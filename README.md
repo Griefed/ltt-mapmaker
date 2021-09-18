@@ -73,14 +73,16 @@ with those new tiles. Edit [Tile.vue](https://github.com/Griefed/ltt-mapmaker/bl
 Here's what the item for the barren-tile looks like. If you wish to add a new item, copy'n'paste this and change
 
   - change `barren` in `@click="barren"` to the name of the new tile
-  - create the icon for the new tile and change `barren` in `<img src="~assets/barren.png"/>` to the name of the new tile
+  - create the icon for the new tile and change `barren` in `<img src="~assets/tiles/barren.webp"/>` to the name of the new tile
+      - images are of the `webp`-format and 55x55 pixels in size.
+      - images for item-selection go into `src/assets/tiles`
   - change `Barren` in `<q-item-label>Barren</q-item-label>` to the name of the new tile
 
 ```vue
         <q-item clickable v-close-popup @click="barren">
           <q-item-section avatar>
             <q-avatar>
-              <img src="~assets/barren.png"/>
+              <img src="~assets/tiles/barren.webp"/>
             </q-avatar>
           </q-item-section>
           <q-item-section>
@@ -96,16 +98,18 @@ After that is done, you need to add a new method for said new tile. Copy'n'paste
   - change `barren` in `this.label = 'barren';` to the name of the new tile
   - change `brown-6` in `this.color = 'brown-6';` to a suitable [Quasar colour](https://quasar.dev/style/color-palette#color-list) of the new tile. This is the button colour.
   - change `white` in `this.textcolor = 'white';` to `black` if `this.color` of the new tile is bright, improves readability
-  - change `#634123` in `this.backgroundColor = 'background-color: #634123';` to a suitable colour of the new tile
+  - change `/barren_tile.webp` in `this.backgroundImage = 'background-image: url(/tiles/barren_tile.webp);'` to a suitable image of the new tile
+      - images are of the `webp`-format and usually ~50x57 pixels in size
+      - images for tiles to into `public/tiles`
 
 ```js
     barren () {
-      console.log('Clicked on Barren');
-      this.label = 'barren';
-      this.color = 'brown-6';
-      this.textcolor = 'white';
-      this.backgroundColor = 'background-color: #634123';
-    },
+  console.log('Clicked on Barren');
+  this.label = 'barren';
+  this.color = 'brown-6';
+  this.textcolor = 'white';
+  this.backgroundImage = 'background-image: url(/tiles/barren_tile.webp);'
+},
 ```
 
 Congratulations! You've added a new tile to lttmm!
@@ -113,3 +117,8 @@ Congratulations! You've added a new tile to lttmm!
 ## Expanding/changing random map names
 
 If you wish to expand/change the random name generator, edit `const reticulating` and/or `getMapName()` in the [MainLayout.vue](https://github.com/Griefed/ltt-mapmaker/blob/c614876316d5216690c3a2dd5ae2d05974965f16/src/layouts/MainLayout.vue).
+
+# Other things to note
+
+Hexagon-shaped tiles would not have been possible without the help of this awesome tool available at [csshexagon on github.io](https://brenna.github.io/csshexagon/)
+by the awesome [brenna](https://github.com/brenna).
