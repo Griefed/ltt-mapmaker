@@ -3,6 +3,12 @@
     <q-header elevated>
       <q-toolbar>
 
+
+        <q-avatar>
+          <img alt="header" src="~assets/icon.webp" width="50">
+        </q-avatar>
+
+
         <q-toolbar-title style="font-weight: bold;">
           Let Them Trade Map-Maker
         </q-toolbar-title>
