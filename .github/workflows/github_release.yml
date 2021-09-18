@@ -1,0 +1,111 @@
+name: Create GitHub release after tag push
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      # GET LATEST CODE
+      - name: Checkout latest code
+        uses: actions/checkout@master
+        with:
+          fetch-depth: 0
+
+      # EXTRACT TAG FROM PUSH
+      - name: Get tag
+        id: tag
+        uses: dawidd6/action-get-tag@v1
+      - name: Use tag
+        run: echo ${{steps.tag.outputs.tag}}
+
+      # GENERATE CHANGELOG, RELEASE
+      - id: conventional_changelog
+        uses: ardalanamini/auto-changelog@master
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{steps.tag.outputs.tag}}
+          body: |
+            Automatic release of version: **${{steps.tag.outputs.tag}}**
+            **Changes in this release:**
+            ${{ steps.conventional_changelog.outputs.changelog }}
+          draft: false
+          prerelease: false
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.4.0
+        with:
+          # Version Spec of the version to use.  Examples: 12.x, 10.15.1, >=10.15.0
+          node-version: '>= 16.9.1'
+          # Set this option if you want the action to check for the latest available version that satisfies the version spec
+          check-latest: false
+      - run: npm install -g @quasar/cli
+      - run: npm install
+      - run: quasar build
+      - run: pwd && ls -al *
+
+      - name: Create Build Archive tar.gz
+        run: |
+          echo "**** Creating archive of quasar build ****"
+          tar -czf lttmm-${{ steps.tag.outputs.tag }}.tar.gz dist/spa
+
+      - name: Create Build Archive zip
+      - uses: papeloto/action-zip@v1
+        with:
+          files: dist/spa
+          recursive: true
+          dest: lttmm-${{ steps.tag.outputs.tag }}.zip
+
+      - name: Upload Release Archive tar.gz
+        id: upload-release-asset-archive
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./lttmm-${{ steps.tag.outputs.tag }}.tar.gz
+          asset_name: lttmm-${{ steps.tag.outputs.tag }}.tar.gz
+          asset_content_type: application/gzip
+
+      - name: Upload Release Archive zip
+        id: upload-release-asset-archive
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./lttmm-${{ steps.tag.outputs.tag }}.zip
+          asset_name: lttmm-${{ steps.tag.outputs.tag }}.zip
+          asset_content_type: application/zip
+
+      # DOCKER RELATED
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v1
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build and push
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64,linux/arm/v7,linux/arm64
+          push: true
+          tags: |
+            ghcr.io/griefed/ltt-mapmaker:latest
+            ghcr.io/griefed/ltt-mapmaker:${{ steps.tag.outputs.tag }}
