@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Paused until further notice
-      - run: |
+        run: |
           echo "This action is paused until further notice."
           echo "I need to figure out how to work with the assets folder for the tile images."
           echo "Currently, they are in public/tiles, which ends in a 404 when running on GitHub pages."
