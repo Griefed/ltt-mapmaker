@@ -10,22 +10,27 @@ jobs:
   pages:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v2.4.0
-        with:
-          # Version Spec of the version to use.  Examples: 12.x, 10.15.1, >=10.15.0
-          node-version: '>= 16.9.1'
-          # Set this option if you want the action to check for the latest available version that satisfies the version spec
-          check-latest: false
-      - run: npm install -g @quasar/cli
-      - run: npm install
-      - run: quasar build
-      - run: pwd && ls -al *
-
-      # DEPLOY TO GH-PAGES
-      - name: Deploy to GitHub-Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.5
-        with:
-          branch: gh-pages
-          folder: dist/spa
+      - name: Paused until further notice
+      - run: |
+          echo "This action is paused until further notice."
+          echo "I need to figure out how to work with the assets folder for the tile images."
+          echo "Currently, they are in public/tiles, which ends in a 404 when running on GitHub pages."
+#      - uses: actions/checkout@v2
+#      - name: Setup Node.js environment
+#        uses: actions/setup-node@v2.4.0
+#        with:
+#          # Version Spec of the version to use.  Examples: 12.x, 10.15.1, >=10.15.0
+#          node-version: '>= 16.9.1'
+#          # Set this option if you want the action to check for the latest available version that satisfies the version spec
+#          check-latest: false
+#      - run: npm install -g @quasar/cli
+#      - run: npm install
+#      - run: quasar build
+#      - run: pwd && ls -al *
+#
+#      # DEPLOY TO GH-PAGES
+#      - name: Deploy to GitHub-Pages
+#        uses: JamesIves/github-pages-deploy-action@4.1.5
+#        with:
+#          branch: gh-pages
+#          folder: dist/spa
