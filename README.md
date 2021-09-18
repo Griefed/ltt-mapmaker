@@ -1,6 +1,6 @@
 [![screenshot](https://i.griefed.de/images/2021/09/18/image265345a28f3ca2d6.png)](https://store.steampowered.com/app/1313290/Let_Them_Trade/)
 
-# Let Them Trade Map Editor (ltt-mapeditor)
+# Let Them Trade Map Maker
 
 ltt-mapmaker is a visual map editor for the game [Let Them Trade](https://store.steampowered.com/app/1313290/Let_Them_Trade/) by [Spaceflower](https://spaceflower.de/), a german indie-gamestudio.
 
