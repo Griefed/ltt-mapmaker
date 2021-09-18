@@ -49,10 +49,18 @@ jobs:
           node-version: '>= 16.9.1'
           # Set this option if you want the action to check for the latest available version that satisfies the version spec
           check-latest: false
-      - run: npm install -g @quasar/cli
-      - run: npm install
-      - run: quasar build
-      - run: pwd && ls -al *
+
+      - name: Install Quasar
+        run: npm install -g @quasar/cli
+
+      - name: Install packages
+        run: npm install
+
+      - name: Build project
+        run: quasar build
+
+      - name: List files
+        run: pwd && ls -al *
 
       - name: Create Build Archive tar.gz
         run: |
@@ -60,7 +68,7 @@ jobs:
           tar -czf lttmm-${{ steps.tag.outputs.tag }}.tar.gz dist/spa
 
       - name: Create Build Archive zip
-      - uses: papeloto/action-zip@v1
+        uses: papeloto/action-zip@v1
         with:
           files: dist/spa
           recursive: true
