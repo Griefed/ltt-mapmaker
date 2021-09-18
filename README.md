@@ -26,7 +26,7 @@ Create a `docker-compose.yml`-file in your preferred location and add the follow
 ```yml
 version: '3'
 services:
-  lttmm:
+  ltt-mapmaker:
     image: ghcr.io/griefed/ltt-mapmaker:latest
     container_name: ltt-mapmaker
     restart: unless-stopped
