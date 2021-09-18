@@ -67,7 +67,7 @@ jobs:
           dest: lttmm-${{ steps.tag.outputs.tag }}.zip
 
       - name: Upload Release Archive tar.gz
-        id: upload-release-asset-archive
+        id: upload-release-asset-archive-targz
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -78,7 +78,7 @@ jobs:
           asset_content_type: application/gzip
 
       - name: Upload Release Archive zip
-        id: upload-release-asset-archive
+        id: upload-release-asset-archive-zip
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
