@@ -5,7 +5,7 @@
 
 
         <q-avatar>
-          <img alt="header" src="~assets/icon.webp" width="50">
+          <img alt="header" src="~assets/icon.webp" width="50px">
         </q-avatar>
 
 
@@ -13,27 +13,211 @@
           Let Them Trade Map-Maker
         </q-toolbar-title>
 
+        <q-btn-dropdown label="Settings" color="secondary">
+          <div class="row no-wrap q-pa-md">
+            <div class="column" style="width: 600px;">
+              <div class="text-h6 q-mb-md">Initial View Radius</div>
+              <q-item>
+                <q-item-section avatar>
+                  <q-icon size="30px" color="secondary" name="mdi-arrow-expand-horizontal" />
+                </q-item-section>
+                <q-item-section>
+                  <q-slider v-model="radiusX" :min="1" :max="24" label color="secondary" :step="1" label-always/>
+                </q-item-section>
+              </q-item>
+
+              <q-item>
+                <q-item-section avatar>
+                  <q-icon size="30px" color="secondary" name="mdi-arrow-expand-vertical" />
+                </q-item-section>
+                <q-item-section>
+                  <q-slider v-model="radiusY" :min="1" :max="14" label color="secondary" :step="1" label-always/>
+                </q-item-section>
+              </q-item>
+
+              <q-separator inset spaced />
+
+              <div class="text-h6 q-mb-md">Initial View Center</div>
+              <q-item>
+                <q-item-section avatar>
+                  <q-icon size="30px" color="secondary" name="mdi-arrow-expand-horizontal" />
+                </q-item-section>
+                <q-item-section>
+                  <q-slider v-model="centerX" :min="-24" :max="24" label color="secondary" :step="1" label-always/>
+                </q-item-section>
+              </q-item>
+
+              <q-item>
+                <q-item-section avatar>
+                  <q-icon size="30px" color="secondary" name="mdi-arrow-expand-vertical" />
+                </q-item-section>
+                <q-item-section>
+                  <q-slider v-model="centerY" :min="-14" :max="14" label color="secondary" :step="1" label-always/>
+                </q-item-section>
+              </q-item>
+
+              <q-separator inset spaced />
+
+              <div class="text-h6 q-mb-md">Scrollbar Settings</div>
+              <div class="row no-wrap q-pa-md">
+                <div>Horizontal Color and Opacity
+                  <q-color v-model="verticalColor" class="my-picker"/>
+                </div>
+                <q-item>
+                  <div class="column">
+                  <q-item-section avatar>
+                    <q-icon size="30px" style="margin-left: 5px;" color="secondary" name="opacity" />
+                  </q-item-section>
+                  <q-item-section>
+                    <q-slider vertical reverse v-model="verticalOpacity" :min="0.0" :max="1" :step="0.1" label color="secondary"  label-always/>
+                  </q-item-section>
+                  </div>
+                </q-item>
+
+                <q-separator inset spaced />
+
+                <div>Horizontal Color and Opacity
+                  <q-color v-model="horizontalColor" class="my-picker"/>
+                </div>
+                <q-item>
+                  <div class="column">
+                    <q-item-section avatar>
+                      <q-icon size="30px" style="margin-left: 5px;" color="secondary" name="opacity" />
+                    </q-item-section>
+                    <q-item-section>
+                      <q-slider vertical reverse v-model="horizontalOpacity" :min="0.0" :max="1" :step="0.1" label color="secondary"  label-always/>
+                    </q-item-section>
+                  </div>
+                </q-item>
+              </div>
+
+            </div>
+          </div>
+        </q-btn-dropdown>
+
+        <q-separator inset spaced />
+
         <q-btn class="q-mr-xs" color="secondary" label="Download Map" @click='generateMap()'>
           <q-tooltip :disable="$q.platform.is.mobile">
             Download current configuration as a JSON-file.
           </q-tooltip>
         </q-btn>
 
-
+        <q-separator inset spaced />
 
         <q-btn
           :icon="$q.fullscreen.isActive ? 'fullscreen_exit' : 'fullscreen'"
           class="q-mr-xs"
           dense
           color="secondary"
-          round
+          label="Toggle Fullscreen"
           @click="$q.fullscreen.toggle()">
           <q-tooltip :disable="$q.platform.is.mobile">
             {{ $q.fullscreen.isActive ? 'Exit Fullscreen' : 'Toggle Fullscreen' }}
           </q-tooltip>
         </q-btn>
 
-        <div class="q-mr-xs" style="font-weight: bold">Made by Griefed</div>
+        <q-separator inset spaced />
+
+        <q-btn @click="alert = true" color="secondary" dense label="Made by Griefed">
+          <q-tooltip :disable="$q.platform.is.mobile">
+            Open a little About :)
+          </q-tooltip>
+          <q-avatar>
+            <img alt="header" src="~assets/Griefed.webp" width="50">
+          </q-avatar>
+        </q-btn>
+
+        <q-dialog v-model="alert">
+          <q-card style="max-width: 1000px;width:750px">
+
+            <q-card-section>
+              <div class="text-h6">About Griefed and Let Them Trade Map Maker</div>
+            </q-card-section>
+
+            <q-card-section align="center">
+              <q-btn style="margin-right: 15px" type="a" href="https://github.com/Griefed">
+                <q-icon size="50px" color="info" name="mdi-github"></q-icon>
+                <q-tooltip :disable="$q.platform.is.mobile">
+                  Visit my GitHub profile!
+                </q-tooltip>
+              </q-btn>
+              <q-btn style="margin-right: 15px" type="a" href="https://blog.griefed.de">
+                <q-icon size="50px" color="info" name="mdi-wordpress"></q-icon>
+                <q-tooltip :disable="$q.platform.is.mobile">
+                  Visit my blog!
+                </q-tooltip>
+              </q-btn>
+              <q-btn style="margin-right: 15px" type="a" href="https://griefed.de">
+                <q-icon size="50px" color="info" name="mdi-web"></q-icon>
+                <q-tooltip :disable="$q.platform.is.mobile">
+                  Visit my website!
+                </q-tooltip>
+              </q-btn>
+            </q-card-section>
+
+            <q-card-section class="q-pt-none">
+              Visual map maker for Let Them Trade by Spaceflower, made with VueJS/Quasar.<br>
+              Simply click on a button in the center of a tile and select the type you want it to change to.<br>
+              Do so for the whole map. After your map looks good to you, hit the "DOWNLOAD MAP"-button in the top-right.<br>
+              This will generate a .json-file and download it which will contain your configuration as a Let Them Trade map.
+            </q-card-section>
+
+            <q-card-section>
+              <div class="text-h6">All Things Spaceflower!</div>
+            </q-card-section>
+
+            <q-card-section align="center">
+              <q-btn style="margin-right: 15px" type="a" href="https://store.steampowered.com/app/1313290/Let_Them_Trade/">
+                <q-icon size="50px" color="black" name="mdi-steam"></q-icon>
+                <q-tooltip :disable="$q.platform.is.mobile">
+                  Let Them Trade on Steam!
+                </q-tooltip>
+              </q-btn>
+              <q-btn style="margin-right: 15px" type="a" href="https://www.twitch.tv/spaceflowerde">
+                <q-icon size="50px" color="black" name="mdi-twitch"></q-icon>
+                <q-tooltip :disable="$q.platform.is.mobile">
+                  Spaceflower on Twitch!
+                </q-tooltip>
+              </q-btn>
+              <q-btn style="margin-right: 15px" type="a" href="https://spaceflower.de/">
+                <q-icon size="50px" color="black" name="mdi-web"></q-icon>
+                <q-tooltip :disable="$q.platform.is.mobile">
+                  Visit the homepage of Spaceflower!
+                </q-tooltip>
+              </q-btn>
+              <q-btn style="margin-right: 15px" type="a" href="https://www.tiktok.com/@spaceflowerde?">
+                <q-icon size="50px" color="black" name="tiktok"></q-icon>
+                <q-tooltip :disable="$q.platform.is.mobile">
+                  Visit Spaceflower on TikTok!
+                </q-tooltip>
+              </q-btn>
+              <q-btn style="margin-right: 15px" type="a" href="https://twitter.com/spaceflowerde">
+                <q-icon size="50px" color="black" name="mdi-twitter"></q-icon>
+                <q-tooltip :disable="$q.platform.is.mobile">
+                  Visit Spaceflower on Twitter!
+                </q-tooltip>
+              </q-btn>
+              <q-btn style="margin-right: 15px" type="a" href="https://www.facebook.com/SpaceflowerDE">
+                <q-icon size="50px" color="black" name="mdi-facebook"></q-icon>
+                <q-tooltip :disable="$q.platform.is.mobile">
+                  Visit Spaceflower on Facebook!
+                </q-tooltip>
+              </q-btn>
+              <q-btn style="margin-right: 15px" type="a" href="https://discordapp.com/invite/yaTeefS">
+                <q-icon size="50px" color="black" name="mdi-discord"></q-icon>
+                <q-tooltip :disable="$q.platform.is.mobile">
+                  Join their Discord server!
+                </q-tooltip>
+              </q-btn>
+            </q-card-section>
+
+            <q-card-actions align="right">
+              <q-btn flat label="OK" color="primary" v-close-popup />
+            </q-card-actions>
+
+          </q-card>
+        </q-dialog>
 
       </q-toolbar>
     </q-header>
@@ -45,8 +229,8 @@
             <q-scroll-area
               :visible="visible" class="full-height full-width page"
               :bar-style="{ borderRadius: '5px', opacity: 1, zIndex: 1001 }"
-              :thumb-style="{ borderRadius: '5px', opacity: 1, zIndex: 1001 }"
-            >
+              :vertical-thumb-style="{ borderRadius: '5px', opacity: verticalOpacity, zIndex: 1001, background: verticalColor }"
+              :horizontal-thumb-style="{ borderRadius: '5px', opacity: horizontalOpacity, zIndex: 1001, background: horizontalColor }">
               <router-view/>
             </q-scroll-area>
           </div>
@@ -58,6 +242,7 @@
 
 <script>
 import { defineComponent, ref } from 'vue'
+import { openURL } from 'quasar'
 
 export default defineComponent({
   name: 'MainLayout',
@@ -89,8 +274,21 @@ export default defineComponent({
       "Splatting","Transforms","Stratifying","Ground","Layers","Sub-Sampling","Water","Data","Synthesizing","Gravity","Synthesizing","Wavelets",
       "Time-Compressing","Simulator","Clock","Unable","to","Reveal","Current","Activity","Weathering","Buildings","Zeroing","Crime","Network",
       "Reticulating","Splines"];
+    let radiusY = 1;
+    let radiusX = 1;
+    let centerX = 0;
+    let centerY = 0;
     return {
       visible: ref(true),
+      alert: ref(false),
+      verticalColor: ref('#000000'),
+      horizontalColor: ref('#000000'),
+      verticalOpacity: ref(1),
+      horizontalOpacity: ref(1),
+      radiusX,
+      radiusY,
+      centerX,
+      centerY,
       reticulating
     }
   },
@@ -99,7 +297,7 @@ export default defineComponent({
       //console.log(this.getMapName());
       //console.log(this.getMapId());
       //console.log(this.getMap());
-      let map = "{\"mapId\": \"" + this.getMapId() + "\",\"mapName\": \"" + this.getMapName() + "\",\"tileSet\": [" + this.getMap() + "]}";
+      let map = "{\"mapId\": \"" + this.getMapId() + "\",\"mapName\": \"" + this.getMapName() + "\",\"initialViewRadiusX\": " + this.radiusX + "," + "\"initialViewRadiusY\": " + this.radiusY + "," + "\"initialViewCenterX\": " + this.centerX + "," + "\"initialViewCenterY\": " + this.centerY + ",\"tileSet\": [" + this.getMap() + "]}";
       this.downloadMap(this.getMapId() + ".json", JSON.stringify(JSON.parse(map), null, 2));
     },
     getMapId() {
