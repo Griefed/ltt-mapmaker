@@ -1,6 +1,6 @@
 <template>
 
-  <div class="row no-wrap"> <!-- 1 ROW -->
+  <div class="row no-wrap firstRow"> <!-- 1 ROW -->
     <Tile id="-24_14" style="z-index: 1000;"></Tile>
     <Tile id="-23_14" style="z-index: 1000; margin-left: -2px"></Tile>
     <Tile id="-22_14" style="z-index: 1000; margin-left: -2px"></Tile>
@@ -60,9 +60,9 @@
     <Tile id="22_14" style="z-index: 1000; margin-left: -2px"></Tile>
     <Tile id="23_14" style="z-index: 1000; margin-left: -2px"></Tile>
     <Tile id="24_14" style="z-index: 1000; margin-left: -2px"></Tile>
-  </div><br>
+  </div>
 
-  <div class="row shifted no-wrap"> <!-- 2 ROW -->
+  <div class="row no-wrap moveup"> <!-- 2 ROW -->
     <Tile id="-24_13" style="z-index: 1000;" ></Tile>
     <Tile id="-23_13" style="z-index: 1000; margin-left: -2px"></Tile>
     <Tile id="-22_13" style="z-index: 1000; margin-left: -2px"></Tile>
@@ -122,9 +122,9 @@
     <Tile id="22_13" style="z-index: 1000; margin-left: -2px"></Tile>
     <Tile id="23_13" style="z-index: 1000; margin-left: -2px"></Tile>
     <Tile id="24_13" style="z-index: 1000; margin-left: -2px"></Tile>
-  </div><br>
+  </div>
 
-  <div class="row no-wrap moveup"> <!-- 3 ROW -->
+  <div class="row no-wrap moveup shifted"> <!-- 3 ROW -->
     <Tile id="-24_12" style="z-index: 1000" ></Tile>
     <Tile id="-23_12" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="-22_12" style="z-index: 1000; margin-left: -2px" ></Tile>
@@ -184,9 +184,9 @@
     <Tile id="22_12" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="23_12" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="24_12" style="z-index: 1000; margin-left: -2px" ></Tile>
-  </div><br>
+  </div>
 
-  <div class="row shifted no-wrap moveup"> <!-- 4 ROW -->
+  <div class="row no-wrap moveup"> <!-- 4 ROW -->
     <Tile id="-24_11" style="z-index: 1000;" ></Tile>
     <Tile id="-23_11" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="-22_11" style="z-index: 1000; margin-left: -2px" ></Tile>
@@ -246,9 +246,9 @@
     <Tile id="22_11" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="23_11" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="24_11" style="z-index: 1000; margin-left: -2px" ></Tile>
-  </div><br>
+  </div>
 
-  <div class="row no-wrap moveup"> <!-- 5 ROW -->
+  <div class="row no-wrap moveup shifted"> <!-- 5 ROW -->
     <Tile id="-24_10" style="z-index: 1000" ></Tile>
     <Tile id="-23_10" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="-22_10" style="z-index: 1000; margin-left: -2px" ></Tile>
@@ -308,9 +308,9 @@
     <Tile id="22_10" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="23_10" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="24_10" style="z-index: 1000; margin-left: -2px" ></Tile>
-  </div><br>
+  </div>
 
-  <div class="row shifted no-wrap moveup"> <!-- 6 ROW -->
+  <div class="row no-wrap moveup"> <!-- 6 ROW -->
     <Tile id="-24_9" style="z-index: 1000;" ></Tile>
     <Tile id="-23_9" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="-22_9" style="z-index: 1000; margin-left: -2px" ></Tile>
@@ -370,9 +370,9 @@
     <Tile id="22_9" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="23_9" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="24_9" style="z-index: 1000; margin-left: -2px" ></Tile>
-  </div><br>
+  </div>
 
-  <div class="row no-wrap moveup"> <!-- 7 ROW -->
+  <div class="row no-wrap moveup shifted"> <!-- 7 ROW -->
     <Tile id="-24_8" style="z-index: 1000" ></Tile>
     <Tile id="-23_8" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="-22_8" style="z-index: 1000; margin-left: -2px" ></Tile>
@@ -432,9 +432,9 @@
     <Tile id="22_8" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="23_8" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="24_8" style="z-index: 1000; margin-left: -2px" ></Tile>
-  </div><br>
+  </div>
 
-  <div class="row shifted no-wrap moveup"> <!-- 8 ROW -->
+  <div class="row no-wrap moveup"> <!-- 8 ROW -->
     <Tile id="-24_7" style="z-index: 1000;" ></Tile>
     <Tile id="-23_7" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="-22_7" style="z-index: 1000; margin-left: -2px" ></Tile>
@@ -494,9 +494,9 @@
     <Tile id="22_7" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="23_7" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="24_7" style="z-index: 1000; margin-left: -2px" ></Tile>
-  </div><br>
+  </div>
 
-  <div class="row no-wrap moveup"> <!-- 9 ROW -->
+  <div class="row no-wrap moveup shifted"> <!-- 9 ROW -->
     <Tile id="-24_6" style="z-index: 1000" ></Tile>
     <Tile id="-23_6" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="-22_6" style="z-index: 1000; margin-left: -2px" ></Tile>
@@ -556,9 +556,9 @@
     <Tile id="22_6" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="23_6" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="24_6" style="z-index: 1000; margin-left: -2px" ></Tile>
-  </div><br>
+  </div>
 
-  <div class="row shifted no-wrap moveup">  <!-- 10 ROW -->
+  <div class="row no-wrap moveup">  <!-- 10 ROW -->
     <Tile id="-24_5" style="z-index: 1000;" ></Tile>
     <Tile id="-23_5" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="-22_5" style="z-index: 1000; margin-left: -2px" ></Tile>
@@ -618,9 +618,9 @@
     <Tile id="22_5" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="23_5" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="24_5" style="z-index: 1000; margin-left: -2px" ></Tile>
-  </div><br>
+  </div>
 
-  <div class="row no-wrap moveup"> <!-- 11 ROW -->
+  <div class="row no-wrap moveup shifted"> <!-- 11 ROW -->
     <Tile id="-24_4" style="z-index: 1000" ></Tile>
     <Tile id="-23_4" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="-22_4" style="z-index: 1000; margin-left: -2px" ></Tile>
@@ -680,9 +680,9 @@
     <Tile id="22_4" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="23_4" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="24_4" style="z-index: 1000; margin-left: -2px" ></Tile>
-  </div><br>
+  </div>
 
-  <div class="row shifted no-wrap moveup"> <!-- 12 ROW -->
+  <div class="row no-wrap moveup"> <!-- 12 ROW -->
     <Tile id="-24_3" style="z-index: 1000;" ></Tile>
     <Tile id="-23_3" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="-22_3" style="z-index: 1000; margin-left: -2px" ></Tile>
@@ -742,9 +742,9 @@
     <Tile id="22_3" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="23_3" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="24_3" style="z-index: 1000; margin-left: -2px" ></Tile>
-  </div><br>
+  </div>
 
-  <div class="row no-wrap moveup"> <!-- 13 ROW -->
+  <div class="row no-wrap moveup shifted"> <!-- 13 ROW -->
     <Tile id="-24_2" style="z-index: 1000" ></Tile>
     <Tile id="-23_2" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="-22_2" style="z-index: 1000; margin-left: -2px" ></Tile>
@@ -804,9 +804,9 @@
     <Tile id="22_2" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="23_2" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="24_2" style="z-index: 1000; margin-left: -2px" ></Tile>
-  </div><br>
+  </div>
 
-  <div class="row shifted no-wrap moveup"> <!-- 14 ROW -->
+  <div class="row no-wrap moveup"> <!-- 14 ROW -->
     <Tile id="-24_1" style="z-index: 1000;" ></Tile>
     <Tile id="-23_1" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="-22_1" style="z-index: 1000; margin-left: -2px" ></Tile>
@@ -866,9 +866,9 @@
     <Tile id="22_1" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="23_1" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="24_1" style="z-index: 1000; margin-left: -2px" ></Tile>
-  </div><br>
+  </div>
 
-  <div class="row no-wrap moveup"> <!-- 15 ROW -->
+  <div class="row no-wrap moveup shifted"> <!-- 15 ROW -->
     <Tile id="-24_0" style="z-index: 1000" ></Tile>
     <Tile id="-23_0" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="-22_0" style="z-index: 1000; margin-left: -2px" ></Tile>
@@ -928,9 +928,9 @@
     <Tile id="22_0" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="23_0" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="24_0" style="z-index: 1000; margin-left: -2px" ></Tile>
-  </div><br>
+  </div>
 
-  <div class="row shifted no-wrap moveup">  <!-- 16 ROW -->
+  <div class="row no-wrap moveup">  <!-- 16 ROW -->
     <Tile id="-24_-1" style="z-index: 1000;" ></Tile>
     <Tile id="-23_-1" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="-22_-1" style="z-index: 1000; margin-left: -2px" ></Tile>
@@ -990,9 +990,9 @@
     <Tile id="22_-1" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="23_-1" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="24_-1" style="z-index: 1000; margin-left: -2px" ></Tile>
-  </div><br>
+  </div>
 
-  <div class="row no-wrap moveup"> <!-- 17 ROW -->
+  <div class="row no-wrap moveup shifted"> <!-- 17 ROW -->
     <Tile id="-24_-2" style="z-index: 1000" ></Tile>
     <Tile id="-23_-2" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="-22_-2" style="z-index: 1000; margin-left: -2px" ></Tile>
@@ -1052,9 +1052,9 @@
     <Tile id="22_-2" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="23_-2" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="24_-2" style="z-index: 1000; margin-left: -2px" ></Tile>
-  </div><br>
+  </div>
 
-  <div class="row shifted no-wrap moveup"> <!-- 18 ROW -->
+  <div class="row no-wrap moveup"> <!-- 18 ROW -->
     <Tile id="-24_-3" style="z-index: 1000;" ></Tile>
     <Tile id="-23_-3" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="-22_-3" style="z-index: 1000; margin-left: -2px" ></Tile>
@@ -1114,9 +1114,9 @@
     <Tile id="22_-3" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="23_-3" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="24_-3" style="z-index: 1000; margin-left: -2px" ></Tile>
-  </div><br>
+  </div>
 
-  <div class="row no-wrap moveup"> <!-- 19 ROW -->
+  <div class="row no-wrap moveup shifted"> <!-- 19 ROW -->
     <Tile id="-24_-4" style="z-index: 1000" ></Tile>
     <Tile id="-23_-4" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="-22_-4" style="z-index: 1000; margin-left: -2px" ></Tile>
@@ -1176,9 +1176,9 @@
     <Tile id="22_-4" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="23_-4" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="24_-4" style="z-index: 1000; margin-left: -2px" ></Tile>
-  </div><br>
+  </div>
 
-  <div class="row shifted no-wrap moveup"> <!-- 20 ROW -->
+  <div class="row no-wrap moveup"> <!-- 20 ROW -->
     <Tile id="-24_-5" style="z-index: 1000;" ></Tile>
     <Tile id="-23_-5" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="-22_-5" style="z-index: 1000; margin-left: -2px" ></Tile>
@@ -1238,9 +1238,9 @@
     <Tile id="22_-5" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="23_-5" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="24_-5" style="z-index: 1000; margin-left: -2px" ></Tile>
-  </div><br>
+  </div>
 
-  <div class="row no-wrap moveup"> <!-- 21 ROW -->
+  <div class="row no-wrap moveup shifted"> <!-- 21 ROW -->
     <Tile id="-24_-6" style="z-index: 1000" ></Tile>
     <Tile id="-23_-6" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="-22_-6" style="z-index: 1000; margin-left: -2px" ></Tile>
@@ -1300,9 +1300,9 @@
     <Tile id="22_-6" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="23_-6" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="24_-6" style="z-index: 1000; margin-left: -2px" ></Tile>
-  </div><br>
+  </div>
 
-  <div class="row shifted no-wrap moveup"> <!-- 22 ROW -->
+  <div class="row no-wrap moveup"> <!-- 22 ROW -->
     <Tile id="-24_-7" style="z-index: 1000;" ></Tile>
     <Tile id="-23_-7" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="-22_-7" style="z-index: 1000; margin-left: -2px" ></Tile>
@@ -1362,9 +1362,9 @@
     <Tile id="22_-7" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="23_-7" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="24_-7" style="z-index: 1000; margin-left: -2px" ></Tile>
-  </div><br>
+  </div>
 
-  <div class="row no-wrap moveup"> <!-- 23 ROW -->
+  <div class="row no-wrap moveup shifted"> <!-- 23 ROW -->
     <Tile id="-24_-8" style="z-index: 1000" ></Tile>
     <Tile id="-23_-8" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="-22_-8" style="z-index: 1000; margin-left: -2px" ></Tile>
@@ -1424,9 +1424,9 @@
     <Tile id="22_-8" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="23_-8" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="24_-8" style="z-index: 1000; margin-left: -2px" ></Tile>
-  </div><br>
+  </div>
 
-  <div class="row shifted no-wrap moveup"> <!-- 24 ROW -->
+  <div class="row no-wrap moveup"> <!-- 24 ROW -->
     <Tile id="-24_-9" style="z-index: 1000;" ></Tile>
     <Tile id="-23_-9" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="-22_-9" style="z-index: 1000; margin-left: -2px" ></Tile>
@@ -1486,9 +1486,9 @@
     <Tile id="22_-9" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="23_-9" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="24_-9" style="z-index: 1000; margin-left: -2px" ></Tile>
-  </div><br>
+  </div>
 
-  <div class="row no-wrap moveup"> <!-- 25 ROW -->
+  <div class="row no-wrap moveup shifted"> <!-- 25 ROW -->
     <Tile id="-24_-10" style="z-index: 1000" ></Tile>
     <Tile id="-23_-10" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="-22_-10" style="z-index: 1000; margin-left: -2px" ></Tile>
@@ -1548,9 +1548,9 @@
     <Tile id="22_-10" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="23_-10" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="24_-10" style="z-index: 1000; margin-left: -2px" ></Tile>
-  </div><br>
+  </div>
 
-  <div class="row shifted no-wrap moveup"> <!-- 26 ROW -->
+  <div class="row no-wrap moveup"> <!-- 26 ROW -->
     <Tile id="-24_-11" style="z-index: 1000;" ></Tile>
     <Tile id="-23_-11" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="-22_-11" style="z-index: 1000; margin-left: -2px" ></Tile>
@@ -1610,9 +1610,9 @@
     <Tile id="22_-11" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="23_-11" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="24_-11" style="z-index: 1000; margin-left: -2px" ></Tile>
-  </div><br>
+  </div>
 
-  <div class="row no-wrap moveup"> <!-- 27 ROW -->
+  <div class="row no-wrap moveup shifted"> <!-- 27 ROW -->
     <Tile id="-24_-12" style="z-index: 1000" ></Tile>
     <Tile id="-23_-12" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="-22_-12" style="z-index: 1000; margin-left: -2px" ></Tile>
@@ -1672,9 +1672,9 @@
     <Tile id="22_-12" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="23_-12" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="24_-12" style="z-index: 1000; margin-left: -2px" ></Tile>
-  </div><br>
+  </div>
 
-  <div class="row shifted no-wrap moveup"> <!-- 28 ROW -->
+  <div class="row no-wrap moveup"> <!-- 28 ROW -->
     <Tile id="-24_-13" style="z-index: 1000;" ></Tile>
     <Tile id="-23_-13" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="-22_-13" style="z-index: 1000; margin-left: -2px" ></Tile>
@@ -1734,9 +1734,9 @@
     <Tile id="22_-13" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="23_-13" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="24_-13" style="z-index: 1000; margin-left: -2px" ></Tile>
-  </div><br>
+  </div>
 
-  <div class="row no-wrap moveup"> <!-- 29 ROW -->
+  <div class="row no-wrap moveup shifted"> <!-- 29 ROW -->
     <Tile id="-24_-14" style="z-index: 1000" ></Tile>
     <Tile id="-23_-14" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="-22_-14" style="z-index: 1000; margin-left: -2px" ></Tile>
@@ -1796,7 +1796,7 @@
     <Tile id="22_-14" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="23_-14" style="z-index: 1000; margin-left: -2px" ></Tile>
     <Tile id="24_-14" style="z-index: 1000; margin-left: -2px" ></Tile>
-  </div><br>
+  </div>
 
 </template>
 
@@ -1817,12 +1817,16 @@ export default defineComponent({
 </script>
 
 <style>
+.firstRow {
+  margin-left: 49px;
+}
+
 .shifted {
-  margin-top: -53px;
+  margin-top: -31px;
   margin-left: 49px;
 }
 
 .moveup {
-  margin-top: -53px;
+  margin-top: -31px;
 }
 </style>
