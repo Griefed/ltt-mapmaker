@@ -186,7 +186,7 @@ export default {
       label: 'grass',
       color: 'green-8',
       textcolor: 'white',
-      backgroundImage: 'background-image: url(/tiles/grass_tile.webp);'
+      backgroundImage: 'background-image: url(./tiles/grass_tile.webp);'
     }
   },
   methods: {
@@ -195,98 +195,98 @@ export default {
       this.label = 'barren';
       this.color = 'brown-6';
       this.textcolor = 'white';
-      this.backgroundImage = 'background-image: url(/tiles/barren_tile.webp);'
+      this.backgroundImage = 'background-image: url(./tiles/barren_tile.webp);'
     },
     clay () {
       console.log('Clicked on Clay');
       this.label = 'clay';
       this.color = 'orange-6';
       this.textcolor = 'white';
-      this.backgroundImage = 'background-image: url(/tiles/clay_tile.webp);'
+      this.backgroundImage = 'background-image: url(./tiles/clay_tile.webp);'
     },
     desert () {
       console.log('Clicked on Desert');
       this.label = 'desert';
       this.color = 'yellow-4';
       this.textcolor = 'black';
-      this.backgroundImage = 'background-image: url(/tiles/desert_tile.webp);'
+      this.backgroundImage = 'background-image: url(./tiles/desert_tile.webp);'
     },
     fish () {
       console.log('Clicked on Fish');
       this.label = 'fish';
       this.color = 'amber-12';
       this.textcolor = 'black';
-      this.backgroundImage = 'background-image: url(/tiles/fish_tile.webp);'
+      this.backgroundImage = 'background-image: url(./tiles/fish_tile.webp);'
     },
     forest () {
       console.log('Clicked on Forest');
       this.label = 'forest';
       this.color = 'green-10';
       this.textcolor = 'white';
-      this.backgroundImage = 'background-image: url(/tiles/forest_tile.webp);'
+      this.backgroundImage = 'background-image: url(./tiles/forest_tile.webp);'
     },
     grass () {
       console.log('Clicked on Grass');
       this.label = 'grass';
       this.color = 'green-8';
       this.textcolor = 'white';
-      this.backgroundImage = 'background-image: url(/tiles/grass_tile.webp);'
+      this.backgroundImage = 'background-image: url(./tiles/grass_tile.webp);'
     },
     ice () {
       console.log('Clicked on Ice');
       this.label = 'ice';
       this.color = 'cyan-2';
       this.textcolor = 'black';
-      this.backgroundImage = 'background-image: url(/tiles/ice_tile.webp);'
+      this.backgroundImage = 'background-image: url(./tiles/ice_tile.webp);'
     },
     iron () {
       console.log('Clicked on Iron');
       this.label = 'iron';
       this.color = 'blue-grey-5';
       this.textcolor = 'white';
-      this.backgroundImage = 'background-image: url(/tiles/iron_tile.webp);'
+      this.backgroundImage = 'background-image: url(./tiles/iron_tile.webp);'
     },
     mountain () {
       console.log('Clicked on Mountain');
       this.label = 'mountain';
       this.color = 'grey-13';
       this.textcolor = 'white';
-      this.backgroundImage = 'background-image: url(/tiles/mountain_tile.webp);'
+      this.backgroundImage = 'background-image: url(./tiles/mountain_tile.webp);'
     },
     salt () {
       console.log('Clicked on Salt');
       this.label = 'salt';
       this.color = 'grey-4';
       this.textcolor = 'black';
-      this.backgroundImage = 'background-image: url(/tiles/salt_tile.webp);'
+      this.backgroundImage = 'background-image: url(./tiles/salt_tile.webp);'
     },
     stone () {
       console.log('Clicked on Stone');
       this.label = 'stone';
       this.color = 'blue-grey-13';
       this.textcolor = 'white';
-      this.backgroundImage = 'background-image: url(/tiles/stone_tile.webp);'
+      this.backgroundImage = 'background-image: url(./tiles/stone_tile.webp);'
     },
     water () {
       console.log('Clicked on Water');
       this.label = 'water';
       this.color = 'blue-10';
       this.textcolor = 'white';
-      this.backgroundImage = 'background-image: url(/tiles/water_tile.webp);'
+      this.backgroundImage = 'background-image: url(./tiles/water_tile.webp);'
     },
     wheat () {
       console.log('Clicked on Wheat');
       this.label = 'wheat';
       this.color = 'amber-12';
       this.textcolor = 'black';
-      this.backgroundImage = 'background-image: url(/tiles/wheat_tile.webp);'
+      this.backgroundImage = 'background-image: url(./tiles/wheat_tile.webp);'
     },
     wool () {
       console.log('Clicked on Wool');
       this.label = 'wool';
       this.color = 'brown-13';
       this.textcolor = 'black';
-      this.backgroundImage = 'background-image: url(/tiles/wool_tile.webp);'
+      this.backgroundImage = 'background-image: url(./tiles/wool_tile.webp);'
     },
   }
 }
