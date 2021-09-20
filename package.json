@@ -6,6 +6,9 @@
   "author": "Griefed <griefed@griefed.de>",
   "private": true,
   "scripts": {
+    "start": "quasar dev",
+    "electron": "quasar dev -m electron",
+    "build": "quasar build",
     "lint": "eslint --ext .js,.vue,.ts ./",
     "test": "echo \"No test specified\" && exit 0"
   },
