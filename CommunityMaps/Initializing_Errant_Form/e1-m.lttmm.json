@@ -1,0 +1,8536 @@
+{
+  "mapId": "e1-m.lttmm",
+  "mapName": "Initializing Errant Form",
+  "initialViewRadiusX": 4,
+  "initialViewRadiusY": 4,
+  "initialViewCenterX": 23,
+  "initialViewCenterY": -11,
+  "tileSet": [
+    {
+      "x": -24,
+      "y": -14,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -23,
+      "y": -14,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -22,
+      "y": -14,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -21,
+      "y": -14,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -20,
+      "y": -14,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -19,
+      "y": -14,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -18,
+      "y": -14,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -17,
+      "y": -14,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -16,
+      "y": -14,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -15,
+      "y": -14,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -14,
+      "y": -14,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": -13,
+      "y": -14,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": -12,
+      "y": -14,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": -11,
+      "y": -14,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": -10,
+      "y": -14,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": -9,
+      "y": -14,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -8,
+      "y": -14,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -7,
+      "y": -14,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -6,
+      "y": -14,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": -5,
+      "y": -14,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": -4,
+      "y": -14,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": -3,
+      "y": -14,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -2,
+      "y": -14,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -1,
+      "y": -14,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": 0,
+      "y": -14,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 1,
+      "y": -14,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 2,
+      "y": -14,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 3,
+      "y": -14,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 4,
+      "y": -14,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 5,
+      "y": -14,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 6,
+      "y": -14,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 7,
+      "y": -14,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 8,
+      "y": -14,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 9,
+      "y": -14,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 10,
+      "y": -14,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 11,
+      "y": -14,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 12,
+      "y": -14,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": 13,
+      "y": -14,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": 14,
+      "y": -14,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": 15,
+      "y": -14,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": 16,
+      "y": -14,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 17,
+      "y": -14,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 18,
+      "y": -14,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 19,
+      "y": -14,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 20,
+      "y": -14,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 21,
+      "y": -14,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 22,
+      "y": -14,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 23,
+      "y": -14,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 24,
+      "y": -14,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": -24,
+      "y": -13,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -23,
+      "y": -13,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -22,
+      "y": -13,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -21,
+      "y": -13,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -20,
+      "y": -13,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -19,
+      "y": -13,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -18,
+      "y": -13,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -17,
+      "y": -13,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -16,
+      "y": -13,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -15,
+      "y": -13,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -14,
+      "y": -13,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -13,
+      "y": -13,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": -12,
+      "y": -13,
+      "z": 0,
+      "typeId": "wool"
+    },
+    {
+      "x": -11,
+      "y": -13,
+      "z": 0,
+      "typeId": "wool"
+    },
+    {
+      "x": -10,
+      "y": -13,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -9,
+      "y": -13,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -8,
+      "y": -13,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -7,
+      "y": -13,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -6,
+      "y": -13,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -5,
+      "y": -13,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": -4,
+      "y": -13,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -3,
+      "y": -13,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -2,
+      "y": -13,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -1,
+      "y": -13,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": 0,
+      "y": -13,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 1,
+      "y": -13,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 2,
+      "y": -13,
+      "z": 0,
+      "typeId": "wool"
+    },
+    {
+      "x": 3,
+      "y": -13,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 4,
+      "y": -13,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 5,
+      "y": -13,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 6,
+      "y": -13,
+      "z": 0,
+      "typeId": "wool"
+    },
+    {
+      "x": 7,
+      "y": -13,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 8,
+      "y": -13,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 9,
+      "y": -13,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 10,
+      "y": -13,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 11,
+      "y": -13,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 12,
+      "y": -13,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 13,
+      "y": -13,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": 14,
+      "y": -13,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": 15,
+      "y": -13,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": 16,
+      "y": -13,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 17,
+      "y": -13,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 18,
+      "y": -13,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 19,
+      "y": -13,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 20,
+      "y": -13,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 21,
+      "y": -13,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 22,
+      "y": -13,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 23,
+      "y": -13,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 24,
+      "y": -13,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": -24,
+      "y": -12,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -23,
+      "y": -12,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -22,
+      "y": -12,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -21,
+      "y": -12,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -20,
+      "y": -12,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -19,
+      "y": -12,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -18,
+      "y": -12,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -17,
+      "y": -12,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -16,
+      "y": -12,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -15,
+      "y": -12,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -14,
+      "y": -12,
+      "z": 0,
+      "typeId": "wool"
+    },
+    {
+      "x": -13,
+      "y": -12,
+      "z": 0,
+      "typeId": "wool"
+    },
+    {
+      "x": -12,
+      "y": -12,
+      "z": 0,
+      "typeId": "wheat"
+    },
+    {
+      "x": -11,
+      "y": -12,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": -10,
+      "y": -12,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -9,
+      "y": -12,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -8,
+      "y": -12,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -7,
+      "y": -12,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -6,
+      "y": -12,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -5,
+      "y": -12,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -4,
+      "y": -12,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -3,
+      "y": -12,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -2,
+      "y": -12,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -1,
+      "y": -12,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 0,
+      "y": -12,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 1,
+      "y": -12,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 2,
+      "y": -12,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 3,
+      "y": -12,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 4,
+      "y": -12,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": 5,
+      "y": -12,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 6,
+      "y": -12,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 7,
+      "y": -12,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": 8,
+      "y": -12,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 9,
+      "y": -12,
+      "z": 0,
+      "typeId": "wheat"
+    },
+    {
+      "x": 10,
+      "y": -12,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 11,
+      "y": -12,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 12,
+      "y": -12,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 13,
+      "y": -12,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": 14,
+      "y": -12,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 15,
+      "y": -12,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 16,
+      "y": -12,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 17,
+      "y": -12,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 18,
+      "y": -12,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 19,
+      "y": -12,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 20,
+      "y": -12,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 21,
+      "y": -12,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 22,
+      "y": -12,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 23,
+      "y": -12,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 24,
+      "y": -12,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -24,
+      "y": -11,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -23,
+      "y": -11,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -22,
+      "y": -11,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -21,
+      "y": -11,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -20,
+      "y": -11,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -19,
+      "y": -11,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -18,
+      "y": -11,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -17,
+      "y": -11,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -16,
+      "y": -11,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -15,
+      "y": -11,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -14,
+      "y": -11,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -13,
+      "y": -11,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -12,
+      "y": -11,
+      "z": 0,
+      "typeId": "wool"
+    },
+    {
+      "x": -11,
+      "y": -11,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": -10,
+      "y": -11,
+      "z": 0,
+      "typeId": "wheat"
+    },
+    {
+      "x": -9,
+      "y": -11,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -8,
+      "y": -11,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -7,
+      "y": -11,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -6,
+      "y": -11,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -5,
+      "y": -11,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -4,
+      "y": -11,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -3,
+      "y": -11,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -2,
+      "y": -11,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -1,
+      "y": -11,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 0,
+      "y": -11,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 1,
+      "y": -11,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 2,
+      "y": -11,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 3,
+      "y": -11,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 4,
+      "y": -11,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 5,
+      "y": -11,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": 6,
+      "y": -11,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 7,
+      "y": -11,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 8,
+      "y": -11,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 9,
+      "y": -11,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 10,
+      "y": -11,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 11,
+      "y": -11,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 12,
+      "y": -11,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 13,
+      "y": -11,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 14,
+      "y": -11,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 15,
+      "y": -11,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 16,
+      "y": -11,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 17,
+      "y": -11,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 18,
+      "y": -11,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 19,
+      "y": -11,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 20,
+      "y": -11,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 21,
+      "y": -11,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 22,
+      "y": -11,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 23,
+      "y": -11,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 24,
+      "y": -11,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -24,
+      "y": -10,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -23,
+      "y": -10,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -22,
+      "y": -10,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -21,
+      "y": -10,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -20,
+      "y": -10,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -19,
+      "y": -10,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -18,
+      "y": -10,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -17,
+      "y": -10,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -16,
+      "y": -10,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -15,
+      "y": -10,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -14,
+      "y": -10,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -13,
+      "y": -10,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -12,
+      "y": -10,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -11,
+      "y": -10,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -10,
+      "y": -10,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": -9,
+      "y": -10,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": -8,
+      "y": -10,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -7,
+      "y": -10,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -6,
+      "y": -10,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -5,
+      "y": -10,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -4,
+      "y": -10,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -3,
+      "y": -10,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -2,
+      "y": -10,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -1,
+      "y": -10,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 0,
+      "y": -10,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 1,
+      "y": -10,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 2,
+      "y": -10,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 3,
+      "y": -10,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 4,
+      "y": -10,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": 5,
+      "y": -10,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 6,
+      "y": -10,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 7,
+      "y": -10,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 8,
+      "y": -10,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": 9,
+      "y": -10,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 10,
+      "y": -10,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 11,
+      "y": -10,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 12,
+      "y": -10,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 13,
+      "y": -10,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 14,
+      "y": -10,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 15,
+      "y": -10,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 16,
+      "y": -10,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 17,
+      "y": -10,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 18,
+      "y": -10,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 19,
+      "y": -10,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 20,
+      "y": -10,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 21,
+      "y": -10,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 22,
+      "y": -10,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 23,
+      "y": -10,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 24,
+      "y": -10,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": -24,
+      "y": -9,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -23,
+      "y": -9,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -22,
+      "y": -9,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -21,
+      "y": -9,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -20,
+      "y": -9,
+      "z": 0,
+      "typeId": "wool"
+    },
+    {
+      "x": -19,
+      "y": -9,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -18,
+      "y": -9,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -17,
+      "y": -9,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -16,
+      "y": -9,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -15,
+      "y": -9,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -14,
+      "y": -9,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -13,
+      "y": -9,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -12,
+      "y": -9,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -11,
+      "y": -9,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -10,
+      "y": -9,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": -9,
+      "y": -9,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -8,
+      "y": -9,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": -7,
+      "y": -9,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": -6,
+      "y": -9,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -5,
+      "y": -9,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -4,
+      "y": -9,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -3,
+      "y": -9,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -2,
+      "y": -9,
+      "z": 0,
+      "typeId": "wheat"
+    },
+    {
+      "x": -1,
+      "y": -9,
+      "z": 0,
+      "typeId": "wool"
+    },
+    {
+      "x": 0,
+      "y": -9,
+      "z": 0,
+      "typeId": "wool"
+    },
+    {
+      "x": 1,
+      "y": -9,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 2,
+      "y": -9,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 3,
+      "y": -9,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 4,
+      "y": -9,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 5,
+      "y": -9,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 6,
+      "y": -9,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 7,
+      "y": -9,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 8,
+      "y": -9,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 9,
+      "y": -9,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 10,
+      "y": -9,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 11,
+      "y": -9,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 12,
+      "y": -9,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 13,
+      "y": -9,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 14,
+      "y": -9,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 15,
+      "y": -9,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 16,
+      "y": -9,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 17,
+      "y": -9,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 18,
+      "y": -9,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 19,
+      "y": -9,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 20,
+      "y": -9,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 21,
+      "y": -9,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 22,
+      "y": -9,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 23,
+      "y": -9,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 24,
+      "y": -9,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -24,
+      "y": -8,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -23,
+      "y": -8,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -22,
+      "y": -8,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -21,
+      "y": -8,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": -20,
+      "y": -8,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -19,
+      "y": -8,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -18,
+      "y": -8,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -17,
+      "y": -8,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -16,
+      "y": -8,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -15,
+      "y": -8,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -14,
+      "y": -8,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -13,
+      "y": -8,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -12,
+      "y": -8,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -11,
+      "y": -8,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -10,
+      "y": -8,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": -9,
+      "y": -8,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": -8,
+      "y": -8,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -7,
+      "y": -8,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": -6,
+      "y": -8,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": -5,
+      "y": -8,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -4,
+      "y": -8,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -3,
+      "y": -8,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -2,
+      "y": -8,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -1,
+      "y": -8,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 0,
+      "y": -8,
+      "z": 0,
+      "typeId": "wheat"
+    },
+    {
+      "x": 1,
+      "y": -8,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 2,
+      "y": -8,
+      "z": 0,
+      "typeId": "salt"
+    },
+    {
+      "x": 3,
+      "y": -8,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": 4,
+      "y": -8,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 5,
+      "y": -8,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 6,
+      "y": -8,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": 7,
+      "y": -8,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 8,
+      "y": -8,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 9,
+      "y": -8,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 10,
+      "y": -8,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 11,
+      "y": -8,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 12,
+      "y": -8,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 13,
+      "y": -8,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 14,
+      "y": -8,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 15,
+      "y": -8,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 16,
+      "y": -8,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 17,
+      "y": -8,
+      "z": 0,
+      "typeId": "wool"
+    },
+    {
+      "x": 18,
+      "y": -8,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 19,
+      "y": -8,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 20,
+      "y": -8,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 21,
+      "y": -8,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 22,
+      "y": -8,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 23,
+      "y": -8,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 24,
+      "y": -8,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": -24,
+      "y": -7,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -23,
+      "y": -7,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -22,
+      "y": -7,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -21,
+      "y": -7,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -20,
+      "y": -7,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -19,
+      "y": -7,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -18,
+      "y": -7,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -17,
+      "y": -7,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -16,
+      "y": -7,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -15,
+      "y": -7,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -14,
+      "y": -7,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -13,
+      "y": -7,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": -12,
+      "y": -7,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -11,
+      "y": -7,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -10,
+      "y": -7,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -9,
+      "y": -7,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -8,
+      "y": -7,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": -7,
+      "y": -7,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": -6,
+      "y": -7,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -5,
+      "y": -7,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": -4,
+      "y": -7,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -3,
+      "y": -7,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -2,
+      "y": -7,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -1,
+      "y": -7,
+      "z": 0,
+      "typeId": "wheat"
+    },
+    {
+      "x": 0,
+      "y": -7,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 1,
+      "y": -7,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 2,
+      "y": -7,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 3,
+      "y": -7,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 4,
+      "y": -7,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 5,
+      "y": -7,
+      "z": 0,
+      "typeId": "wool"
+    },
+    {
+      "x": 6,
+      "y": -7,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 7,
+      "y": -7,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 8,
+      "y": -7,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 9,
+      "y": -7,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 10,
+      "y": -7,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": 11,
+      "y": -7,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 12,
+      "y": -7,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 13,
+      "y": -7,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 14,
+      "y": -7,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 15,
+      "y": -7,
+      "z": 0,
+      "typeId": "stone"
+    },
+    {
+      "x": 16,
+      "y": -7,
+      "z": 0,
+      "typeId": "stone"
+    },
+    {
+      "x": 17,
+      "y": -7,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 18,
+      "y": -7,
+      "z": 0,
+      "typeId": "wool"
+    },
+    {
+      "x": 19,
+      "y": -7,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 20,
+      "y": -7,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 21,
+      "y": -7,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 22,
+      "y": -7,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 23,
+      "y": -7,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 24,
+      "y": -7,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": -24,
+      "y": -6,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -23,
+      "y": -6,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -22,
+      "y": -6,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -21,
+      "y": -6,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -20,
+      "y": -6,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -19,
+      "y": -6,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -18,
+      "y": -6,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": -17,
+      "y": -6,
+      "z": 0,
+      "typeId": "wheat"
+    },
+    {
+      "x": -16,
+      "y": -6,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -15,
+      "y": -6,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -14,
+      "y": -6,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -13,
+      "y": -6,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -12,
+      "y": -6,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -11,
+      "y": -6,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -10,
+      "y": -6,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -9,
+      "y": -6,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -8,
+      "y": -6,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -7,
+      "y": -6,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": -6,
+      "y": -6,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": -5,
+      "y": -6,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -4,
+      "y": -6,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -3,
+      "y": -6,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -2,
+      "y": -6,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -1,
+      "y": -6,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 0,
+      "y": -6,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 1,
+      "y": -6,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 2,
+      "y": -6,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 3,
+      "y": -6,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 4,
+      "y": -6,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 5,
+      "y": -6,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 6,
+      "y": -6,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 7,
+      "y": -6,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 8,
+      "y": -6,
+      "z": 0,
+      "typeId": "wheat"
+    },
+    {
+      "x": 9,
+      "y": -6,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 10,
+      "y": -6,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 11,
+      "y": -6,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 12,
+      "y": -6,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 13,
+      "y": -6,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 14,
+      "y": -6,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 15,
+      "y": -6,
+      "z": 0,
+      "typeId": "stone"
+    },
+    {
+      "x": 16,
+      "y": -6,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 17,
+      "y": -6,
+      "z": 0,
+      "typeId": "wool"
+    },
+    {
+      "x": 18,
+      "y": -6,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 19,
+      "y": -6,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 20,
+      "y": -6,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 21,
+      "y": -6,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 22,
+      "y": -6,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 23,
+      "y": -6,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 24,
+      "y": -6,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": -24,
+      "y": -5,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -23,
+      "y": -5,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -22,
+      "y": -5,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -21,
+      "y": -5,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -20,
+      "y": -5,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -19,
+      "y": -5,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": -18,
+      "y": -5,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -17,
+      "y": -5,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -16,
+      "y": -5,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -15,
+      "y": -5,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -14,
+      "y": -5,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -13,
+      "y": -5,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -12,
+      "y": -5,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -11,
+      "y": -5,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": -10,
+      "y": -5,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -9,
+      "y": -5,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -8,
+      "y": -5,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -7,
+      "y": -5,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -6,
+      "y": -5,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -5,
+      "y": -5,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -4,
+      "y": -5,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -3,
+      "y": -5,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -2,
+      "y": -5,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -1,
+      "y": -5,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": 0,
+      "y": -5,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 1,
+      "y": -5,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 2,
+      "y": -5,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 3,
+      "y": -5,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 4,
+      "y": -5,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 5,
+      "y": -5,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 6,
+      "y": -5,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 7,
+      "y": -5,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 8,
+      "y": -5,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 9,
+      "y": -5,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 10,
+      "y": -5,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 11,
+      "y": -5,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 12,
+      "y": -5,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 13,
+      "y": -5,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 14,
+      "y": -5,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 15,
+      "y": -5,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 16,
+      "y": -5,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 17,
+      "y": -5,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 18,
+      "y": -5,
+      "z": 0,
+      "typeId": "wool"
+    },
+    {
+      "x": 19,
+      "y": -5,
+      "z": 0,
+      "typeId": "wool"
+    },
+    {
+      "x": 20,
+      "y": -5,
+      "z": 0,
+      "typeId": "wool"
+    },
+    {
+      "x": 21,
+      "y": -5,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 22,
+      "y": -5,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 23,
+      "y": -5,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 24,
+      "y": -5,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": -24,
+      "y": -4,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -23,
+      "y": -4,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -22,
+      "y": -4,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -21,
+      "y": -4,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -20,
+      "y": -4,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -19,
+      "y": -4,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -18,
+      "y": -4,
+      "z": 0,
+      "typeId": "wool"
+    },
+    {
+      "x": -17,
+      "y": -4,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -16,
+      "y": -4,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -15,
+      "y": -4,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -14,
+      "y": -4,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -13,
+      "y": -4,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -12,
+      "y": -4,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -11,
+      "y": -4,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -10,
+      "y": -4,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -9,
+      "y": -4,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -8,
+      "y": -4,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -7,
+      "y": -4,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -6,
+      "y": -4,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -5,
+      "y": -4,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -4,
+      "y": -4,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -3,
+      "y": -4,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -2,
+      "y": -4,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": -1,
+      "y": -4,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 0,
+      "y": -4,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 1,
+      "y": -4,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 2,
+      "y": -4,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 3,
+      "y": -4,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 4,
+      "y": -4,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 5,
+      "y": -4,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 6,
+      "y": -4,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 7,
+      "y": -4,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 8,
+      "y": -4,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 9,
+      "y": -4,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 10,
+      "y": -4,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 11,
+      "y": -4,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 12,
+      "y": -4,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 13,
+      "y": -4,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 14,
+      "y": -4,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 15,
+      "y": -4,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 16,
+      "y": -4,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 17,
+      "y": -4,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 18,
+      "y": -4,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 19,
+      "y": -4,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 20,
+      "y": -4,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 21,
+      "y": -4,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 22,
+      "y": -4,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 23,
+      "y": -4,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 24,
+      "y": -4,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": -24,
+      "y": -3,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": -23,
+      "y": -3,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -22,
+      "y": -3,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -21,
+      "y": -3,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -20,
+      "y": -3,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -19,
+      "y": -3,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -18,
+      "y": -3,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -17,
+      "y": -3,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -16,
+      "y": -3,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -15,
+      "y": -3,
+      "z": 0,
+      "typeId": "wheat"
+    },
+    {
+      "x": -14,
+      "y": -3,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -13,
+      "y": -3,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -12,
+      "y": -3,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -11,
+      "y": -3,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -10,
+      "y": -3,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -9,
+      "y": -3,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -8,
+      "y": -3,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -7,
+      "y": -3,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -6,
+      "y": -3,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -5,
+      "y": -3,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -4,
+      "y": -3,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -3,
+      "y": -3,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -2,
+      "y": -3,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -1,
+      "y": -3,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 0,
+      "y": -3,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 1,
+      "y": -3,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 2,
+      "y": -3,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 3,
+      "y": -3,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 4,
+      "y": -3,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 5,
+      "y": -3,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 6,
+      "y": -3,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 7,
+      "y": -3,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 8,
+      "y": -3,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 9,
+      "y": -3,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 10,
+      "y": -3,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 11,
+      "y": -3,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 12,
+      "y": -3,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 13,
+      "y": -3,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 14,
+      "y": -3,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 15,
+      "y": -3,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 16,
+      "y": -3,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 17,
+      "y": -3,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 18,
+      "y": -3,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 19,
+      "y": -3,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 20,
+      "y": -3,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 21,
+      "y": -3,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 22,
+      "y": -3,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 23,
+      "y": -3,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 24,
+      "y": -3,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -24,
+      "y": -2,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": -23,
+      "y": -2,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": -22,
+      "y": -2,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -21,
+      "y": -2,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -20,
+      "y": -2,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -19,
+      "y": -2,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -18,
+      "y": -2,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -17,
+      "y": -2,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -16,
+      "y": -2,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -15,
+      "y": -2,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -14,
+      "y": -2,
+      "z": 0,
+      "typeId": "wool"
+    },
+    {
+      "x": -13,
+      "y": -2,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -12,
+      "y": -2,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -11,
+      "y": -2,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -10,
+      "y": -2,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -9,
+      "y": -2,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -8,
+      "y": -2,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -7,
+      "y": -2,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -6,
+      "y": -2,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -5,
+      "y": -2,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -4,
+      "y": -2,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -3,
+      "y": -2,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -2,
+      "y": -2,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -1,
+      "y": -2,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 0,
+      "y": -2,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 1,
+      "y": -2,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 2,
+      "y": -2,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 3,
+      "y": -2,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 4,
+      "y": -2,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 5,
+      "y": -2,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 6,
+      "y": -2,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 7,
+      "y": -2,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 8,
+      "y": -2,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 9,
+      "y": -2,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 10,
+      "y": -2,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 11,
+      "y": -2,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 12,
+      "y": -2,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 13,
+      "y": -2,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 14,
+      "y": -2,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 15,
+      "y": -2,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 16,
+      "y": -2,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 17,
+      "y": -2,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 18,
+      "y": -2,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 19,
+      "y": -2,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 20,
+      "y": -2,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 21,
+      "y": -2,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 22,
+      "y": -2,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 23,
+      "y": -2,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 24,
+      "y": -2,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -24,
+      "y": -1,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": -23,
+      "y": -1,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": -22,
+      "y": -1,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -21,
+      "y": -1,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": -20,
+      "y": -1,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": -19,
+      "y": -1,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -18,
+      "y": -1,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -17,
+      "y": -1,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -16,
+      "y": -1,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -15,
+      "y": -1,
+      "z": 0,
+      "typeId": "wheat"
+    },
+    {
+      "x": -14,
+      "y": -1,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": -13,
+      "y": -1,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -12,
+      "y": -1,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -11,
+      "y": -1,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -10,
+      "y": -1,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -9,
+      "y": -1,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -8,
+      "y": -1,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -7,
+      "y": -1,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -6,
+      "y": -1,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -5,
+      "y": -1,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -4,
+      "y": -1,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -3,
+      "y": -1,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -2,
+      "y": -1,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -1,
+      "y": -1,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 0,
+      "y": -1,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": 1,
+      "y": -1,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 2,
+      "y": -1,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 3,
+      "y": -1,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 4,
+      "y": -1,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 5,
+      "y": -1,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": 6,
+      "y": -1,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 7,
+      "y": -1,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 8,
+      "y": -1,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 9,
+      "y": -1,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 10,
+      "y": -1,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 11,
+      "y": -1,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 12,
+      "y": -1,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 13,
+      "y": -1,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 14,
+      "y": -1,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 15,
+      "y": -1,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 16,
+      "y": -1,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 17,
+      "y": -1,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 18,
+      "y": -1,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 19,
+      "y": -1,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 20,
+      "y": -1,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 21,
+      "y": -1,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 22,
+      "y": -1,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 23,
+      "y": -1,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 24,
+      "y": -1,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": -24,
+      "y": 0,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": -23,
+      "y": 0,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": -22,
+      "y": 0,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": -21,
+      "y": 0,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -20,
+      "y": 0,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": -19,
+      "y": 0,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -18,
+      "y": 0,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -17,
+      "y": 0,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -16,
+      "y": 0,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -15,
+      "y": 0,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -14,
+      "y": 0,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -13,
+      "y": 0,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -12,
+      "y": 0,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -11,
+      "y": 0,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -10,
+      "y": 0,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -9,
+      "y": 0,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -8,
+      "y": 0,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -7,
+      "y": 0,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -6,
+      "y": 0,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -5,
+      "y": 0,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -4,
+      "y": 0,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -3,
+      "y": 0,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -2,
+      "y": 0,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -1,
+      "y": 0,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 8,
+      "y": 0,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 9,
+      "y": 0,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 10,
+      "y": 0,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 11,
+      "y": 0,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 12,
+      "y": 0,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 13,
+      "y": 0,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 14,
+      "y": 0,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 15,
+      "y": 0,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 16,
+      "y": 0,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 17,
+      "y": 0,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 18,
+      "y": 0,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 19,
+      "y": 0,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 20,
+      "y": 0,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 21,
+      "y": 0,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 22,
+      "y": 0,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 23,
+      "y": 0,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 24,
+      "y": 0,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -24,
+      "y": 1,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": -23,
+      "y": 1,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": -22,
+      "y": 1,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -21,
+      "y": 1,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -20,
+      "y": 1,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": -19,
+      "y": 1,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -18,
+      "y": 1,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -17,
+      "y": 1,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -16,
+      "y": 1,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -15,
+      "y": 1,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -14,
+      "y": 1,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -13,
+      "y": 1,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -12,
+      "y": 1,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -11,
+      "y": 1,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -10,
+      "y": 1,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -9,
+      "y": 1,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -8,
+      "y": 1,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -7,
+      "y": 1,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -6,
+      "y": 1,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -5,
+      "y": 1,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -4,
+      "y": 1,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -3,
+      "y": 1,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -2,
+      "y": 1,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -1,
+      "y": 1,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 8,
+      "y": 1,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 9,
+      "y": 1,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 10,
+      "y": 1,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 11,
+      "y": 1,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 12,
+      "y": 1,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 13,
+      "y": 1,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 14,
+      "y": 1,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 15,
+      "y": 1,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 16,
+      "y": 1,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 17,
+      "y": 1,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 18,
+      "y": 1,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 19,
+      "y": 1,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 20,
+      "y": 1,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 21,
+      "y": 1,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 22,
+      "y": 1,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 23,
+      "y": 1,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 24,
+      "y": 1,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": -24,
+      "y": 2,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -23,
+      "y": 2,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -22,
+      "y": 2,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -21,
+      "y": 2,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": -20,
+      "y": 2,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -19,
+      "y": 2,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -18,
+      "y": 2,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -17,
+      "y": 2,
+      "z": 0,
+      "typeId": "wheat"
+    },
+    {
+      "x": -16,
+      "y": 2,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -15,
+      "y": 2,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -14,
+      "y": 2,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -13,
+      "y": 2,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -12,
+      "y": 2,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -11,
+      "y": 2,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -10,
+      "y": 2,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -9,
+      "y": 2,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -8,
+      "y": 2,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -7,
+      "y": 2,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -6,
+      "y": 2,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -5,
+      "y": 2,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -4,
+      "y": 2,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -3,
+      "y": 2,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -2,
+      "y": 2,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -1,
+      "y": 2,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 8,
+      "y": 2,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 9,
+      "y": 2,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 10,
+      "y": 2,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 11,
+      "y": 2,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 12,
+      "y": 2,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 13,
+      "y": 2,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 14,
+      "y": 2,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 15,
+      "y": 2,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 16,
+      "y": 2,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 17,
+      "y": 2,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 18,
+      "y": 2,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 19,
+      "y": 2,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 20,
+      "y": 2,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 21,
+      "y": 2,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 22,
+      "y": 2,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 23,
+      "y": 2,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 24,
+      "y": 2,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -24,
+      "y": 3,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -23,
+      "y": 3,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -22,
+      "y": 3,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -21,
+      "y": 3,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -20,
+      "y": 3,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -19,
+      "y": 3,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -18,
+      "y": 3,
+      "z": 0,
+      "typeId": "wool"
+    },
+    {
+      "x": -17,
+      "y": 3,
+      "z": 0,
+      "typeId": "wool"
+    },
+    {
+      "x": -16,
+      "y": 3,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": -15,
+      "y": 3,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -14,
+      "y": 3,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -13,
+      "y": 3,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -12,
+      "y": 3,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -11,
+      "y": 3,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -10,
+      "y": 3,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -9,
+      "y": 3,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -8,
+      "y": 3,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -7,
+      "y": 3,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -6,
+      "y": 3,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -5,
+      "y": 3,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -4,
+      "y": 3,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -3,
+      "y": 3,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -2,
+      "y": 3,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -1,
+      "y": 3,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 9,
+      "y": 3,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 10,
+      "y": 3,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 11,
+      "y": 3,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 12,
+      "y": 3,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 13,
+      "y": 3,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 14,
+      "y": 3,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 15,
+      "y": 3,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": 16,
+      "y": 3,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 17,
+      "y": 3,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 18,
+      "y": 3,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 19,
+      "y": 3,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 20,
+      "y": 3,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 21,
+      "y": 3,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 22,
+      "y": 3,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 23,
+      "y": 3,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 24,
+      "y": 3,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -24,
+      "y": 4,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -23,
+      "y": 4,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -22,
+      "y": 4,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -21,
+      "y": 4,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -20,
+      "y": 4,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -19,
+      "y": 4,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -18,
+      "y": 4,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -17,
+      "y": 4,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -16,
+      "y": 4,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -15,
+      "y": 4,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -14,
+      "y": 4,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -13,
+      "y": 4,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -12,
+      "y": 4,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -11,
+      "y": 4,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -10,
+      "y": 4,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -9,
+      "y": 4,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -8,
+      "y": 4,
+      "z": 0,
+      "typeId": "stone"
+    },
+    {
+      "x": -7,
+      "y": 4,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -6,
+      "y": 4,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -5,
+      "y": 4,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -4,
+      "y": 4,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -3,
+      "y": 4,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -2,
+      "y": 4,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -1,
+      "y": 4,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 8,
+      "y": 4,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 9,
+      "y": 4,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 10,
+      "y": 4,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": 11,
+      "y": 4,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 12,
+      "y": 4,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 13,
+      "y": 4,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 14,
+      "y": 4,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 15,
+      "y": 4,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": 16,
+      "y": 4,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 17,
+      "y": 4,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 18,
+      "y": 4,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 19,
+      "y": 4,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 20,
+      "y": 4,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 21,
+      "y": 4,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 22,
+      "y": 4,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 23,
+      "y": 4,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 24,
+      "y": 4,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -24,
+      "y": 5,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -23,
+      "y": 5,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -22,
+      "y": 5,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -21,
+      "y": 5,
+      "z": 0,
+      "typeId": "clay"
+    },
+    {
+      "x": -20,
+      "y": 5,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -19,
+      "y": 5,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -18,
+      "y": 5,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -17,
+      "y": 5,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -16,
+      "y": 5,
+      "z": 0,
+      "typeId": "clay"
+    },
+    {
+      "x": -15,
+      "y": 5,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -14,
+      "y": 5,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -13,
+      "y": 5,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -12,
+      "y": 5,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -11,
+      "y": 5,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -10,
+      "y": 5,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -9,
+      "y": 5,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -8,
+      "y": 5,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -7,
+      "y": 5,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -6,
+      "y": 5,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -5,
+      "y": 5,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -4,
+      "y": 5,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -3,
+      "y": 5,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -2,
+      "y": 5,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -1,
+      "y": 5,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 10,
+      "y": 5,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 11,
+      "y": 5,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 12,
+      "y": 5,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 13,
+      "y": 5,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 14,
+      "y": 5,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 15,
+      "y": 5,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 16,
+      "y": 5,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": 17,
+      "y": 5,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 18,
+      "y": 5,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 19,
+      "y": 5,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 20,
+      "y": 5,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 21,
+      "y": 5,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 22,
+      "y": 5,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 23,
+      "y": 5,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 24,
+      "y": 5,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -24,
+      "y": 6,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -23,
+      "y": 6,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -22,
+      "y": 6,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -21,
+      "y": 6,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -20,
+      "y": 6,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -19,
+      "y": 6,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -18,
+      "y": 6,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -17,
+      "y": 6,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -16,
+      "y": 6,
+      "z": 0,
+      "typeId": "stone"
+    },
+    {
+      "x": -15,
+      "y": 6,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -14,
+      "y": 6,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -13,
+      "y": 6,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -12,
+      "y": 6,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -11,
+      "y": 6,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -10,
+      "y": 6,
+      "z": 0,
+      "typeId": "stone"
+    },
+    {
+      "x": -9,
+      "y": 6,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -8,
+      "y": 6,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -7,
+      "y": 6,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -6,
+      "y": 6,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -5,
+      "y": 6,
+      "z": 0,
+      "typeId": "iron"
+    },
+    {
+      "x": -4,
+      "y": 6,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -3,
+      "y": 6,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -2,
+      "y": 6,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -1,
+      "y": 6,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 10,
+      "y": 6,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 11,
+      "y": 6,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 12,
+      "y": 6,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 13,
+      "y": 6,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 14,
+      "y": 6,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 15,
+      "y": 6,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 16,
+      "y": 6,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 17,
+      "y": 6,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 18,
+      "y": 6,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 19,
+      "y": 6,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 20,
+      "y": 6,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 21,
+      "y": 6,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 22,
+      "y": 6,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 23,
+      "y": 6,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 24,
+      "y": 6,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -24,
+      "y": 7,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -23,
+      "y": 7,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -22,
+      "y": 7,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -21,
+      "y": 7,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -20,
+      "y": 7,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -19,
+      "y": 7,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -18,
+      "y": 7,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -17,
+      "y": 7,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -16,
+      "y": 7,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -15,
+      "y": 7,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -14,
+      "y": 7,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -13,
+      "y": 7,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -12,
+      "y": 7,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -11,
+      "y": 7,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -10,
+      "y": 7,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -9,
+      "y": 7,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -8,
+      "y": 7,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -7,
+      "y": 7,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -6,
+      "y": 7,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -5,
+      "y": 7,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -4,
+      "y": 7,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -3,
+      "y": 7,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -2,
+      "y": 7,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -1,
+      "y": 7,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 8,
+      "y": 7,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 9,
+      "y": 7,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 10,
+      "y": 7,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 11,
+      "y": 7,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 12,
+      "y": 7,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 13,
+      "y": 7,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 14,
+      "y": 7,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 15,
+      "y": 7,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 16,
+      "y": 7,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 17,
+      "y": 7,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 18,
+      "y": 7,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 19,
+      "y": 7,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 20,
+      "y": 7,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 21,
+      "y": 7,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 22,
+      "y": 7,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 23,
+      "y": 7,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 24,
+      "y": 7,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -24,
+      "y": 8,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -23,
+      "y": 8,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -22,
+      "y": 8,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -21,
+      "y": 8,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -20,
+      "y": 8,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -19,
+      "y": 8,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -18,
+      "y": 8,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -17,
+      "y": 8,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -16,
+      "y": 8,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -15,
+      "y": 8,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -14,
+      "y": 8,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -13,
+      "y": 8,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -12,
+      "y": 8,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -11,
+      "y": 8,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -10,
+      "y": 8,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -9,
+      "y": 8,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -8,
+      "y": 8,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -7,
+      "y": 8,
+      "z": 0,
+      "typeId": "stone"
+    },
+    {
+      "x": -6,
+      "y": 8,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -5,
+      "y": 8,
+      "z": 0,
+      "typeId": "stone"
+    },
+    {
+      "x": -4,
+      "y": 8,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -3,
+      "y": 8,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -2,
+      "y": 8,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -1,
+      "y": 8,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 0,
+      "y": 8,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 8,
+      "y": 8,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 9,
+      "y": 8,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 10,
+      "y": 8,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 11,
+      "y": 8,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 12,
+      "y": 8,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 13,
+      "y": 8,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 14,
+      "y": 8,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 15,
+      "y": 8,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 16,
+      "y": 8,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 17,
+      "y": 8,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 18,
+      "y": 8,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 19,
+      "y": 8,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 20,
+      "y": 8,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 21,
+      "y": 8,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 22,
+      "y": 8,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 23,
+      "y": 8,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 24,
+      "y": 8,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -24,
+      "y": 9,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -23,
+      "y": 9,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -22,
+      "y": 9,
+      "z": 0,
+      "typeId": "salt"
+    },
+    {
+      "x": -21,
+      "y": 9,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -20,
+      "y": 9,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -19,
+      "y": 9,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -18,
+      "y": 9,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -17,
+      "y": 9,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -16,
+      "y": 9,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -15,
+      "y": 9,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -14,
+      "y": 9,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -13,
+      "y": 9,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -12,
+      "y": 9,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -11,
+      "y": 9,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -10,
+      "y": 9,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -9,
+      "y": 9,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -8,
+      "y": 9,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -7,
+      "y": 9,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -6,
+      "y": 9,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -5,
+      "y": 9,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -4,
+      "y": 9,
+      "z": 0,
+      "typeId": "iron"
+    },
+    {
+      "x": -3,
+      "y": 9,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -2,
+      "y": 9,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -1,
+      "y": 9,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 0,
+      "y": 9,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 7,
+      "y": 9,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 8,
+      "y": 9,
+      "z": 0,
+      "typeId": "stone"
+    },
+    {
+      "x": 9,
+      "y": 9,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 10,
+      "y": 9,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 11,
+      "y": 9,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 12,
+      "y": 9,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": 13,
+      "y": 9,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 14,
+      "y": 9,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 15,
+      "y": 9,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 16,
+      "y": 9,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 17,
+      "y": 9,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 18,
+      "y": 9,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 19,
+      "y": 9,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 20,
+      "y": 9,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 21,
+      "y": 9,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 22,
+      "y": 9,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 23,
+      "y": 9,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 24,
+      "y": 9,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -24,
+      "y": 10,
+      "z": 0,
+      "typeId": "salt"
+    },
+    {
+      "x": -23,
+      "y": 10,
+      "z": 0,
+      "typeId": "salt"
+    },
+    {
+      "x": -22,
+      "y": 10,
+      "z": 0,
+      "typeId": "salt"
+    },
+    {
+      "x": -21,
+      "y": 10,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -20,
+      "y": 10,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -19,
+      "y": 10,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -18,
+      "y": 10,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -17,
+      "y": 10,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -16,
+      "y": 10,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -15,
+      "y": 10,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -14,
+      "y": 10,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -13,
+      "y": 10,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -12,
+      "y": 10,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -11,
+      "y": 10,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -10,
+      "y": 10,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -9,
+      "y": 10,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -8,
+      "y": 10,
+      "z": 0,
+      "typeId": "stone"
+    },
+    {
+      "x": -7,
+      "y": 10,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -6,
+      "y": 10,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -5,
+      "y": 10,
+      "z": 0,
+      "typeId": "stone"
+    },
+    {
+      "x": -4,
+      "y": 10,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -3,
+      "y": 10,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -2,
+      "y": 10,
+      "z": 0,
+      "typeId": "iron"
+    },
+    {
+      "x": -1,
+      "y": 10,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 0,
+      "y": 10,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 1,
+      "y": 10,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 2,
+      "y": 10,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 3,
+      "y": 10,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 4,
+      "y": 10,
+      "z": 0,
+      "typeId": "stone"
+    },
+    {
+      "x": 5,
+      "y": 10,
+      "z": 0,
+      "typeId": "stone"
+    },
+    {
+      "x": 6,
+      "y": 10,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 7,
+      "y": 10,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 8,
+      "y": 10,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 9,
+      "y": 10,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 10,
+      "y": 10,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 11,
+      "y": 10,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 12,
+      "y": 10,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 13,
+      "y": 10,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 14,
+      "y": 10,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 15,
+      "y": 10,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 16,
+      "y": 10,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 17,
+      "y": 10,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 18,
+      "y": 10,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 19,
+      "y": 10,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 20,
+      "y": 10,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 21,
+      "y": 10,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 22,
+      "y": 10,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 23,
+      "y": 10,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 24,
+      "y": 10,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -24,
+      "y": 11,
+      "z": 0,
+      "typeId": "clay"
+    },
+    {
+      "x": -23,
+      "y": 11,
+      "z": 0,
+      "typeId": "clay"
+    },
+    {
+      "x": -22,
+      "y": 11,
+      "z": 0,
+      "typeId": "clay"
+    },
+    {
+      "x": -21,
+      "y": 11,
+      "z": 0,
+      "typeId": "salt"
+    },
+    {
+      "x": -20,
+      "y": 11,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -19,
+      "y": 11,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -18,
+      "y": 11,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -17,
+      "y": 11,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -16,
+      "y": 11,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -15,
+      "y": 11,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -14,
+      "y": 11,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -13,
+      "y": 11,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -12,
+      "y": 11,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -11,
+      "y": 11,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -10,
+      "y": 11,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -9,
+      "y": 11,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -8,
+      "y": 11,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -7,
+      "y": 11,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -6,
+      "y": 11,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -5,
+      "y": 11,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -4,
+      "y": 11,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -3,
+      "y": 11,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -2,
+      "y": 11,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -1,
+      "y": 11,
+      "z": 0,
+      "typeId": "stone"
+    },
+    {
+      "x": 0,
+      "y": 11,
+      "z": 0,
+      "typeId": "stone"
+    },
+    {
+      "x": 1,
+      "y": 11,
+      "z": 0,
+      "typeId": "stone"
+    },
+    {
+      "x": 2,
+      "y": 11,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 3,
+      "y": 11,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 4,
+      "y": 11,
+      "z": 0,
+      "typeId": "iron"
+    },
+    {
+      "x": 5,
+      "y": 11,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 6,
+      "y": 11,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 7,
+      "y": 11,
+      "z": 0,
+      "typeId": "iron"
+    },
+    {
+      "x": 8,
+      "y": 11,
+      "z": 0,
+      "typeId": "stone"
+    },
+    {
+      "x": 9,
+      "y": 11,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 10,
+      "y": 11,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 11,
+      "y": 11,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 12,
+      "y": 11,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 13,
+      "y": 11,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 14,
+      "y": 11,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 15,
+      "y": 11,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 16,
+      "y": 11,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 17,
+      "y": 11,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": 18,
+      "y": 11,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": 19,
+      "y": 11,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 20,
+      "y": 11,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 21,
+      "y": 11,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 22,
+      "y": 11,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 23,
+      "y": 11,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 24,
+      "y": 11,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -24,
+      "y": 12,
+      "z": 0,
+      "typeId": "clay"
+    },
+    {
+      "x": -23,
+      "y": 12,
+      "z": 0,
+      "typeId": "clay"
+    },
+    {
+      "x": -22,
+      "y": 12,
+      "z": 0,
+      "typeId": "salt"
+    },
+    {
+      "x": -21,
+      "y": 12,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -20,
+      "y": 12,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -19,
+      "y": 12,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -18,
+      "y": 12,
+      "z": 0,
+      "typeId": "stone"
+    },
+    {
+      "x": -17,
+      "y": 12,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -16,
+      "y": 12,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -15,
+      "y": 12,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -14,
+      "y": 12,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -13,
+      "y": 12,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -12,
+      "y": 12,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -11,
+      "y": 12,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -10,
+      "y": 12,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -9,
+      "y": 12,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -8,
+      "y": 12,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -7,
+      "y": 12,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -6,
+      "y": 12,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -5,
+      "y": 12,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -4,
+      "y": 12,
+      "z": 0,
+      "typeId": "iron"
+    },
+    {
+      "x": -3,
+      "y": 12,
+      "z": 0,
+      "typeId": "stone"
+    },
+    {
+      "x": -2,
+      "y": 12,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -1,
+      "y": 12,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 0,
+      "y": 12,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 1,
+      "y": 12,
+      "z": 0,
+      "typeId": "iron"
+    },
+    {
+      "x": 2,
+      "y": 12,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 3,
+      "y": 12,
+      "z": 0,
+      "typeId": "stone"
+    },
+    {
+      "x": 4,
+      "y": 12,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 5,
+      "y": 12,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 6,
+      "y": 12,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 7,
+      "y": 12,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 8,
+      "y": 12,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 9,
+      "y": 12,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 10,
+      "y": 12,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 11,
+      "y": 12,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 12,
+      "y": 12,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 13,
+      "y": 12,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 14,
+      "y": 12,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 15,
+      "y": 12,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 16,
+      "y": 12,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": 17,
+      "y": 12,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 18,
+      "y": 12,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": 19,
+      "y": 12,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 20,
+      "y": 12,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 21,
+      "y": 12,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 22,
+      "y": 12,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 23,
+      "y": 12,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 24,
+      "y": 12,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -24,
+      "y": 13,
+      "z": 0,
+      "typeId": "clay"
+    },
+    {
+      "x": -23,
+      "y": 13,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -22,
+      "y": 13,
+      "z": 0,
+      "typeId": "clay"
+    },
+    {
+      "x": -21,
+      "y": 13,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -20,
+      "y": 13,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -19,
+      "y": 13,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -18,
+      "y": 13,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -17,
+      "y": 13,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -16,
+      "y": 13,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -15,
+      "y": 13,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -14,
+      "y": 13,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": -13,
+      "y": 13,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -12,
+      "y": 13,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -11,
+      "y": 13,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -10,
+      "y": 13,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -9,
+      "y": 13,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -8,
+      "y": 13,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -7,
+      "y": 13,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -6,
+      "y": 13,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -5,
+      "y": 13,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -4,
+      "y": 13,
+      "z": 0,
+      "typeId": "stone"
+    },
+    {
+      "x": -3,
+      "y": 13,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -2,
+      "y": 13,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -1,
+      "y": 13,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 0,
+      "y": 13,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 1,
+      "y": 13,
+      "z": 0,
+      "typeId": "stone"
+    },
+    {
+      "x": 2,
+      "y": 13,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 3,
+      "y": 13,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 4,
+      "y": 13,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 5,
+      "y": 13,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 6,
+      "y": 13,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 7,
+      "y": 13,
+      "z": 0,
+      "typeId": "stone"
+    },
+    {
+      "x": 8,
+      "y": 13,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 9,
+      "y": 13,
+      "z": 0,
+      "typeId": "stone"
+    },
+    {
+      "x": 10,
+      "y": 13,
+      "z": 0,
+      "typeId": "iron"
+    },
+    {
+      "x": 11,
+      "y": 13,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 12,
+      "y": 13,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 13,
+      "y": 13,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 14,
+      "y": 13,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 15,
+      "y": 13,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 16,
+      "y": 13,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 17,
+      "y": 13,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 18,
+      "y": 13,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 19,
+      "y": 13,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": 20,
+      "y": 13,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 21,
+      "y": 13,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 22,
+      "y": 13,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 23,
+      "y": 13,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 24,
+      "y": 13,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": -24,
+      "y": 14,
+      "z": 0,
+      "typeId": "clay"
+    },
+    {
+      "x": -23,
+      "y": 14,
+      "z": 0,
+      "typeId": "clay"
+    },
+    {
+      "x": -22,
+      "y": 14,
+      "z": 0,
+      "typeId": "clay"
+    },
+    {
+      "x": -21,
+      "y": 14,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -20,
+      "y": 14,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -19,
+      "y": 14,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -18,
+      "y": 14,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -17,
+      "y": 14,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -16,
+      "y": 14,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -15,
+      "y": 14,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -14,
+      "y": 14,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -13,
+      "y": 14,
+      "z": 0,
+      "typeId": "water"
+    },
+    {
+      "x": -12,
+      "y": 14,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -11,
+      "y": 14,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -10,
+      "y": 14,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -9,
+      "y": 14,
+      "z": 0,
+      "typeId": "desert"
+    },
+    {
+      "x": -8,
+      "y": 14,
+      "z": 0,
+      "typeId": "grass"
+    },
+    {
+      "x": -7,
+      "y": 14,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -6,
+      "y": 14,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -5,
+      "y": 14,
+      "z": 0,
+      "typeId": "stone"
+    },
+    {
+      "x": -4,
+      "y": 14,
+      "z": 0,
+      "typeId": "stone"
+    },
+    {
+      "x": -3,
+      "y": 14,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": -2,
+      "y": 14,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": -1,
+      "y": 14,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 0,
+      "y": 14,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 1,
+      "y": 14,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 2,
+      "y": 14,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 3,
+      "y": 14,
+      "z": 0,
+      "typeId": "stone"
+    },
+    {
+      "x": 4,
+      "y": 14,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 5,
+      "y": 14,
+      "z": 0,
+      "typeId": "iron"
+    },
+    {
+      "x": 6,
+      "y": 14,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 7,
+      "y": 14,
+      "z": 0,
+      "typeId": "barren"
+    },
+    {
+      "x": 8,
+      "y": 14,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 9,
+      "y": 14,
+      "z": 0,
+      "typeId": "stone"
+    },
+    {
+      "x": 10,
+      "y": 14,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 11,
+      "y": 14,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 12,
+      "y": 14,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 13,
+      "y": 14,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 14,
+      "y": 14,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 15,
+      "y": 14,
+      "z": 0,
+      "typeId": "forest"
+    },
+    {
+      "x": 16,
+      "y": 14,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 17,
+      "y": 14,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 18,
+      "y": 14,
+      "z": 0,
+      "typeId": "mountain"
+    },
+    {
+      "x": 19,
+      "y": 14,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": 20,
+      "y": 14,
+      "z": 0,
+      "typeId": "fish"
+    },
+    {
+      "x": 21,
+      "y": 14,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 22,
+      "y": 14,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 23,
+      "y": 14,
+      "z": 0,
+      "typeId": "ice"
+    },
+    {
+      "x": 24,
+      "y": 14,
+      "z": 0,
+      "typeId": "ice"
+    }
+  ]
+}
