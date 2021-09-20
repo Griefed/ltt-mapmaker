@@ -278,6 +278,8 @@ export default defineComponent({
     let radiusX = 1;
     let centerX = 0;
     let centerY = 0;
+    let mapSizeX = 29;
+    let mapSizeY = 29;
     return {
       visible: ref(true),
       alert: ref(false),
@@ -289,7 +291,9 @@ export default defineComponent({
       radiusY,
       centerX,
       centerY,
-      reticulating
+      reticulating,
+      mapSizeX,
+      mapSizeY
     }
   },
   methods: {

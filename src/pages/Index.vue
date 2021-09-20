@@ -1,49 +1,21 @@
 <template>
   <span v-if="map">
     <span v-for="(xRow, index) in map" :key="index">
-      <div v-if="index == 0" class="row no-wrap firstRow"
+      <div class="row no-wrap"
         v-bind:class="{
           firstRow: (index == 0),
           moveup: (index !=0),
-          shifted: (index%2)
+          shifted: (index != 0 && !(index%2))
         }"
       >
         <Tile
           v-for="(tile, i) in xRow"
           v-bind:id="tile.x+'_'+tile.y"
-          v-bind:style="{ zIndex: 1000,
-                          margin: {
-                            left: (i!=0)?-2:0
-                          }
-                        }"
-          v-bind:key="i"></Tile>
-      </div>
-      <div v-else-if="(index%2)" class="row no-wrap moveup">
-        <Tile
-          v-for="(tile, i) in xRow"
-          v-bind:id="tile.x+'_'+tile.y"
-          v-bind:style="{
-              zIndex: 1000,
-              margin: {
-                left: (i!=0)?-2:0
-                }
-            }"
-          v-bind:key="i"></Tile>
-      </div>
-      <div v-else class="row no-wrap moveup shifted">
-        <Tile
-          v-for="(tile, i) in xRow"
-          v-bind:id="tile.x+'_'+tile.y"
-          v-bind:style="{
-            zIndex: 1000,
-            margin: {
-              left: (i!=0)?-2:0}
-              }"
+          v-bind:style="{ zIndex: 1000, margin: { left: (i!=0)?-2:0 } }"
           v-bind:key="i"></Tile>
       </div>
     </span>
   </span>
-
 </template>
 
 <script>
@@ -54,10 +26,10 @@ export default defineComponent({
     setup() {
       var mapSizeX = 49;
       var mapSizeY = 29;
-      var map = [
+      var map = [[]/*
         [{x:-1,y:1,z:0,type:"grass"},{x:0,y:1,z:0,type:"grass"},{x:1,y:1,z:0,type:"grass"}],
         [{x:-1,y:0,z:0,type:"grass"},{x:0,y:0,z:0,type:"grass"},{x:1,y:0,z:0,type:"grass"}],
-        [{x:-1,y:-1,z:0,type:"grass"},{x:0,y:-1,z:0,type:"grass"},{x:1,y:-1,z:0,type:"grass"}]
+        [{x:-1,y:-1,z:0,type:"grass"},{x:0,y:-1,z:0,type:"grass"},{x:1,y:-1,z:0,type:"grass"}]*/
         ];
       return {
         mapSizeX,
@@ -67,13 +39,10 @@ export default defineComponent({
     },
     mounted() {
       this.map = this.createMap(this.mapSizeX, this.mapSizeY);
-      console.log(this.map);
+      //console.log(this.map);
       this.$forceUpdate();
     },
     methods:{
-      init(){
-
-      },
       createMap(x,y){
         let defaultTile = "grass";
         let map = [];
@@ -82,12 +51,7 @@ export default defineComponent({
         for(let m = y; m > 0; m--){
           let xArr = [];
           for(let i = 0; i < x; i++){
-            xArr.push({
-              x: i-xMod,
-              y: m-yMod,
-              z: 0,
-              type: defaultTile
-            });
+            xArr.push({ x: i-xMod, y: m-yMod, z: 0, type: defaultTile });
           }
           map.push(xArr);
         }
