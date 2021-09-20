@@ -218,7 +218,9 @@ module.exports = configure(function (ctx) {
         // protocol: 'myapp://path',
 
         // Windows only
-        // win32metadata: { ... }
+        win32metadata: {
+          FileDescription: "Map Maker for LTT"
+        }
       },
 
       builder: {
