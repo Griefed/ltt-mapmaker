@@ -1,0 +1,124 @@
+name: Major Release
+
+on:
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      # GET LATEST CODE
+      - name: Checkout latest code
+        uses: actions/checkout@master
+        with:
+          fetch-depth: 0
+
+      # GENERATE CHANGELOG, TAG, RELEASE
+      - id: conventional_changelog
+        uses: ardalanamini/auto-changelog@master
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - id: compute_tag
+        uses: craig-day/compute-tag@v13
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          version_scheme: semantic
+          version_type: major
+          # MAJOR.MINOR.PATCH
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ steps.compute_tag.outputs.next_tag }}
+          body: |
+            Automatic release of version: **${{ steps.compute_tag.outputs.next_tag }}**
+            **Changes in this release:**
+            ${{ steps.conventional_changelog.outputs.changelog }}
+          draft: false
+          prerelease: false
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.4.0
+        with:
+          # Version Spec of the version to use.  Examples: 12.x, 10.15.1, >=10.15.0
+          node-version: '>= 16.9.1'
+          # Set this option if you want the action to check for the latest available version that satisfies the version spec
+          check-latest: false
+
+      - name: Install Quasar
+        run: npm install -g @quasar/cli
+
+      - name: Install packages
+        run: npm install
+
+      - name: Build project
+        run: quasar build
+
+      - name: List files
+        run: pwd && ls -al *
+
+      - name: Create Build Archive tar.gz
+        run: |
+          echo "**** Creating archive of quasar build ****"
+          tar -czf lttmm-${{ steps.compute_tag.outputs.next_tag }}.tar.gz dist/spa
+
+      - name: Create Build Archive zip
+        uses: papeloto/action-zip@v1
+        with:
+          files: dist/spa
+          recursive: true
+          dest: lttmm-${{ steps.compute_tag.outputs.next_tag }}.zip
+
+      - name: Upload Release Archive tar.gz
+        id: upload-release-asset-archive-targz
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./lttmm-${{ steps.compute_tag.outputs.next_tag }}.tar.gz
+          asset_name: lttmm-${{ steps.compute_tag.outputs.next_tag }}.tar.gz
+          asset_content_type: application/gzip
+
+      - name: Upload Release Archive zip
+        id: upload-release-asset-archive-zip
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./lttmm-${{ steps.compute_tag.outputs.next_tag }}.zip
+          asset_name: lttmm-${{ steps.compute_tag.outputs.next_tag }}.zip
+          asset_content_type: application/zip
+
+      # DOCKER RELATED
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v1
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+      - name: Login to DockerHub
+        uses: docker/login-action@v1
+        with:
+          username: griefed
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build and push
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64,linux/arm/v7,linux/arm64
+          push: true
+          tags: |
+            ghcr.io/griefed/ltt-mapmaker:latest
+            ghcr.io/griefed/ltt-mapmaker:${{ steps.compute_tag.outputs.next_tag }}
+            griefed/ltt-mapmaker:latest
+            griefed/ltt-mapmaker:${{ steps.compute_tag.outputs.next_tag }}
