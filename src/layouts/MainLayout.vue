@@ -13,6 +13,9 @@
           Let Them Trade Map-Maker
         </q-toolbar-title>
 
+        <q-btn to="/noise" color="secondary" dense label="Noise">
+        </q-btn>
+
         <q-btn-dropdown label="Settings" color="secondary">
           <div class="row no-wrap q-pa-md">
             <div class="column" style="width: 600px;">
