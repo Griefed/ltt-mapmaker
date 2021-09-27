@@ -9,6 +9,7 @@
     "start": "quasar dev",
     "electron": "quasar dev -m electron",
     "build": "quasar build",
+    "ebuild": "quasar build -m electron",
     "lint": "eslint --ext .js,.vue,.ts ./",
     "test": "echo \"No test specified\" && exit 0"
   },
