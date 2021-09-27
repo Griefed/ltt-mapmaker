@@ -6,6 +6,10 @@
   "author": "Griefed <griefed@griefed.de>",
   "private": true,
   "scripts": {
+    "start": "quasar dev",
+    "electron": "quasar dev -m electron",
+    "build": "quasar build",
+    "ebuild": "quasar build -m electron",
     "lint": "eslint --ext .js,.vue,.ts ./",
     "test": "echo \"No test specified\" && exit 0"
   },
@@ -17,6 +21,8 @@
   "devDependencies": {
     "@babel/eslint-parser": "^7.15.7",
     "@quasar/app": "^3.1.0",
+    "electron": "^14.0.1",
+    "electron-packager": "^15.4.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-vue": "^7.18.0",
