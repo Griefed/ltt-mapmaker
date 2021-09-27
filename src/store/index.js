@@ -42,13 +42,10 @@ const methods = {
   },
 
   loadMap(mapData) {
+    let tileSetData = this.getMultDimArrayFromFlattendArray(mapData.tileSet);
+
     state.mapID = mapData.mapID;
     state.mapName = mapData.mapName;
-    state.initialViewRadiusX = mapData.initialViewRadiusX;
-    state.initialViewRadiusY = mapData.initialViewRadiusY;
-    state.initialVieCenterX = mapData.initialVieCenterX;
-    state.initialViewCenterY = mapData.initialViewCenterY;
-    let tileSetData = this.getMultDimArrayFromFlattendArray(mapData.tileSet);
     state.mapSizeX = tileSetData.mapSizeX;
     state.mapSizeY = tileSetData.mapSizeY;
     state.lttMap = tileSetData.map;
@@ -56,6 +53,10 @@ const methods = {
     state.minX = tileSetData.minX;
     state.maxY = tileSetData.maxY;
     state.minY = tileSetData.minY;
+    state.radiusX = mapData.initialViewRadiusX;
+    state.radiusY = mapData.initialViewRadiusY;
+    state.centerX = mapData.initialViewCenterX;
+    state.centerY = mapData.initialViewCenterY;
   },
 
   getMultDimArrayFromFlattendArray(arr){

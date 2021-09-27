@@ -48,20 +48,20 @@ export default {
     const isViewRadiusBorder = function() {
       var borders = [];
       //leftBorder
-      if( props.tile.x == (this.store.state.centerX-this.store.state.radiusX) &&
-          ((this.store.state.centerY-this.store.state.radiusY) <= props.tile.y && props.tile.y <= (this.store.state.centerY+this.store.state.radiusY))){
+      if( props.tile.x == (this.store.state.centerX-this.store.state.radiusX+1) &&
+          ((this.store.state.centerY-this.store.state.radiusY+1) <= props.tile.y && props.tile.y <= (this.store.state.centerY+this.store.state.radiusY-1))){
             borders.push("viewBorderLeft");
       }
-      if( props.tile.x == (this.store.state.centerX+this.store.state.radiusX) &&
-          ((this.store.state.centerY-this.store.state.radiusY) <= props.tile.y && props.tile.y <= (this.store.state.centerY+this.store.state.radiusY))){
+      if( props.tile.x == (this.store.state.centerX+this.store.state.radiusX-1) &&
+          ((this.store.state.centerY-this.store.state.radiusY+1) <= props.tile.y && props.tile.y <= (this.store.state.centerY+this.store.state.radiusY-1))){
             borders.push("viewBorderRight")
       }
-      if( props.tile.y == (this.store.state.centerY+this.store.state.radiusY) &&
-          ((this.store.state.centerX-this.store.state.radiusX) <= props.tile.x && props.tile.x <= (this.store.state.centerX+this.store.state.radiusX))){
+      if( props.tile.y == (this.store.state.centerY+this.store.state.radiusY-1) &&
+          ((this.store.state.centerX-this.store.state.radiusX+1) <= props.tile.x && props.tile.x <= (this.store.state.centerX+this.store.state.radiusX-1))){
             borders.push("viewBorderTop")
       }
-      if( props.tile.y == (this.store.state.centerY-this.store.state.radiusY) &&
-          ((this.store.state.centerX-this.store.state.radiusX) <= props.tile.x && props.tile.x <= (this.store.state.centerX+this.store.state.radiusX))){
+      if( props.tile.y == (this.store.state.centerY-this.store.state.radiusY+1) &&
+          ((this.store.state.centerX-this.store.state.radiusX+1) <= props.tile.x && props.tile.x <= (this.store.state.centerX+this.store.state.radiusX-1))){
             borders.push("viewBorderBottom")
       }
 
