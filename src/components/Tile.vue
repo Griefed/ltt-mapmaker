@@ -1,8 +1,9 @@
 <template>
 
-   <div id="parent" class="hexagon" :class="tile.typeId">
-    <div class="hexTop"></div>
-    <div class="hexBottom"></div>
+   <div id="parent" class="hexagon"
+    :class="[tile.typeId, ((tile.x == store.state.centerX) && (tile.y == store.state.centerY))?'centerTile':'', isViewRadiusBorder()]">
+    <div class="hexTop" :class="((tile.x == store.state.centerX) && (tile.y == store.state.centerY))?'centerTop':''"></div>
+    <div class="hexBottom" :class="((tile.x == store.state.centerX) && (tile.y == store.state.centerY))?'centerBottom':''"></div>
 
     <q-btn-dropdown
       class="buttonshift without-icon custom-width"
@@ -33,16 +34,43 @@
 </template>
 
 <script>
-import {ref} from "vue";
+import {inject, ref} from "vue";
 
 export default {
   props:{
     tile: Object,
     typeValue: String
   },
-  setup () {
+  setup (props) {
     var types = ["barren", "clay", "desert", "fish", "forest", "grass", "ice", "iron", "mountain", "salt", "stone", "water", "wheat", "wool"];
+    const store = inject('store');
+
+    const isViewRadiusBorder = function() {
+      var borders = [];
+      //leftBorder
+      if( props.tile.x == (this.store.state.centerX-this.store.state.radiusX) &&
+          ((this.store.state.centerY-this.store.state.radiusY) <= props.tile.y && props.tile.y <= (this.store.state.centerY+this.store.state.radiusY))){
+            borders.push("viewBorderLeft");
+      }
+      if( props.tile.x == (this.store.state.centerX+this.store.state.radiusX) &&
+          ((this.store.state.centerY-this.store.state.radiusY) <= props.tile.y && props.tile.y <= (this.store.state.centerY+this.store.state.radiusY))){
+            borders.push("viewBorderRight")
+      }
+      if( props.tile.y == (this.store.state.centerY+this.store.state.radiusY) &&
+          ((this.store.state.centerX-this.store.state.radiusX) <= props.tile.x && props.tile.x <= (this.store.state.centerX+this.store.state.radiusX))){
+            borders.push("viewBorderTop")
+      }
+      if( props.tile.y == (this.store.state.centerY-this.store.state.radiusY) &&
+          ((this.store.state.centerX-this.store.state.radiusX) <= props.tile.x && props.tile.x <= (this.store.state.centerX+this.store.state.radiusX))){
+            borders.push("viewBorderBottom")
+      }
+
+      return borders;
+    }
+
     return {
+      isViewRadiusBorder,
+      store,
       types,
       menuState: ref(false),
       label: 'grass',
@@ -86,6 +114,12 @@ button.without-icon i {
   background-position: center;
   border-left: solid 3px #333333;
   border-right: solid 3px #333333;
+}
+
+.centerTile {
+  z-index: 1002;
+  border-left: solid 3px red;
+  border-right: solid 3px red;
 }
 
 .hexTop,
@@ -147,6 +181,52 @@ button.without-icon i {
   height: 54.2709px;
   z-index: 2;
   background: inherit;
+}
+
+.viewBorderLeft {
+  z-index: 1001;
+  border-left: dashed 3px blue;
+}
+
+.viewBorderRight {
+  z-index: 1001;
+  border-right: dashed 3px blue;
+}
+
+.viewBorderTop {
+  z-index: 1001;
+  .hexTop {
+    border-top: dashed 3px blue;
+    border-right: dashed 3px blue;
+  }
+}
+.viewBorderBottom {
+  z-index: 1001;
+  .hexBottom {
+    border-bottom: dashed 3px blue;
+    border-left: dashed 3px blue;
+  }
+}
+
+.notShifted{
+  .viewBorderLeft{
+    .hexTop{
+      border-top: dashed 3px blue;
+    }
+    .hexBottom{
+      border-left: dashed 3px blue;
+    }
+  }
+}
+.shifted{
+  .viewBorderRight{
+    .hexTop{
+      border-right: dashed 3px blue;
+    }
+    .hexBottom{
+      border-bottom: dashed 3px blue;
+    }
+  }
 }
 
 .barren {
@@ -248,5 +328,15 @@ button.without-icon i {
     background-color: $brown-13;
     color: black;
   }
+}
+
+.centerTop {
+  border-top: solid 4.2426px red;
+  border-right: solid 4.2426px red;
+}
+
+.centerBottom {
+  border-bottom: solid 4.2426px red;
+  border-left: solid 4.2426px red;
 }
 </style>
