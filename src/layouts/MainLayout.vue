@@ -119,93 +119,80 @@
 
         <q-separator inset spaced />
 
-        <q-btn @click="alert = true" color="secondary" dense label="Made by Griefed">
+        <q-btn @click="alert = true" color="secondary" dense label="About LTTMM">
           <q-tooltip :disable="$q.platform.is.mobile">
-            Open a little About :)
+            Open a little About! 🙂
           </q-tooltip>
-          <q-avatar>
-            <img alt="header" src="~assets/Griefed.webp" width="50">
-          </q-avatar>
+
         </q-btn>
 
         <q-dialog v-model="alert">
           <q-card style="max-width: 1000px;width:750px">
 
             <q-card-section>
-              <div class="text-h6">About Griefed and Let Them Trade Map Maker</div>
+              <div class="text-h6 text-center">About Let Them Trade Map-Maker, Let Them Trade, and Spaceflower</div>
+              <div class="text-center">Let Them Trade Map-Maker is not affiliated with Spaceflower in any way, shape, or form.</div>
             </q-card-section>
 
             <q-card-section align="center">
-              <q-btn style="margin-right: 15px" type="a" href="https://github.com/Griefed">
-                <q-icon size="50px" color="info" name="mdi-github"></q-icon>
+              <q-btn style="margin-right: 15px" type="a" target="_blank" href="https://github.com/Griefed/ltt-mapmaker">
+                <q-icon size="50px" color="dark" name="mdi-github"></q-icon>
                 <q-tooltip :disable="$q.platform.is.mobile">
-                  Visit my GitHub profile!
-                </q-tooltip>
-              </q-btn>
-              <q-btn style="margin-right: 15px" type="a" href="https://blog.griefed.de">
-                <q-icon size="50px" color="info" name="mdi-wordpress"></q-icon>
-                <q-tooltip :disable="$q.platform.is.mobile">
-                  Visit my blog!
-                </q-tooltip>
-              </q-btn>
-              <q-btn style="margin-right: 15px" type="a" href="https://griefed.de">
-                <q-icon size="50px" color="info" name="mdi-web"></q-icon>
-                <q-tooltip :disable="$q.platform.is.mobile">
-                  Visit my website!
+                  LTTMM on GitHub!
                 </q-tooltip>
               </q-btn>
             </q-card-section>
 
-            <q-card-section class="q-pt-none">
-              Visual map maker for Let Them Trade by Spaceflower, made with VueJS/Quasar.<br>
+            <q-card-section class="q-pt-none text-center">
+              A visual map maker for the game <b>Let Them Trade</b>, by <b>Spaceflower</b>, made with VueJS/Quasar.<br>
               Simply click on a button in the center of a tile and select the type you want it to change to.<br>
-              Do so for the whole map. After your map looks good to you, hit the "DOWNLOAD MAP"-button in the top-right.<br>
-              This will generate a .json-file and download it which will contain your configuration as a Let Them Trade map.
+              Do so for the whole map. After your map looks good to you, hit the "<b>DOWNLOAD MAP</b>"-button in the menubar at the top.<br>
+              This will generate and download a <b>.json</b>-file containing your Let Them Trade map.
             </q-card-section>
 
             <q-card-section>
-              <div class="text-h6">All Things Spaceflower!</div>
+              <div class="text-h6 text-center">All Things Spaceflower!</div>
             </q-card-section>
 
             <q-card-section align="center">
               <q-btn style="margin-right: 15px" type="a" href="https://store.steampowered.com/app/1313290/Let_Them_Trade/">
-                <q-icon size="50px" color="black" name="mdi-steam"></q-icon>
+                <q-icon size="50px" color="red-7" name="mdi-steam"></q-icon>
                 <q-tooltip :disable="$q.platform.is.mobile">
                   Let Them Trade on Steam!
                 </q-tooltip>
               </q-btn>
               <q-btn style="margin-right: 15px" type="a" href="https://www.twitch.tv/spaceflowerde">
-                <q-icon size="50px" color="black" name="mdi-twitch"></q-icon>
+                <q-icon size="50px" color="red-7" name="mdi-twitch"></q-icon>
                 <q-tooltip :disable="$q.platform.is.mobile">
                   Spaceflower on Twitch!
                 </q-tooltip>
               </q-btn>
               <q-btn style="margin-right: 15px" type="a" href="https://spaceflower.de/">
-                <q-icon size="50px" color="black" name="mdi-web"></q-icon>
+                <q-icon size="50px" color="red-7" name="mdi-web"></q-icon>
                 <q-tooltip :disable="$q.platform.is.mobile">
                   Visit the homepage of Spaceflower!
                 </q-tooltip>
               </q-btn>
               <q-btn style="margin-right: 15px" type="a" href="https://www.tiktok.com/@spaceflowerde?">
-                <q-icon size="50px" color="black" name="tiktok"></q-icon>
+                <q-icon size="50px" color="red-7" name="tiktok"></q-icon>
                 <q-tooltip :disable="$q.platform.is.mobile">
                   Visit Spaceflower on TikTok!
                 </q-tooltip>
               </q-btn>
               <q-btn style="margin-right: 15px" type="a" href="https://twitter.com/spaceflowerde">
-                <q-icon size="50px" color="black" name="mdi-twitter"></q-icon>
+                <q-icon size="50px" color="red-7" name="mdi-twitter"></q-icon>
                 <q-tooltip :disable="$q.platform.is.mobile">
                   Visit Spaceflower on Twitter!
                 </q-tooltip>
               </q-btn>
               <q-btn style="margin-right: 15px" type="a" href="https://www.facebook.com/SpaceflowerDE">
-                <q-icon size="50px" color="black" name="mdi-facebook"></q-icon>
+                <q-icon size="50px" color="red-7" name="mdi-facebook"></q-icon>
                 <q-tooltip :disable="$q.platform.is.mobile">
                   Visit Spaceflower on Facebook!
                 </q-tooltip>
               </q-btn>
               <q-btn style="margin-right: 15px" type="a" href="https://discordapp.com/invite/yaTeefS">
-                <q-icon size="50px" color="black" name="mdi-discord"></q-icon>
+                <q-icon size="50px" color="red-7" name="mdi-discord"></q-icon>
                 <q-tooltip :disable="$q.platform.is.mobile">
                   Join their Discord server!
                 </q-tooltip>
