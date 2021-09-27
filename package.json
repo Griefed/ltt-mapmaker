@@ -2,7 +2,7 @@
   "name": "ltt-mapmaker",
   "version": "1.1.0",
   "description": "Visual Map Maker for Let Them Trade",
-  "productName": "Let Them Trade Map Maker",
+  "productName": "Let Them Trade Map-Maker",
   "author": "Griefed <griefed@griefed.de>",
   "private": true,
   "scripts": {
