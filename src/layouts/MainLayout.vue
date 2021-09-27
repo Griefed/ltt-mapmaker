@@ -13,6 +13,31 @@
           Let Them Trade Map-Maker
         </q-toolbar-title>
 
+        <template v-if="store.state.lttMap">
+          <q-btn class="q-mr-xs" color="secondary" label="New Map" @click='confirmMapNew = true'>
+            <q-tooltip :disable="$q.platform.is.mobile">
+              NewMap
+            </q-tooltip>
+          </q-btn>
+
+          <q-separator inset spaced />
+
+          <q-dialog v-model="confirmMapNew" persistent>
+            <q-card>
+              <q-card-section class="row items-center">
+                <span class="q-ml-sm">
+                  Make sure you have saved your map before generating or loading another one!
+                  Clear Map?</span>
+              </q-card-section>
+
+              <q-card-actions align="right">
+                <q-btn flat label="Cancel" color="primary" v-close-popup />
+                <q-btn flat label="Clear Map" color="primary" @click='newMap()' v-close-popup />
+              </q-card-actions>
+            </q-card>
+          </q-dialog>
+        </template>
+
         <q-btn-dropdown label="Settings" color="secondary">
           <div class="row no-wrap q-pa-md">
             <div class="column" style="width: 600px;">
@@ -249,6 +274,7 @@ export default defineComponent({
   setup () {
     const store = inject('store');
     return {
+      confirmMapNew: ref(false),
       store,
       visible: ref(true),
       alert: ref(false),
@@ -259,6 +285,10 @@ export default defineComponent({
     }
   },
   methods: {
+    newMap(){
+      this.confirmMapNew = false;
+      this.store.methods.reset();
+    },
     generateMap() {
       this.downloadMap(this.store.methods.getMapId() + ".json", JSON.stringify(this.store.methods.exportMap(), null, 2));
     },

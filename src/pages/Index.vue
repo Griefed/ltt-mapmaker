@@ -17,14 +17,15 @@
           :class="{tileMl: (i!=0)?1:0}"
           v-bind:style="{ zIndex: 1000,
                         }"
-          v-bind:key="i"></Tile>
+          v-bind:key="i">
+          </Tile>
       </div>
     </span>
   </span>
   <span v-else>
     <div class="row no-wrap q-pa-md">
       <div class="column" style="width: 600px;">
-        <div class="text-h6 q-mb-md">MapSize</div>
+        <div class="text-h6 q-mb-md text-grey-1">MapDimensions</div>
         <q-item>
           <q-item-section avatar>
             <q-icon size="30px" color="secondary" name="mdi-arrow-expand-horizontal" />
@@ -42,18 +43,34 @@
             <q-slider v-model="store.state.mapSizeY" :min="1" :max="101" label color="secondary" :step="2" label-always/>
           </q-item-section>
         </q-item>
-        <q-btn class="q-mr-xs" color="secondary" label="Generate Base Map" @click='createMap()'>
+        <q-btn class="q-mr-xs" color="secondary" label="Generate New Map" @click='createMap()'>
           <q-tooltip :disable="$q.platform.is.mobile">
-            Create Base Map
+            Create New Map
+          </q-tooltip>
+        </q-btn>
+      </div>
+      <div class="column">
+        <q-input
+          v-model="mapString"
+          filled
+          autogrow
+          placeholder="Paste Map Data"
+          type="textarea"
+          input-class="pastCodeArea"
+        ></q-input>
+        <q-btn class="q-mr-xs" color="secondary" label="Load Map From Filedata" @click='loadMapData()'>
+          <q-tooltip :disable="$q.platform.is.mobile">
+            Load Map From Data
           </q-tooltip>
         </q-btn>
       </div>
     </div>
   </span>
+
 </template>
 
 <script>
-import { defineComponent, inject } from 'vue';
+import { defineComponent, inject, ref } from 'vue';
 import Tile from "../components/Tile.vue";
 
 export default defineComponent({
@@ -61,14 +78,21 @@ export default defineComponent({
 
       const store = inject('store');
 
+      var mapString = ref('')
+
+      const loadMapData = function() {
+        store.methods.loadMap(JSON.parse(mapString.value));
+      };
+
       const createMap= function(){
         store.methods.generateMap();
-        //this.$forceUpdate();
       };
 
       return {
+        mapString,
         store,
         createMap,
+        loadMapData
       }
     },
 
@@ -98,5 +122,9 @@ export default defineComponent({
 
 .moveup {
   margin-top: -31px;
+}
+
+.pastCodeArea {
+  color: white;
 }
 </style>

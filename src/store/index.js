@@ -7,26 +7,77 @@ const state = reactive({
   centerY: 0,
   radiusY: 1,
   radiusX: 1,
-  lttMap: null
+  mapID: 'e1-m.lttmm',
+  mapName: '',
+  lttMap: null,
 })
 
 const methods = {
 
+  reset() {
+    state.mapSizeX = 1;
+    state.mapSizeY = 1;
+    state.centerX = 0;
+    state.centerY = 0;
+    state.radiusY = 1;
+    state.radiusX = 1;
+    state.mapID = 'e1-m.lttmm';
+    state.mapName = '';
+    state.lttMap = null;
+  },
+
   exportMap() {
     return{
-      mapID: this.getMapId(),
-      mapName: this.getMapName(),
+      mapID: state.mapID,
+      mapName: state.mapName,
       initialViewRadiusX: state.centerX,
       initialViewRadiusY: state.centerY,
       initialVieCenterX: state.radiusX,
       initialViewCenterY: state.radiusY,
       tileSet: state.lttMap.flat()}
-
   },
 
-  getTileSet(){
-
+  loadMap(mapData) {
+    state.mapID = mapData.mapID;
+    state.mapName = mapData.mapName;
+    state.initialViewRadiusX = mapData.initialViewRadiusX;
+    state.initialViewRadiusY = mapData.initialViewRadiusY;
+    state.initialVieCenterX = mapData.initialVieCenterX;
+    state.initialViewCenterY = mapData.initialViewCenterY;
+    let tileSetData = this.getMultDimArrayFromFlattendArray(mapData.tileSet);
+    state.mapSizeX = tileSetData.mapSizeX;
+    state.mapSizeY = tileSetData.mapSizeY;
+    state.lttMap = tileSetData.map;
   },
+
+  getMultDimArrayFromFlattendArray(arr){
+    let maxX,minX,maxY,minY, mapSizeX, mapSizeY;
+    let sortArr = arr.sort((a,b)=>{
+      if(a.y == b.y){
+        return a.x - b.x;
+      } else {
+        return b.y-a.y
+      }
+    })
+    let arrSize = sortArr.length;
+    minX = sortArr[0].x;
+    maxY = sortArr[0].y;
+    minY = sortArr[arrSize-1].y;
+    maxX = sortArr[arrSize-1].x;
+    mapSizeX = Math.abs(minX)+Math.abs(maxX)+1;
+    mapSizeY = Math.abs(minY)+Math.abs(maxY)+1;
+
+    let map = [];
+    for(let m = 0; m < mapSizeY; m++){
+      let xArr = [];
+      for(let i = 0; i < mapSizeX; i++){
+        xArr.push(sortArr[(m*mapSizeX)+i]);
+      }
+      map.push(xArr);
+    }
+    return {mapSizeX, mapSizeY, map};
+  },
+
 
   getMapName() {
     const reticulating = ["Adding","Hidden","Agendas","Adjusting","Bell","Curves","Aesthesizing","Industrial","Areas","Aligning","Covariance","Matrices",
@@ -78,6 +129,7 @@ const methods = {
       map.push(xArr);
     }
     state.lttMap = map;
+    state.mapName = this.getMapName();
   }
 
 }

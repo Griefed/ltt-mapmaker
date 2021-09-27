@@ -20,11 +20,14 @@
             </q-avatar>
           </q-item-section>
           <q-item-section>
-            <q-item-label>{{type}}</q-item-label>
+            <q-item-label>{{type.toUpperCase()}}</q-item-label>
           </q-item-section>
         </q-item>
       </q-list>
     </q-btn-dropdown>
+    <q-tooltip :disable="$q.platform.is.mobile">
+      {{tile.x+'/'+tile.y+": "+ tile.typeId}}
+    </q-tooltip>
    </div>
 
 </template>
