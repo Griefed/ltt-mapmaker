@@ -1,6 +1,10 @@
 import {reactive} from 'vue';
 
 const state = reactive({
+  maxX: 0,
+  minX: 0,
+  maxY: 0,
+  minY: 0,
   mapSizeX: 1,
   mapSizeY: 1,
   centerX: 0,
@@ -48,6 +52,10 @@ const methods = {
     state.mapSizeX = tileSetData.mapSizeX;
     state.mapSizeY = tileSetData.mapSizeY;
     state.lttMap = tileSetData.map;
+    state.maxX = tileSetData.maxX;
+    state.minX = tileSetData.minX;
+    state.maxY = tileSetData.maxY;
+    state.minY = tileSetData.minY;
   },
 
   getMultDimArrayFromFlattendArray(arr){
@@ -75,7 +83,7 @@ const methods = {
       }
       map.push(xArr);
     }
-    return {mapSizeX, mapSizeY, map};
+    return {mapSizeX, mapSizeY,maxX, minX,maxY, minY, map};
   },
 
 
@@ -119,12 +127,25 @@ const methods = {
   generateMap() {
     let defaultTile = "grass";
     let map = [];
-    let xMod = Math.floor(state.mapSizeX/2);
-    let yMod = Math.ceil(state.mapSizeY/2);
-    for(let m = state.mapSizeY; m > 0; m--){
+
+    state.minX = -Math.floor(state.mapSizeX/2);
+    if(state.mapSizeX%2){
+      state.maxX = Math.floor(state.mapSizeX/2);
+    }else{
+      state.maxX = Math.floor(state.mapSizeX/2)+1;
+    }
+
+    state.minY = -Math.floor(state.mapSizeY/2);
+    if(state.mapSizeY%2){
+      state.maxY = Math.floor(state.mapSizeY/2);
+    }else{
+      state.maxY = Math.floor(state.mapSizeY/2)+1;
+    }
+
+    for(let m = state.maxY; m >= state.minY; m--){
       let xArr = [];
-      for(let i = 0; i < state.mapSizeX; i++){
-        xArr.push({ x: i-xMod, y: m-yMod, z: 0, typeId: defaultTile });
+      for(let i = state.minX; i <= state.maxX; i++){
+        xArr.push({ x: i, y: m, z: 0, typeId: defaultTile });
       }
       map.push(xArr);
     }

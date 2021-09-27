@@ -36,99 +36,101 @@
               </q-card-actions>
             </q-card>
           </q-dialog>
-        </template>
 
-        <q-btn-dropdown label="Settings" color="secondary">
-          <div class="row no-wrap q-pa-md">
-            <div class="column" style="width: 600px;">
-              <div class="text-h6 q-mb-md">Initial View Radius</div>
-              <q-item>
-                <q-item-section avatar>
-                  <q-icon size="30px" color="secondary" name="mdi-arrow-expand-horizontal" />
-                </q-item-section>
-                <q-item-section>
-                  <q-slider v-model="store.state.radiusX" :min="1" :max="24" label color="secondary" :step="1" label-always/>
-                </q-item-section>
-              </q-item>
 
-              <q-item>
-                <q-item-section avatar>
-                  <q-icon size="30px" color="secondary" name="mdi-arrow-expand-vertical" />
-                </q-item-section>
-                <q-item-section>
-                  <q-slider v-model="store.state.radiusY" :min="1" :max="14" label color="secondary" :step="1" label-always/>
-                </q-item-section>
-              </q-item>
-
-              <q-separator inset spaced />
-
-              <div class="text-h6 q-mb-md">Initial View Center</div>
-              <q-item>
-                <q-item-section avatar>
-                  <q-icon size="30px" color="secondary" name="mdi-arrow-expand-horizontal" />
-                </q-item-section>
-                <q-item-section>
-                  <q-slider v-model="store.state.centerX" :min="-24" :max="24" label color="secondary" :step="1" label-always/>
-                </q-item-section>
-              </q-item>
-
-              <q-item>
-                <q-item-section avatar>
-                  <q-icon size="30px" color="secondary" name="mdi-arrow-expand-vertical" />
-                </q-item-section>
-                <q-item-section>
-                  <q-slider v-model="store.state.centerY" :min="-14" :max="14" label color="secondary" :step="1" label-always/>
-                </q-item-section>
-              </q-item>
-
-              <q-separator inset spaced />
-
-              <div class="text-h6 q-mb-md">Scrollbar Settings</div>
-              <div class="row no-wrap q-pa-md">
-                <div>Horizontal Color and Opacity
-                  <q-color v-model="verticalColor" class="my-picker"/>
-                </div>
+          <q-btn-dropdown label="Settings" color="secondary">
+            <div class="row no-wrap q-pa-md">
+              <div class="column" style="width: 600px;">
+                <div class="text-h6 q-mb-md">Initial View Radius</div>
                 <q-item>
-                  <div class="column">
                   <q-item-section avatar>
-                    <q-icon size="30px" style="margin-left: 5px;" color="secondary" name="opacity" />
+                    <q-icon size="30px" color="secondary" name="mdi-arrow-expand-horizontal" />
                   </q-item-section>
                   <q-item-section>
-                    <q-slider vertical reverse v-model="verticalOpacity" :min="0.0" :max="1" :step="0.1" label color="secondary"  label-always/>
+                    <q-slider v-model="store.state.radiusX" :min="1" :max="Math.floor(store.state.mapSizeX/2)" label color="secondary" :step="1" label-always/>
                   </q-item-section>
-                  </div>
+                </q-item>
+
+                <q-item>
+                  <q-item-section avatar>
+                    <q-icon size="30px" color="secondary" name="mdi-arrow-expand-vertical" />
+                  </q-item-section>
+                  <q-item-section>
+                    <q-slider v-model="store.state.radiusY" :min="1" :max="Math.floor(store.state.mapSizeY/2)" label color="secondary" :step="1" label-always/>
+                  </q-item-section>
                 </q-item>
 
                 <q-separator inset spaced />
 
-                <div>Horizontal Color and Opacity
-                  <q-color v-model="horizontalColor" class="my-picker"/>
-                </div>
+                <div class="text-h6 q-mb-md">Initial View Center</div>
                 <q-item>
-                  <div class="column">
+                  <q-item-section avatar>
+                    <q-icon size="30px" color="secondary" name="mdi-arrow-expand-horizontal" />
+                  </q-item-section>
+                  <q-item-section>
+                    <q-slider v-model="store.state.centerX" :min="store.state.minX" :max="store.state.maxX" label color="secondary" :step="1" label-always/>
+                  </q-item-section>
+                </q-item>
+
+                <q-item>
+                  <q-item-section avatar>
+                    <q-icon size="30px" color="secondary" name="mdi-arrow-expand-vertical" />
+                  </q-item-section>
+                  <q-item-section>
+                    <q-slider v-model="store.state.centerY" :min="store.state.minY" :max="store.state.maxY" label color="secondary" :step="1" label-always/>
+                  </q-item-section>
+                </q-item>
+
+                <q-separator inset spaced />
+
+                <div class="text-h6 q-mb-md">Scrollbar Settings</div>
+                <div class="row no-wrap q-pa-md">
+                  <div>Horizontal Color and Opacity
+                    <q-color v-model="verticalColor" class="my-picker"/>
+                  </div>
+                  <q-item>
+                    <div class="column">
                     <q-item-section avatar>
                       <q-icon size="30px" style="margin-left: 5px;" color="secondary" name="opacity" />
                     </q-item-section>
                     <q-item-section>
-                      <q-slider vertical reverse v-model="horizontalOpacity" :min="0.0" :max="1" :step="0.1" label color="secondary"  label-always/>
+                      <q-slider vertical reverse v-model="verticalOpacity" :min="0.0" :max="1" :step="0.1" label color="secondary"  label-always/>
                     </q-item-section>
+                    </div>
+                  </q-item>
+
+                  <q-separator inset spaced />
+
+                  <div>Horizontal Color and Opacity
+                    <q-color v-model="horizontalColor" class="my-picker"/>
                   </div>
-                </q-item>
+                  <q-item>
+                    <div class="column">
+                      <q-item-section avatar>
+                        <q-icon size="30px" style="margin-left: 5px;" color="secondary" name="opacity" />
+                      </q-item-section>
+                      <q-item-section>
+                        <q-slider vertical reverse v-model="horizontalOpacity" :min="0.0" :max="1" :step="0.1" label color="secondary"  label-always/>
+                      </q-item-section>
+                    </div>
+                  </q-item>
+                </div>
+
               </div>
-
             </div>
-          </div>
-        </q-btn-dropdown>
+          </q-btn-dropdown>
 
-        <q-separator inset spaced />
+          <q-separator inset spaced />
 
-        <q-btn class="q-mr-xs" color="secondary" label="Download Map" @click='generateMap()'>
-          <q-tooltip :disable="$q.platform.is.mobile">
-            Download current configuration as a JSON-file.
-          </q-tooltip>
-        </q-btn>
+          <q-btn class="q-mr-xs" color="secondary" label="Download Map" @click='generateMap()'>
+            <q-tooltip :disable="$q.platform.is.mobile">
+              Download current configuration as a JSON-file.
+            </q-tooltip>
+          </q-btn>
 
-        <q-separator inset spaced />
+          <q-separator inset spaced />
+
+        </template>
 
         <q-btn
           :icon="$q.fullscreen.isActive ? 'fullscreen_exit' : 'fullscreen'"

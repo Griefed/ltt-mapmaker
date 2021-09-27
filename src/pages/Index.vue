@@ -31,7 +31,7 @@
             <q-icon size="30px" color="secondary" name="mdi-arrow-expand-horizontal" />
           </q-item-section>
           <q-item-section>
-            <q-slider v-model="store.state.mapSizeX" :min="1" :max="101" label color="secondary" :step="2" label-always/>
+            <q-slider v-model="store.state.mapSizeX" :min="1" :max="101" label color="secondary" :step="1" label-always/>
           </q-item-section>
         </q-item>
 
@@ -40,7 +40,7 @@
             <q-icon size="30px" color="secondary" name="mdi-arrow-expand-vertical" />
           </q-item-section>
           <q-item-section>
-            <q-slider v-model="store.state.mapSizeY" :min="1" :max="101" label color="secondary" :step="2" label-always/>
+            <q-slider v-model="store.state.mapSizeY" :min="1" :max="101" label color="secondary" :step="1" label-always/>
           </q-item-section>
         </q-item>
         <q-btn class="q-mr-xs" color="secondary" label="Generate New Map" @click='createMap()'>
