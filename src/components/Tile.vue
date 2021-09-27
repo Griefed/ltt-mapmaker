@@ -1,7 +1,7 @@
 <template>
 
    <div id="parent" class="hexagon"
-    :class="[tile.typeId, ((tile.x == store.state.centerX) && (tile.y == store.state.centerY))?'centerTile':'', isViewRadiusBorder()]">
+    :class="[tile.typeId,isViewRadiusBorder(), ((tile.x == store.state.centerX) && (tile.y == store.state.centerY))?'centerTile':'']">
     <div class="hexTop" :class="((tile.x == store.state.centerX) && (tile.y == store.state.centerY))?'centerTop':''"></div>
     <div class="hexBottom" :class="((tile.x == store.state.centerX) && (tile.y == store.state.centerY))?'centerBottom':''"></div>
 
@@ -116,11 +116,7 @@ button.without-icon i {
   border-right: solid 3px #333333;
 }
 
-.centerTile {
-  z-index: 1002;
-  border-left: solid 3px red;
-  border-right: solid 3px red;
-}
+
 
 .hexTop,
 .hexBottom {
@@ -216,6 +212,15 @@ button.without-icon i {
     .hexBottom{
       border-left: dashed 3px blue;
     }
+    .centerTop {
+      border-top: solid 4.2426px red;
+      border-right: solid 4.2426px red;
+    }
+
+    .centerBottom {
+      border-bottom: solid 4.2426px red;
+      border-left: solid 4.2426px red;
+    }
   }
 }
 .shifted{
@@ -225,6 +230,15 @@ button.without-icon i {
     }
     .hexBottom{
       border-bottom: dashed 3px blue;
+    }
+    .centerTop {
+      border-top: solid 4.2426px red;
+      border-right: solid 4.2426px red;
+    }
+
+    .centerBottom {
+      border-bottom: solid 4.2426px red;
+      border-left: solid 4.2426px red;
     }
   }
 }
@@ -338,5 +352,11 @@ button.without-icon i {
 .centerBottom {
   border-bottom: solid 4.2426px red;
   border-left: solid 4.2426px red;
+}
+
+.centerTile {
+  z-index: 1002;
+  border-left: solid 3px red;
+  border-right: solid 3px red;
 }
 </style>
