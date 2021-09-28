@@ -71,4 +71,4 @@ jobs:
           github_token: ${{ secrets.github_token }}
 
       - name: List files
-        run: ls -al dist
+        run: ls dist
