@@ -23,47 +23,54 @@
     </span>
   </span>
   <span v-else>
-    <div class="row no-wrap q-pa-md">
-      <div class="column" style="width: 600px;">
-        <div class="text-h6 q-mb-md text-grey-1">MapDimensions</div>
-        <q-item>
-          <q-item-section avatar>
-            <q-icon size="30px" color="secondary" name="mdi-arrow-expand-horizontal" />
-          </q-item-section>
-          <q-item-section>
-            <q-slider v-model="store.state.mapSizeX" :min="1" :max="101" label color="secondary" :step="1" label-always/>
-          </q-item-section>
-        </q-item>
+    <div class="row no-wrap q-pa-md absolute-center">
+      <q-card>
+        <q-card-section>
+            <div class="column" style="width: 600px;">
+              <div class="text-h6 q-mb-md text-black">New Map Dimensions</div>
+              <q-item>
+                <q-item-section avatar>
+                  <q-icon size="30px" color="secondary" name="mdi-arrow-expand-horizontal" />
+                </q-item-section>
+                <q-item-section>
+                  <q-slider v-model="store.state.mapSizeX" :min="1" :max="101" label color="secondary" :step="1" label-always/>
+                </q-item-section>
+              </q-item>
 
-        <q-item>
-          <q-item-section avatar>
-            <q-icon size="30px" color="secondary" name="mdi-arrow-expand-vertical" />
-          </q-item-section>
-          <q-item-section>
-            <q-slider v-model="store.state.mapSizeY" :min="1" :max="101" label color="secondary" :step="1" label-always/>
-          </q-item-section>
-        </q-item>
-        <q-btn class="q-mr-xs" color="secondary" label="Generate New Map" @click='createMap()'>
-          <q-tooltip :disable="$q.platform.is.mobile">
-            Create New Map
-          </q-tooltip>
-        </q-btn>
-      </div>
-      <div class="column">
-        <q-input
-          v-model="mapString"
-          filled
-          autogrow
-          placeholder="Paste Map Data"
-          type="textarea"
-          input-class="pastCodeArea"
-        ></q-input>
-        <q-btn class="q-mr-xs" color="secondary" label="Load Map From Filedata" @click='loadMapData()'>
-          <q-tooltip :disable="$q.platform.is.mobile">
-            Load Map From Data
-          </q-tooltip>
-        </q-btn>
-      </div>
+              <q-item>
+                <q-item-section avatar>
+                  <q-icon size="30px" color="secondary" name="mdi-arrow-expand-vertical" />
+                </q-item-section>
+                <q-item-section>
+                  <q-slider v-model="store.state.mapSizeY" :min="1" :max="101" label color="secondary" :step="1" label-always/>
+                </q-item-section>
+              </q-item>
+              <q-btn class="q-mr-xs" color="secondary" label="Generate New Map" @click='createMap()'>
+                <q-tooltip :disable="$q.platform.is.mobile">
+                  Generate new map with size set above
+                </q-tooltip>
+              </q-btn>
+            </div>
+          </q-card-section>
+
+          <q-card-section>
+            <div class="column">
+              <div class="text-h6 q-mb-md text-black">Load Existing Map</div>
+              <q-input
+                v-model="mapString"
+                filled
+                placeholder="Paste Map Data"
+                type="textarea"
+                input-class="pastCodeArea"
+              ></q-input>
+              <q-btn class="q-mr-xs" color="secondary" label="Load Map From Filedata" @click='loadMapData()'>
+                <q-tooltip :disable="$q.platform.is.mobile">
+                  Load Map From Data
+                </q-tooltip>
+              </q-btn>
+            </div>
+        </q-card-section>
+      </q-card>
     </div>
   </span>
 
@@ -122,9 +129,5 @@ export default defineComponent({
 
 .moveup {
   margin-top: -31px;
-}
-
-.pastCodeArea {
-  color: white;
 }
 </style>

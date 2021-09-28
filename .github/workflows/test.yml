@@ -39,3 +39,60 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64,linux/arm/v7,linux/arm64
           push: false
+
+  electron:
+    needs: test
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [macos-latest, ubuntu-latest, windows-latest]
+
+    steps:
+      # GET LATEST CODE
+      - name: Checkout latest code
+        uses: actions/checkout@master
+        with:
+          fetch-depth: 0
+
+      - name: We are running on
+        run: echo matrix.os is ${{ matrix.os }}
+        # Either:
+        #  1. macos-latest
+        #  2. ubuntu-latest
+        #  3. windows-latest
+
+      # SETUP NODE ENVIRONMENT
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.4.0
+        with:
+          # Version Spec of the version to use.  Examples: 12.x, 10.15.1, >=10.15.0
+          node-version: '>= 16.9.1'
+          # Set this option if you want the action to check for the latest available version that satisfies the version spec
+          check-latest: false
+
+      - name: Build/release Electron app
+        uses: vedaprakashms/quasar_electron_build@V0.0.1
+        with:
+          # GitHub token, automatically provided to the action
+          # (No need to define this secret in the repo settings)
+          github_token: ${{ secrets.github_token }}
+
+      - name: List files
+        run: ls dist/electron
+
+      - name: Rename folders
+        run: |
+          mv dist/electron/Let* dist/electron/lttmm-${{ matrix.os }}
+
+      # Electron Archives
+      - name: Create zip
+        uses: ihiroky/archive-action@v1
+        with:
+          root_dir: dist/electron/lttmm-${{ matrix.os }}
+          file_path: lttmm-app-$ARCHIVEOS.zip
+      - name: Create tar.gz
+        uses: ihiroky/archive-action@v1
+        with:
+          root_dir: dist/electron/lttmm-${{ matrix.os }}
+          file_path: lttmm-app-$ARCHIVEOS.tar.gz
