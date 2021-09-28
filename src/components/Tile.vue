@@ -212,18 +212,18 @@ button.without-icon i {
     .hexBottom{
       border-left: dashed 3px blue;
     }
-    .centerTop {
-      border-top: solid 4.2426px red;
-      border-right: solid 4.2426px red;
+        .centerTop {
+      border-top: solid 4.2426px red !important;;
+      border-right: solid 4.2426px red !important;
     }
 
     .centerBottom {
-      border-bottom: solid 4.2426px red;
-      border-left: solid 4.2426px red;
+      border-bottom: solid 4.2426px red !important;
+      border-left: solid 4.2426px red !important;
     }
   }
 }
-.shifted{
+.shifted, .firstRow{
   .viewBorderRight{
     .hexTop{
       border-right: dashed 3px blue;
@@ -231,14 +231,14 @@ button.without-icon i {
     .hexBottom{
       border-bottom: dashed 3px blue;
     }
-    .centerTop {
-      border-top: solid 4.2426px red;
-      border-right: solid 4.2426px red;
+        .centerTop {
+      border-top: solid 4.2426px red !important;
+      border-right: solid 4.2426px red !important;
     }
 
     .centerBottom {
-      border-bottom: solid 4.2426px red;
-      border-left: solid 4.2426px red;
+      border-bottom: solid 4.2426px red !important;
+      border-left: solid 4.2426px red !important;
     }
   }
 }
@@ -345,18 +345,18 @@ button.without-icon i {
 }
 
 .centerTop {
-  border-top: solid 4.2426px red;
-  border-right: solid 4.2426px red;
+  border-top: solid 4.2426px red !important;
+  border-right: solid 4.2426px red !important;
 }
 
 .centerBottom {
-  border-bottom: solid 4.2426px red;
-  border-left: solid 4.2426px red;
+  border-bottom: solid 4.2426px red !important;
+  border-left: solid 4.2426px red !important;
 }
 
 .centerTile {
   z-index: 1002;
-  border-left: solid 3px red;
-  border-right: solid 3px red;
+  border-left: solid 3px red !important;
+  border-right: solid 3px red !important;
 }
 </style>
