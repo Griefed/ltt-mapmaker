@@ -1,4 +1,5 @@
 <template>
+
   <span v-if="store.state.lttMap">
     <span v-for="(xRow, index) in store.state.lttMap" :key="index">
       <div class="row no-wrap"
@@ -19,11 +20,12 @@
       </div>
     </span>
   </span>
+
   <span v-else>
     <div class="row no-wrap q-pa-md absolute-center">
       <q-card>
         <q-card-section>
-            <div class="column" style="width: 600px;">
+          <div class="column" style="width: 600px;">
               <div class="text-h6 q-mb-md text-black">New Map Dimensions</div>
               <q-item>
                 <q-item-section avatar>
@@ -42,31 +44,49 @@
                   <q-slider v-model="store.state.mapSizeY" :min="1" :max="101" label color="secondary" :step="1" label-always/>
                 </q-item-section>
               </q-item>
-              <q-btn class="q-mr-xs" color="secondary" label="Generate New Map" @click='createMap()'>
-                <q-tooltip :disable="$q.platform.is.mobile">
-                  Generate new map with size set above
-                </q-tooltip>
-              </q-btn>
-            </div>
-          </q-card-section>
 
-          <q-card-section>
-            <div class="column">
-              <div class="text-h6 q-mb-md text-black">Load Existing Map</div>
-              <q-input
-                v-model="mapString"
-                filled
-                placeholder="Paste Map Data"
-                type="textarea"
-                input-class="pastCodeArea"
-              ></q-input>
-              <q-btn class="q-mr-xs" color="secondary" label="Load Map From Filedata" @click='loadMapData()'>
+              <q-btn class="q-mr-xs" color="secondary" label="Generate Empty Map" @click='createMap()'>
                 <q-tooltip :disable="$q.platform.is.mobile">
-                  Load Map From Data
+                  Generate empty map with size set above
                 </q-tooltip>
               </q-btn>
-            </div>
+
+          </div>
         </q-card-section>
+
+        <q-card-section>
+          <div class="column" style="width: 600px;">
+            <q-input color="black" filled v-model="store.state.seed" label="Seed" type="number" maxlength="15">
+              <template v-if="store.state.seed" v-slot:append>
+                <q-icon name="cancel" @click.stop="seed = null" class="cursor-pointer" />
+              </template>
+            </q-input>
+            <q-btn class="q-mr-xs" color="secondary" label="Generate Random Map" @click='createRandomMap()'>
+                <q-tooltip :disable="$q.platform.is.mobile">
+                  Generate random map with size set above
+                </q-tooltip>
+            </q-btn>
+          </div>
+        </q-card-section>
+
+        <q-card-section>
+          <div class="column">
+            <div class="text-h6 q-mb-md text-black">Load Existing Map</div>
+            <q-input
+              v-model="mapString"
+              filled
+              placeholder="Paste Map Data"
+              type="textarea"
+              input-class="pastCodeArea"
+            ></q-input>
+            <q-btn class="q-mr-xs" color="secondary" label="Load Map From Filedata" @click='loadMapData()'>
+              <q-tooltip :disable="$q.platform.is.mobile">
+                Load Map From Data
+              </q-tooltip>
+            </q-btn>
+          </div>
+        </q-card-section>
+
       </q-card>
     </div>
   </span>
@@ -82,20 +102,25 @@ export default defineComponent({
 
       const store = inject('store');
 
-      var mapString = ref('')
+      var mapString = ref('');
 
       const loadMapData = function() {
         store.methods.loadMap(JSON.parse(mapString.value));
       };
 
-      const createMap= function(){
+      const createMap = function() {
         store.methods.generateMap();
+      };
+
+      const createRandomMap = function() {
+        store.methods.generateRandomMap();
       };
 
       return {
         mapString,
         store,
         createMap,
+        createRandomMap,
         loadMapData
       }
     },
