@@ -26,8 +26,6 @@ function createWindow () {
 
   mainWindow.loadURL(process.env.APP_URL)
 
-  mainWindow.webContents.openDevTools();
-  /*
   if (process.env.DEBUGGING) {
     // if on DEV or Production with debug enabled
     mainWindow.webContents.openDevTools()
@@ -36,7 +34,7 @@ function createWindow () {
     mainWindow.webContents.on('devtools-opened', () => {
       mainWindow.webContents.closeDevTools()
     })
-  }*/
+  }
 
   nativeTheme.themeSource = 'system'
 

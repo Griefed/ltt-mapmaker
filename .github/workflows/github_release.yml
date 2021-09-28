@@ -8,6 +8,12 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
+
+    # OUTPUTS
+    outputs:
+      newtag: ${{ steps.tag.outputs.tag }}
+      uploadurl: ${{ steps.create_release.outputs.upload_url }}
+
     steps:
       # GET LATEST CODE
       - name: Checkout latest code
@@ -43,7 +49,7 @@ jobs:
           prerelease: false
 
       - name: Setup Node.js environment
-        uses: actions/setup-node@v2.4.0
+        uses: actions/setup-node@v2.4.1
         with:
           # Version Spec of the version to use.  Examples: 12.x, 10.15.1, >=10.15.0
           node-version: '>= 16.9.1'
@@ -56,24 +62,25 @@ jobs:
       - name: Install packages
         run: npm install
 
-      - name: Build project
+      - name: Build project for NGINX release package
         run: quasar build
 
       - name: List files
         run: pwd && ls -al *
 
-      - name: Create Build Archive tar.gz
+      # NGINX Archives
+      - name: Create NGINX Archive tar.gz
         run: |
           echo "**** Creating archive of quasar build ****"
-          tar -czf lttmm-${{ steps.tag.outputs.tag }}.tar.gz dist/spa
-
-      - name: Create Build Archive zip
+          tar -czf lttmm-NGINX-${{ steps.tag.outputs.tag }}.tar.gz dist/spa
+      - name: Create NGINX Archive zip
         uses: papeloto/action-zip@v1
         with:
           files: dist/spa
           recursive: true
-          dest: lttmm-${{ steps.tag.outputs.tag }}.zip
+          dest: lttmm-NGINX-${{ steps.tag.outputs.tag }}.zip
 
+      # Upload NGINX Assets
       - name: Upload Release Archive tar.gz
         id: upload-release-asset-archive-targz
         uses: actions/upload-release-asset@v1
@@ -81,10 +88,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./lttmm-${{ steps.tag.outputs.tag }}.tar.gz
-          asset_name: lttmm-${{ steps.tag.outputs.tag }}.tar.gz
+          asset_path: ./lttmm-NGINX-${{ steps.tag.outputs.tag }}.tar.gz
+          asset_name: lttmm-NGINX-${{ steps.tag.outputs.tag }}.tar.gz
           asset_content_type: application/gzip
-
       - name: Upload Release Archive zip
         id: upload-release-asset-archive-zip
         uses: actions/upload-release-asset@v1
@@ -92,9 +98,16 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./lttmm-${{ steps.tag.outputs.tag }}.zip
-          asset_name: lttmm-${{ steps.tag.outputs.tag }}.zip
+          asset_path: ./lttmm-NGINX-${{ steps.tag.outputs.tag }}.zip
+          asset_name: lttmm-NGINX-${{ steps.tag.outputs.tag }}.zip
           asset_content_type: application/zip
+
+      # DEPLOY TO GH-PAGES
+      - name: Deploy to GitHub-Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.5
+        with:
+          branch: gh-pages
+          folder: dist/spa
 
       # DOCKER RELATED
       - name: Set up QEMU
@@ -124,3 +137,75 @@ jobs:
             ghcr.io/griefed/ltt-mapmaker:${{ steps.tag.outputs.tag }}
             griefed/ltt-mapmaker:latest
             griefed/ltt-mapmaker:${{ steps.tag.outputs.tag }}
+
+  electron:
+    needs: release
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [macos-latest, ubuntu-latest, windows-latest]
+
+    steps:
+      # GET LATEST CODE
+      - name: Checkout latest code
+        uses: actions/checkout@master
+        with:
+          fetch-depth: 0
+
+      # SETUP NODE ENVIRONMENT
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.4.1
+        with:
+          # Version Spec of the version to use.  Examples: 12.x, 10.15.1, >=10.15.0
+          node-version: '>= 16.9.1'
+          # Set this option if you want the action to check for the latest available version that satisfies the version spec
+          check-latest: false
+
+      - name: Build/release Electron app
+        uses: vedaprakashms/quasar_electron_build@V0.0.1
+        with:
+          # GitHub token, automatically provided to the action
+          # (No need to define this secret in the repo settings)
+          github_token: ${{ secrets.github_token }}
+
+      - name: List files
+        run: ls dist/electron
+
+      - name: Rename folders
+        run: |
+          mv dist/electron/Let* dist/electron/lttmm-${{ matrix.os }}
+
+      # Electron Archives
+      - name: Create zip
+        uses: ihiroky/archive-action@v1
+        with:
+          root_dir: dist/electron/lttmm-${{ matrix.os }}
+          file_path: lttmm-app-${{ matrix.os }}-${{ needs.release.outputs.newtag }}.zip
+      - name: Create tar.gz
+        uses: ihiroky/archive-action@v1
+        with:
+          root_dir: dist/electron/lttmm-${{ matrix.os }}
+          file_path: lttmm-app-${{ matrix.os }}-${{ needs.release.outputs.newtag }}.tar.gz
+
+      # Upload App Assets
+      - name: Upload App Archive tar.gz
+        id: upload-release-asset-archive-targz
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ needs.release.outputs.uploadurl }}
+          asset_path: ./lttmm-app-${{ matrix.os }}-${{ needs.release.outputs.newtag }}.tar.gz
+          asset_name: lttmm-app-${{ matrix.os }}-${{ needs.release.outputs.newtag }}.tar.gz
+          asset_content_type: application/gzip
+      - name: Upload App Archive zip
+        id: upload-release-asset-archive-zip
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ needs.release.outputs.uploadurl }}
+          asset_path: ./lttmm-app-${{ matrix.os }}-${{ needs.release.outputs.newtag }}.zip
+          asset_name: lttmm-app-${{ matrix.os }}-${{ needs.release.outputs.newtag }}.zip
+          asset_content_type: application/zip

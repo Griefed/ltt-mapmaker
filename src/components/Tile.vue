@@ -1,187 +1,77 @@
 <template>
 
-  <div id="parent" class="hexagon" :style="backgroundImage">
-    <div class="hexTop"></div>
-    <div class="hexBottom"></div>
+   <div id="parent" class="hexagon"
+    :class="[tile.typeId,isViewRadiusBorder(), ((tile.x == store.state.centerX) && (tile.y == store.state.centerY))?'centerTile':'']">
+    <div class="hexTop" :class="((tile.x == store.state.centerX) && (tile.y == store.state.centerY))?'centerTop':''"></div>
+    <div class="hexBottom" :class="((tile.x == store.state.centerX) && (tile.y == store.state.centerY))?'centerBottom':''"></div>
 
     <q-btn-dropdown
       class="buttonshift without-icon custom-width"
-      :color="color"
-      :label="label"
-      :text-color="textcolor"
+      :label="tile.typeId"
       align="center"
       size="11px"
       dropdown-icon=" "
       v-model="menuState">
       <q-list>
 
-        <q-item clickable v-close-popup @click="barren">
+        <q-item v-for="type in types" v-bind:key="type" clickable v-close-popup @click="setType(type)">
           <q-item-section avatar>
             <q-avatar>
-              <img src="~assets/tiles/barren.webp"/>
+              <img :src="'./tiles/'+type+'.webp'" />
             </q-avatar>
           </q-item-section>
           <q-item-section>
-            <q-item-label>Barren</q-item-label>
+            <q-item-label>{{type.toUpperCase()}}</q-item-label>
           </q-item-section>
         </q-item>
-
-        <q-item clickable v-close-popup @click="clay">
-          <q-item-section avatar>
-            <q-avatar>
-              <img src="~assets/tiles/clay.webp"/>
-            </q-avatar>
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Clay</q-item-label>
-          </q-item-section>
-        </q-item>
-
-        <q-item clickable v-close-popup @click="desert">
-          <q-item-section avatar>
-            <q-avatar>
-              <img src="~assets/tiles/desert.webp"/>
-            </q-avatar>
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Desert</q-item-label>
-          </q-item-section>
-        </q-item>
-
-        <q-item clickable v-close-popup @click="fish">
-          <q-item-section avatar>
-            <q-avatar>
-              <img src="~assets/tiles/fish.webp"/>
-            </q-avatar>
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Fish</q-item-label>
-          </q-item-section>
-        </q-item>
-
-        <q-item clickable v-close-popup @click="forest">
-          <q-item-section avatar>
-            <q-avatar>
-              <img src="~assets/tiles/wood.webp"/>
-            </q-avatar>
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Forest</q-item-label>
-          </q-item-section>
-        </q-item>
-
-        <q-item clickable v-close-popup @click="grass">
-          <q-item-section avatar>
-            <q-avatar>
-              <img src="~assets/tiles/grass.webp"/>
-            </q-avatar>
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Grass</q-item-label>
-          </q-item-section>
-        </q-item>
-
-        <q-item clickable v-close-popup @click="ice">
-          <q-item-section avatar>
-            <q-avatar>
-              <img src="~assets/tiles/ice.webp"/>
-            </q-avatar>
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Ice</q-item-label>
-          </q-item-section>
-        </q-item>
-
-        <q-item clickable v-close-popup @click="iron">
-          <q-item-section avatar>
-            <q-avatar>
-              <img src="~assets/tiles/iron.webp"/>
-            </q-avatar>
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Iron</q-item-label>
-          </q-item-section>
-        </q-item>
-
-        <q-item clickable v-close-popup @click="mountain">
-          <q-item-section avatar>
-            <q-avatar>
-              <img src="~assets/tiles/mountain.webp"/>
-            </q-avatar>
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Mountain</q-item-label>
-          </q-item-section>
-        </q-item>
-
-        <q-item clickable v-close-popup @click="salt">
-          <q-item-section avatar>
-            <q-avatar>
-              <img src="~assets/tiles/salt.webp"/>
-            </q-avatar>
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Salt</q-item-label>
-          </q-item-section>
-        </q-item>
-
-        <q-item clickable v-close-popup @click="stone">
-          <q-item-section avatar>
-            <q-avatar>
-              <img src="~assets/tiles/stone.webp"/>
-            </q-avatar>
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Stone</q-item-label>
-          </q-item-section>
-        </q-item>
-
-        <q-item clickable v-close-popup @click="water">
-          <q-item-section avatar>
-            <q-avatar>
-              <img src="~assets/tiles/water.webp"/>
-            </q-avatar>
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Water</q-item-label>
-          </q-item-section>
-        </q-item>
-
-        <q-item clickable v-close-popup @click="wheat">
-          <q-item-section avatar>
-            <q-avatar>
-              <img src="~assets/tiles/wheat.webp"/>
-            </q-avatar>
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Wheat</q-item-label>
-          </q-item-section>
-        </q-item>
-
-        <q-item clickable v-close-popup @click="wool">
-          <q-item-section avatar>
-            <q-avatar>
-              <img src="~assets/tiles/wool.webp"/>
-            </q-avatar>
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Wool</q-item-label>
-          </q-item-section>
-        </q-item>
-
       </q-list>
     </q-btn-dropdown>
-
-  </div>
+    <q-tooltip :disable="$q.platform.is.mobile">
+      {{tile.x+'/'+tile.y+": "+ tile.typeId}}
+    </q-tooltip>
+   </div>
 
 </template>
 
 <script>
-import {ref} from "vue";
+import {inject, ref} from "vue";
 
 export default {
-  setup () {
+  props:{
+    tile: Object,
+    typeValue: String
+  },
+  setup (props) {
+    var types = ["barren", "clay", "desert", "fish", "forest", "grass", "ice", "iron", "mountain", "salt", "stone", "water", "wheat", "wool"];
+    const store = inject('store');
+
+    const isViewRadiusBorder = function() {
+      var borders = [];
+      //leftBorder
+      if( props.tile.x == (this.store.state.centerX-this.store.state.radiusX+1) &&
+          ((this.store.state.centerY-this.store.state.radiusY+1) <= props.tile.y && props.tile.y <= (this.store.state.centerY+this.store.state.radiusY-1))){
+            borders.push("viewBorderLeft");
+      }
+      if( props.tile.x == (this.store.state.centerX+this.store.state.radiusX-1) &&
+          ((this.store.state.centerY-this.store.state.radiusY+1) <= props.tile.y && props.tile.y <= (this.store.state.centerY+this.store.state.radiusY-1))){
+            borders.push("viewBorderRight")
+      }
+      if( props.tile.y == (this.store.state.centerY+this.store.state.radiusY-1) &&
+          ((this.store.state.centerX-this.store.state.radiusX+1) <= props.tile.x && props.tile.x <= (this.store.state.centerX+this.store.state.radiusX-1))){
+            borders.push("viewBorderTop")
+      }
+      if( props.tile.y == (this.store.state.centerY-this.store.state.radiusY+1) &&
+          ((this.store.state.centerX-this.store.state.radiusX+1) <= props.tile.x && props.tile.x <= (this.store.state.centerX+this.store.state.radiusX-1))){
+            borders.push("viewBorderBottom")
+      }
+
+      return borders;
+    }
+
     return {
+      isViewRadiusBorder,
+      store,
+      types,
       menuState: ref(false),
       label: 'grass',
       color: 'green-8',
@@ -189,110 +79,19 @@ export default {
       backgroundImage: 'background-image: url(./tiles/grass_tile.webp);'
     }
   },
+  emits: ['update:typeValue'],
+  updated(){
+
+  },
   methods: {
-    barren () {
-      console.log('Clicked on Barren');
-      this.label = 'barren';
-      this.color = 'brown-6';
-      this.textcolor = 'white';
-      this.backgroundImage = 'background-image: url(./tiles/barren_tile.webp);'
-    },
-    clay () {
-      console.log('Clicked on Clay');
-      this.label = 'clay';
-      this.color = 'orange-6';
-      this.textcolor = 'white';
-      this.backgroundImage = 'background-image: url(./tiles/clay_tile.webp);'
-    },
-    desert () {
-      console.log('Clicked on Desert');
-      this.label = 'desert';
-      this.color = 'yellow-4';
-      this.textcolor = 'black';
-      this.backgroundImage = 'background-image: url(./tiles/desert_tile.webp);'
-    },
-    fish () {
-      console.log('Clicked on Fish');
-      this.label = 'fish';
-      this.color = 'amber-12';
-      this.textcolor = 'black';
-      this.backgroundImage = 'background-image: url(./tiles/fish_tile.webp);'
-    },
-    forest () {
-      console.log('Clicked on Forest');
-      this.label = 'forest';
-      this.color = 'green-10';
-      this.textcolor = 'white';
-      this.backgroundImage = 'background-image: url(./tiles/forest_tile.webp);'
-    },
-    grass () {
-      console.log('Clicked on Grass');
-      this.label = 'grass';
-      this.color = 'green-8';
-      this.textcolor = 'white';
-      this.backgroundImage = 'background-image: url(./tiles/grass_tile.webp);'
-    },
-    ice () {
-      console.log('Clicked on Ice');
-      this.label = 'ice';
-      this.color = 'cyan-2';
-      this.textcolor = 'black';
-      this.backgroundImage = 'background-image: url(./tiles/ice_tile.webp);'
-    },
-    iron () {
-      console.log('Clicked on Iron');
-      this.label = 'iron';
-      this.color = 'blue-grey-5';
-      this.textcolor = 'white';
-      this.backgroundImage = 'background-image: url(./tiles/iron_tile.webp);'
-    },
-    mountain () {
-      console.log('Clicked on Mountain');
-      this.label = 'mountain';
-      this.color = 'grey-13';
-      this.textcolor = 'white';
-      this.backgroundImage = 'background-image: url(./tiles/mountain_tile.webp);'
-    },
-    salt () {
-      console.log('Clicked on Salt');
-      this.label = 'salt';
-      this.color = 'grey-4';
-      this.textcolor = 'black';
-      this.backgroundImage = 'background-image: url(./tiles/salt_tile.webp);'
-    },
-    stone () {
-      console.log('Clicked on Stone');
-      this.label = 'stone';
-      this.color = 'blue-grey-13';
-      this.textcolor = 'white';
-      this.backgroundImage = 'background-image: url(./tiles/stone_tile.webp);'
-    },
-    water () {
-      console.log('Clicked on Water');
-      this.label = 'water';
-      this.color = 'blue-10';
-      this.textcolor = 'white';
-      this.backgroundImage = 'background-image: url(./tiles/water_tile.webp);'
-    },
-    wheat () {
-      console.log('Clicked on Wheat');
-      this.label = 'wheat';
-      this.color = 'amber-12';
-      this.textcolor = 'black';
-      this.backgroundImage = 'background-image: url(./tiles/wheat_tile.webp);'
-    },
-    wool () {
-      console.log('Clicked on Wool');
-      this.label = 'wool';
-      this.color = 'brown-13';
-      this.textcolor = 'black';
-      this.backgroundImage = 'background-image: url(./tiles/wool_tile.webp);'
+    setType(type){
+      this.$emit('update:typeValue', type);
     },
   }
 }
 </script>
 
-<style>
+<style lang="scss">
 .buttonshift {
   z-index: 1001;
   margin-top: 15px;
@@ -316,6 +115,8 @@ button.without-icon i {
   border-left: solid 3px #333333;
   border-right: solid 3px #333333;
 }
+
+
 
 .hexTop,
 .hexBottom {
@@ -376,5 +177,186 @@ button.without-icon i {
   height: 54.2709px;
   z-index: 2;
   background: inherit;
+}
+
+.viewBorderLeft {
+  z-index: 1001;
+  border-left: dashed 3px blue;
+}
+
+.viewBorderRight {
+  z-index: 1001;
+  border-right: dashed 3px blue;
+}
+
+.viewBorderTop {
+  z-index: 1001;
+  .hexTop {
+    border-top: dashed 3px blue;
+    border-right: dashed 3px blue;
+  }
+}
+.viewBorderBottom {
+  z-index: 1001;
+  .hexBottom {
+    border-bottom: dashed 3px blue;
+    border-left: dashed 3px blue;
+  }
+}
+
+.notShifted{
+  .viewBorderLeft{
+    .hexTop{
+      border-top: dashed 3px blue;
+    }
+    .hexBottom{
+      border-left: dashed 3px blue;
+    }
+    .centerTop {
+      border-top: solid 4.2426px red;
+      border-right: solid 4.2426px red;
+    }
+
+    .centerBottom {
+      border-bottom: solid 4.2426px red;
+      border-left: solid 4.2426px red;
+    }
+  }
+}
+.shifted{
+  .viewBorderRight{
+    .hexTop{
+      border-right: dashed 3px blue;
+    }
+    .hexBottom{
+      border-bottom: dashed 3px blue;
+    }
+    .centerTop {
+      border-top: solid 4.2426px red;
+      border-right: solid 4.2426px red;
+    }
+
+    .centerBottom {
+      border-bottom: solid 4.2426px red;
+      border-left: solid 4.2426px red;
+    }
+  }
+}
+
+.barren {
+  background-image: url("../assets/tiles/barren_tile.webp");
+  button {
+    background-color: $brown-6;
+    color: white;
+  }
+}
+
+.clay {
+  background-image: url("../assets/tiles/clay_tile.webp");
+  button {
+    background-color: $orange-6;
+    color: white;
+  }
+}
+
+.desert {
+  background-image: url("../assets/tiles/desert_tile.webp");
+  button {
+    background-color: $yellow-4;
+    color: black;
+  }
+}
+.fish {
+  background-image: url("../assets/tiles/fish_tile.webp");
+  button {
+    background-color: $amber-12;
+    color: black;
+  }
+}
+.forest {
+  background-image: url("../assets/tiles/forest_tile.webp");
+  button {
+    background-color: $green-10;
+    color: white;
+  }
+}
+.grass {
+  background-image: url("../assets/tiles/grass_tile.webp");
+  button {
+    background-color: $green-8;
+    color: white;
+  }
+}
+.ice {
+  background-image: url("../assets/tiles/ice_tile.webp");
+  button {
+    background-color: $cyan-2;
+    color: black;
+  }
+}
+.iron {
+  background-image: url("../assets/tiles/iron_tile.webp");
+  button {
+    background-color: $blue-grey-5;
+    color: white;
+  }
+}
+.mountain {
+  background-image: url("../assets/tiles/mountain_tile.webp");
+  button {
+    background-color: $grey-13;
+    color: white;
+  }
+}
+.salt {
+  background-image: url("../assets/tiles/salt_tile.webp");
+  button {
+    background-color: $grey-4;
+    color: black;
+  }
+}
+.stone {
+  background-image: url("../assets/tiles/stone_tile.webp");
+  button {
+    background-color: $blue-grey-13;
+    color: white;
+  }
+}
+.water {
+  background-image: url("../assets/tiles/water_tile.webp");
+  button {
+    background-color: $blue-10;
+    color: white;
+  }
+}
+.wheat {
+  background-image: url("../assets/tiles/wheat_tile.webp");
+  button {
+    background-color: $amber-12;
+    color: black;
+  }
+}
+.wool {
+  background-image: url("../assets/tiles/wool_tile.webp");
+  button {
+    background-color: $brown-13;
+    color: black;
+  }
+}
+
+.centerTop {
+  border-top: solid 4.2426px red;
+  border-right: solid 4.2426px red;
+}
+
+.centerBottom {
+  border-bottom: solid 4.2426px red;
+  border-left: solid 4.2426px red;
+}
+
+.centerTile {
+  z-index: 1002;
+  border-left: solid 3px red;
+  border-right: solid 3px red;
 }
 </style>

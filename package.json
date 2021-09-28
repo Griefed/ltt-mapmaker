@@ -1,26 +1,27 @@
 {
   "name": "ltt-mapmaker",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Visual Map Maker for Let Them Trade",
-  "productName": "Let Them Trade Map Maker",
+  "productName": "Let Them Trade Map-Maker",
   "author": "Griefed <griefed@griefed.de>",
   "private": true,
   "scripts": {
     "start": "quasar dev",
     "electron": "quasar dev -m electron",
     "build": "quasar build",
+    "ebuild": "quasar build -m electron",
     "lint": "eslint --ext .js,.vue,.ts ./",
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
-    "@quasar/extras": "^1.11.0",
-    "core-js": "^3.18.0",
+    "@quasar/extras": "^1.11.1",
+    "core-js": "^3.18.1",
     "quasar": "^2.1.0"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.15.7",
     "@quasar/app": "^3.1.0",
-    "electron": "^14.0.1",
+    "electron": "^15.0.0",
     "electron-packager": "^15.4.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",

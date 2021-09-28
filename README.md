@@ -39,7 +39,6 @@ download it which will contain your configuration as a Let Them Trade map.
 - Add infobutton/box telling users how to load their maps in-game (so far only relevant for playtests)
 `map fromfile` - Opens a "Open file"-dialog
 - Figure out how to generate random maps (very low on the priority list)
-- Allow users to set the size of the map
 
 # Deploying lttmm
 

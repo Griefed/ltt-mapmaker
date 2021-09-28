@@ -5,8 +5,9 @@ RUN \
     git \
     npm && \
   git clone \
-    https://github.com/Griefed/ltt-mapmaker.git \
-      /tmp/lttmm && \
+    -b develop \
+      https://github.com/Griefed/ltt-mapmaker.git \
+        /tmp/lttmm && \
   cd /tmp/lttmm && \
   npm install -g npm@7.23.0 && \
   npm install -g @quasar/cli && \
