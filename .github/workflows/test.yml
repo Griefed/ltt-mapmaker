@@ -55,8 +55,10 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: We are running on
-        run: echo ${{ matrix.os }} && echo ${{ github.runner_os }}
+      - name: A.We are running on
+        run: |
+        echo matrix.os is ${{ matrix.os }}
+        echo github.runner_os is ${{ github.runner_os }}
 
       # SETUP NODE ENVIRONMENT
       - name: Setup Node.js environment
