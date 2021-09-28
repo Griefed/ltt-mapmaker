@@ -47,7 +47,7 @@
                     <q-icon size="30px" color="secondary" name="mdi-arrow-expand-horizontal" />
                   </q-item-section>
                   <q-item-section>
-                    <q-slider v-model="store.state.radiusX" :min="1" :max="Math.floor(store.state.mapSizeX/2)" label color="secondary" :step="1" label-always/>
+                    <q-slider v-model="store.state.radiusX" :min="1" :max="getViewRadiusMax(store.state.mapSizeX)" label color="secondary" :step="1" label-always/>
                   </q-item-section>
                 </q-item>
 
@@ -56,7 +56,7 @@
                     <q-icon size="30px" color="secondary" name="mdi-arrow-expand-vertical" />
                   </q-item-section>
                   <q-item-section>
-                    <q-slider v-model="store.state.radiusY" :min="1" :max="Math.floor(store.state.mapSizeY/2)" label color="secondary" :step="1" label-always/>
+                    <q-slider v-model="store.state.radiusY" :min="1" :max="getViewRadiusMax(store.state.mapSizeY)" label color="secondary" :step="1" label-always/>
                   </q-item-section>
                 </q-item>
 
@@ -274,6 +274,13 @@ export default defineComponent({
     }
   },
   methods: {
+    getViewRadiusMax(mapSize){
+      if(mapSize%2){
+        return Math.floor(mapSize/2)+1
+      }else{
+        return (mapSize/2)+2
+      }
+    },
     newMap(){
       this.confirmMapNew = false;
       this.store.methods.reset();
