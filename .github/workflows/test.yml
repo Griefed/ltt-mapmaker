@@ -72,4 +72,4 @@ jobs:
           github_token: ${{ secrets.github_token }}
 
       - name: List files
-        run: ls dist
+        run: ls dist/electron
