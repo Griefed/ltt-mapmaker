@@ -22,11 +22,11 @@
 
 # Screenshots
 
-[![screenshot](https://i.griefed.de/images/2021/09/18/image265345a28f3ca2d6.png)](https://store.steampowered.com/app/1313290/Let_Them_Trade/)
+[![screenshot](https://i.griefed.de/images/2021/09/28/image.png)](https://store.steampowered.com/app/1313290/Let_Them_Trade/)
 
-# Let Them Trade Map Maker
+# Let Them Trade Map-Maker
 
-ltt-mapmaker is a visual map maker for the game [Let Them Trade](https://store.steampowered.com/app/1313290/Let_Them_Trade/) by [Spaceflower](https://spaceflower.de/), a german indie-gamestudio.
+ltt-mapmaker is a visual map-maker for the game [Let Them Trade](https://store.steampowered.com/app/1313290/Let_Them_Trade/) by [Spaceflower](https://spaceflower.de/), a german indie-gamestudio.
 
 # Using lttmm
 
@@ -37,15 +37,24 @@ download it which will contain your configuration as a Let Them Trade map.
 # TODOs
 
 - Add infobutton/box telling users how to load their maps in-game (so far only relevant for playtests)
-`map fromfile` - Opens a "Open file"-dialog
-- Figure out how to generate random maps (very low on the priority list)
+`map fromfile` - Opens an "Open file"-dialog
 
-# Deploying lttmm
+# Using/Deploying lttmm
+
+## Deploying lttmm as a website
 
 If you wish to manually deploy lttmm, download the latest `lttmm-x.x.x.tar.gz` or `lttmm-x.x.x.zip` from the
 [Releases](https://github.com/Griefed/ltt-mapmaker/releases/latest) page and use these files to deploy it. I expect you
 to know how to deploy these files with NGINX or similar software, as providing a complete guide on how to do so would
 blow up the README.
+
+## Using the Electron App
+
+If you wish to use Let Them Trade Map-Maker as an app, download the archive fitting to your OS from the
+[Releases](https://github.com/Griefed/ltt-mapmaker/releases/latest) page. Currently available are macOS, Linux Ubuntu and Windows builds.
+
+* When using the Linux build, you may need to `chmod +x` the binary first.
+* When using macOS, you may need to adjust your Security preferences first and trust the app.
 
 ## Docker
 
@@ -95,60 +104,14 @@ If you wish to make changes, simply clone this repository, install the dependenc
 start the app in development mode (hot-code reloading, error reporting, etc.) with `quasar dev` and make your changes,
 lint the files `npm run lint`, build the app for production with `quasar build`.
 
-## Expanding tiles
-
-Should Let Them Trade ever introduce more tiles to the game, a couple of things need to be done in order to expand lttmm
-with those new tiles. Edit [Tile.vue](https://github.com/Griefed/ltt-mapmaker/blob/c614876316d5216690c3a2dd5ae2d05974965f16/src/components/Tile.vue):
-
-Here's what the item for the barren-tile looks like. If you wish to add a new item, copy'n'paste this and change
-
-  - change `barren` in `@click="barren"` to the name of the new tile
-  - create the icon for the new tile and change `barren` in `<img src="~assets/tiles/barren.webp"/>` to the name of the new tile
-      - images are of the `webp`-format and 55x55 pixels in size.
-      - images for item-selection go into `src/assets/tiles`
-  - change `Barren` in `<q-item-label>Barren</q-item-label>` to the name of the new tile
-
-```vue
-        <q-item clickable v-close-popup @click="barren">
-          <q-item-section avatar>
-            <q-avatar>
-              <img src="~assets/tiles/barren.webp"/>
-            </q-avatar>
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Barren</q-item-label>
-          </q-item-section>
-        </q-item>
-```
-
-After that is done, you need to add a new method for said new tile. Copy'n'paste this from the `methods: {`-section and change
-
-  - change `barren` in the name of the method `barren () {` to the name of the new tile
-  - change `Barren` in `console.log('Clicked on Barren');` to the name of the new tile
-  - change `barren` in `this.label = 'barren';` to the name of the new tile
-  - change `brown-6` in `this.color = 'brown-6';` to a suitable [Quasar colour](https://quasar.dev/style/color-palette#color-list) of the new tile. This is the button colour.
-  - change `white` in `this.textcolor = 'white';` to `black` if `this.color` of the new tile is bright, improves readability
-  - change `/barren_tile.webp` in `this.backgroundImage = 'background-image: url(/tiles/barren_tile.webp);'` to a suitable image of the new tile
-      - images are of the `webp`-format and usually ~50x57 pixels in size
-      - images for tiles to into `public/tiles`
-
-```js
-    barren () {
-  console.log('Clicked on Barren');
-  this.label = 'barren';
-  this.color = 'brown-6';
-  this.textcolor = 'white';
-  this.backgroundImage = 'background-image: url(/tiles/barren_tile.webp);'
-},
-```
-
-Congratulations! You've added a new tile to lttmm!
-
 ## Expanding/changing random map names
 
-If you wish to expand/change the random name generator, edit `const reticulating` and/or `getMapName()` in the [MainLayout.vue](https://github.com/Griefed/ltt-mapmaker/blob/c614876316d5216690c3a2dd5ae2d05974965f16/src/layouts/MainLayout.vue).
+If you wish to expand/change the random name generator, edit `const reticulating` and/or `getMapName()` in the [index.js](https://github.com/Griefed/ltt-mapmaker/blob/master/src/store/index.js).
 
 # Other things to note
 
-Hexagon-shaped tiles would not have been possible without the help of this awesome tool available at [csshexagon on github.io](https://brenna.github.io/csshexagon/)
+* Hexagon-shaped tiles would not have been possible without the help of this awesome tool available at [csshexagon on GitHub.io](https://brenna.github.io/csshexagon/)
 by the awesome [brenna](https://github.com/brenna).
+* Random maps realized with the help of:
+    * [noise-map](https://github.com/ogus/noise-map) by [boo1ean](https://github.com/boo1ean)
+    * [mersenne-twister](https://github.com/boo1ean/mersenne-twister) by [ogus](https://github.com/ogus)
