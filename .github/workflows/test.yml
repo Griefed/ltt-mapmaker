@@ -55,6 +55,9 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: We are running on
+        run: echo ${{ matrix.os }} ${{ github.runner_os }}
+
       # SETUP NODE ENVIRONMENT
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.4.0
