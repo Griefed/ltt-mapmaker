@@ -45,5 +45,22 @@
     "node": "^16.9.1",
     "npm": "^7.23.0",
     "yarn": "^1.22.11"
-  }
+  },
+  "contributors": [
+    {
+      "name": "Griefed",
+      "email": "griefed@griefed.de",
+      "url": "https://github.com/Griefed"
+    },
+    {
+      "name": "Trungel",
+      "email": "29035983+Trungel@users.noreply.github.com",
+      "url": "https://github.com/Trungel"
+    },
+    {
+      "name": "dependabot[bot]",
+      "email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "url": "https://github.com/apps/dependabot"
+    }
+  ]
 }
