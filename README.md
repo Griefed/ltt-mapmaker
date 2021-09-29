@@ -108,6 +108,23 @@ lint the files `npm run lint`, build the app for production with `quasar build`.
 
 If you wish to expand/change the random name generator, edit `const reticulating` and/or `getMapName()` in the [index.js](https://github.com/Griefed/ltt-mapmaker/blob/master/src/store/index.js).
 
+# Awesome People!
+
+## Contributors & Collaborators
+
+<!-- readme: collaborators,contributors -start -->
+<!-- readme: collaborators,contributors -end -->
+
+## Sponsors
+
+<!-- readme: sponsors -start -->
+<!-- readme: sponsors -end -->
+
+## Bots
+
+<!-- readme: bots -start -->
+<!-- readme: bots -end -->
+
 # Other things to note
 
 * Hexagon-shaped tiles would not have been possible without the help of this awesome tool available at [csshexagon on GitHub.io](https://brenna.github.io/csshexagon/)
