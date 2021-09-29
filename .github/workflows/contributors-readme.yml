@@ -1,0 +1,21 @@
+name: Contributors
+
+on:
+  schedule:
+    - cron: '0 1 * * 0'
+  workflow_dispatch:
+
+jobs:
+  readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - uses: akhilmhdh/contributors-readme-action@v2.2
+        with:
+          collaborators: all
+          commit_message: "chore: Update Collaborators, Contributors etc. in README"
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
