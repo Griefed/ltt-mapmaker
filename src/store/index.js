@@ -9,12 +9,12 @@ const state = reactive({
   minX: 0,
   maxY: 0,
   minY: 0,
-  mapSizeX: 1,
-  mapSizeY: 1,
+  mapSizeX: 50,
+  mapSizeY: 30,
   centerX: 0,
   centerY: 0,
-  radiusY: 1,
-  radiusX: 1,
+  radiusY: 5,
+  radiusX: 5,
   mapID: 'e1-m.lttmm',
   mapName: '',
   lttMap: null,
@@ -56,12 +56,12 @@ const methods = {
    * @author Trungel
    */
   reset() {
-    state.mapSizeX = 1;
-    state.mapSizeY = 1;
+    state.mapSizeX = 50;
+    state.mapSizeY = 30;
     state.centerX = 0;
     state.centerY = 0;
-    state.radiusY = 1;
-    state.radiusX = 1;
+    state.radiusY = 5;
+    state.radiusX = 5;
     state.mapID = 'e1-m.lttmm';
     state.mapName = '';
     state.lttMap = null;
