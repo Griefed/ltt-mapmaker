@@ -57,8 +57,9 @@
         <q-card-section>
           <div class="column" style="width: 600px;">
             <q-input color="black" filled v-model="store.state.seed" label="Seed" type="number" maxlength="15">
-              <template v-if="store.state.seed" v-slot:append>
-                <q-icon name="cancel" @click.stop="seed = null" class="cursor-pointer" />
+              <template v-slot:append>
+                <q-icon name="cancel" @click.stop="store.state.seed = null" class="cursor-pointer" />
+                <q-icon name="refresh" @click.stop="store.state.seed = store.seedGenerator.random_int31()" class="cursor-pointer" />
               </template>
             </q-input>
             <q-btn class="q-mr-xs" color="secondary" label="Generate Random Map" @click='createRandomMap()'>

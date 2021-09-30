@@ -264,5 +264,6 @@ const methods = {
 
 export default {
   state,
-  methods
+  methods,
+  seedGenerator
 };
