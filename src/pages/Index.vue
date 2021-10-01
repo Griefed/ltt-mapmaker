@@ -88,6 +88,25 @@
           </div>
         </q-card-section>
 
+        <q-card-section>
+          <div class="column">
+            <div class="text-h6 q-mb-md text-black">Load Map from File</div>
+            <q-file
+              v-model="file"
+              label="Pick one file"
+              filled
+              accept=".json"
+              style="max-width: 300px"
+            />
+            <q-btn class="q-mr-xs" color="secondary" label="Load Map From Filedata" @click='loadMapFile()'>
+              <q-tooltip :disable="$q.platform.is.mobile">
+                Load Map From Data
+              </q-tooltip>
+            </q-btn>
+          </div>
+        </q-card-section>
+
+
       </q-card>
     </div>
   </span>
@@ -97,16 +116,49 @@
 <script>
 import { defineComponent, inject, ref } from 'vue';
 import Tile from "../components/Tile.vue";
+import { useQuasar } from 'quasar';
 
 export default defineComponent({
     setup() {
 
       const store = inject('store');
 
+      const $q = useQuasar()
+
       var mapString = ref('');
 
+      const parseJsonFromString = function(mapString) {
+        let mapObject;
+        try {
+          mapObject = JSON.parse(mapString);
+        } catch (e) {
+            if (e instanceof SyntaxError) {
+              $q.notify({
+                type: 'negative',
+                message: 'Input is not a valid JSON'
+              })
+          } else {
+              $q.notify({
+                type: 'negative',
+                message: 'An unknown error occured'
+              })
+              console.log(e);
+          }
+          return;
+        }
+        this.file = null;
+        this.mapString = null;
+        store.methods.loadMap(mapObject);
+      }
+
       const loadMapData = function() {
-        store.methods.loadMap(JSON.parse(mapString.value));
+        this.parseJsonFromString(mapString.value);
+      };
+
+      const loadMapFile = function() {
+        const reader = new FileReader();
+        reader.onload = e => this.parseJsonFromString(e.target.result);
+        reader.readAsText(this.file);
       };
 
       const createMap = function() {
@@ -118,11 +170,14 @@ export default defineComponent({
       };
 
       return {
+        parseJsonFromString,
+        file: ref(null),
         mapString,
         store,
         createMap,
         createRandomMap,
-        loadMapData
+        loadMapData,
+        loadMapFile
       }
     },
 
