@@ -90,9 +90,13 @@ jobs:
         uses: ihiroky/archive-action@v1
         with:
           root_dir: lttmm-${{ matrix.os }}
+          base_dir: "lttmm-${{ matrix.os }}"
           file_path: lttmm-app-${{ matrix.os }}.zip
+          verbose: true
       - name: Create tar.gz
         uses: ihiroky/archive-action@v1
         with:
           root_dir: lttmm-${{ matrix.os }}
+          base_dir: "lttmm-${{ matrix.os }}"
           file_path: lttmm-app${{ matrix.os }}.tar.gz
+          verbose: true
