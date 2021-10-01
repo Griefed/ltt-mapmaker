@@ -100,3 +100,6 @@ jobs:
           base_dir: "lttmm-${{ matrix.os }}"
           file_path: lttmm-app${{ matrix.os }}.tar.gz
           verbose: true
+
+      - name: List files
+        run: ls
