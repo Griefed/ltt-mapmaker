@@ -192,7 +192,7 @@ export default defineComponent({
       const onRejected = function(rejectedEntries) {
         $q.notify({
           type: 'negative',
-          message: `${rejectedEntries[0].file.name} file(s) did not pass validation constraints`
+          message: `${rejectedEntries[0].file.name}-file did not pass validation constraints. The file is either too big or not a valid JSON.`
         });
       };
 
