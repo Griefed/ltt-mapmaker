@@ -146,6 +146,20 @@
 
         <q-separator inset spaced />
 
+        <q-btn
+          :icon="$q.dark.isActive ? 'nights_stay' : 'wb_sunny'"
+          class="q-mr-xs"
+          dense
+          color="secondary"
+          label="Toggle Dark Mode"
+          @click="$q.dark.toggle()">
+          <q-tooltip :disable="$q.platform.is.mobile">
+            {{ $q.dark.isActive ? 'Deactivate Dark Mode' : 'Activate Dark Mode' }}
+          </q-tooltip>
+        </q-btn>
+
+        <q-separator inset spaced />
+
         <q-btn @click="alert = true" color="secondary" dense label="About LTTMM">
           <q-tooltip :disable="$q.platform.is.mobile">
             Open a little About! 🙂
@@ -163,7 +177,7 @@
 
             <q-card-section align="center">
               <q-btn style="margin-right: 15px" type="a" target="_blank" href="https://github.com/Griefed/ltt-mapmaker">
-                <q-icon size="50px" color="dark" name="mdi-github"></q-icon>
+                <q-icon size="50px" :color="$q.dark.isActive ? 'white' : 'dark'" name="mdi-github"></q-icon>
                 <q-tooltip :disable="$q.platform.is.mobile">
                   LTTMM on GitHub!
                 </q-tooltip>
