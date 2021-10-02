@@ -72,7 +72,7 @@ jobs:
       - name: Create NGINX Archive tar.gz
         run: |
           echo "**** Creating archive of quasar build ****"
-          tar -czf lttmm-NGINX-${{ steps.tag.outputs.tag }}.tar.gz dist/spa
+          tar -cvzf lttmm-NGINX-${{ steps.tag.outputs.tag }}.tar.gz dist/spa
       - name: Create NGINX Archive zip
         uses: papeloto/action-zip@v1
         with:
@@ -182,11 +182,10 @@ jobs:
         with:
           root_dir: lttmm-${{ matrix.os }}
           file_path: lttmm-app-${{ matrix.os }}-${{ needs.release.outputs.newtag }}.zip
+          verbose: true
       - name: Create tar.gz
-        uses: ihiroky/archive-action@v1
-        with:
-          root_dir: lttmm-${{ matrix.os }}
-          file_path: lttmm-app-${{ matrix.os }}-${{ needs.release.outputs.newtag }}.tar.gz
+        run: |
+          tar -cvzf lttmm-app-${{ matrix.os }}-${{ needs.release.outputs.newtag }}.tar.gz lttmm-${{ matrix.os }}
 
       # Upload App Assets
       - name: Upload App Archive zip
