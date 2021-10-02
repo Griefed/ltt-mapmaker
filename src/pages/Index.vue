@@ -26,7 +26,7 @@
       <q-card>
         <q-card-section>
           <div class="column" style="width: 600px;">
-              <div class="text-h6 q-mb-md text-black">New Map Dimensions</div>
+              <div class="text-h6 q-mb-md">New Map Dimensions</div>
               <q-item>
                 <q-item-section avatar>
                   <q-icon size="30px" color="secondary" name="mdi-arrow-expand-horizontal" />
@@ -81,7 +81,7 @@
 
         <q-card-section>
           <div class="column">
-            <div class="text-h6 q-mb-md text-black">Load Existing Map</div>
+            <div class="text-h6 q-mb-md">Load Existing Map</div>
             <q-input
               v-model="mapString"
               filled
@@ -103,7 +103,7 @@
 
         <q-card-section>
           <div class="column">
-            <div class="text-h6 q-mb-md text-black">Load Map from File</div>
+            <div class="text-h6 q-mb-md">Load Map from File</div>
             <q-file
               v-model="file"
               label="Pick one file"
