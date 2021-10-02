@@ -153,22 +153,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Check for macOS
-        if: ${{ matrix.os == 'macos-latest' }}
-        run: |
-          echo "os=MAC" >> $GITHUB_ENV
-
-      - name: Check for Ubuntu
-        if: ${{ matrix.os == 'ubuntu-latest' }}
-        run: |
-          echo "os=UBUNTU" >> $GITHUB_ENV
-
-      - name: Check for Windows
-        if: ${{ matrix.os == 'windows-latest' }}
-        run: |
-          echo "os=WINDOWS" >> $GITHUB_ENV
-
-
       # SETUP NODE ENVIRONMENT
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.4.1
@@ -190,19 +174,19 @@ jobs:
 
       - name: Rename folders
         run: |
-          mv dist/electron/Let* lttmm-${{ env.os }}
+          mv dist/electron/Let* lttmm-${{ matrix.os }}
 
       # Electron Archives
       - name: Create zip
         uses: ihiroky/archive-action@v1
         with:
-          root_dir: lttmm-${{ env.os }}
-          file_path: lttmm-app-${{ env.os }}-${{ needs.release.outputs.newtag }}.zip
+          root_dir: lttmm-${{ matrix.os }}
+          file_path: lttmm-app-${{ matrix.os }}-${{ needs.release.outputs.newtag }}.zip
       - name: Create tar.gz
         uses: ihiroky/archive-action@v1
         with:
-          root_dir: lttmm-${{ env.os }}
-          file_path: lttmm-app-${{ env.os }}-${{ needs.release.outputs.newtag }}.tar.gz
+          root_dir: lttmm-${{ matrix.os }}
+          file_path: lttmm-app-${{ matrix.os }}-${{ needs.release.outputs.newtag }}.tar.gz
 
       # Upload App Assets
       - name: Upload App Archive zip
@@ -212,8 +196,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ needs.release.outputs.uploadurl }}
-          asset_path: ./lttmm-app-${{ env.os }}-${{ needs.release.outputs.newtag }}.zip
-          asset_name: lttmm-app-${{ env.os }}-${{ needs.release.outputs.newtag }}.zip
+          asset_path: ./lttmm-app-${{ matrix.os }}-${{ needs.release.outputs.newtag }}.zip
+          asset_name: lttmm-app-${{ matrix.os }}-${{ needs.release.outputs.newtag }}.zip
           asset_content_type: application/zip
       - name: Upload App Archive tar.gz
         id: upload-release-asset-archive-targz
@@ -222,6 +206,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ needs.release.outputs.uploadurl }}
-          asset_path: ./lttmm-app-${{ env.os }}-${{ needs.release.outputs.newtag }}.tar.gz
-          asset_name: lttmm-app-${{ env.os }}-${{ needs.release.outputs.newtag }}.tar.gz
+          asset_path: ./lttmm-app-${{ matrix.os }}-${{ needs.release.outputs.newtag }}.tar.gz
+          asset_name: lttmm-app-${{ matrix.os }}-${{ needs.release.outputs.newtag }}.tar.gz
           asset_content_type: application/gzip
