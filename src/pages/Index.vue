@@ -33,6 +33,9 @@
                 </q-item-section>
                 <q-item-section>
                   <q-slider v-model="store.state.mapSizeX" :min="1" :max="101" label color="secondary" :step="1" label-always/>
+                  <q-tooltip :disable="$q.platform.is.mobile">
+                      Size along the X-axis.
+                  </q-tooltip>
                 </q-item-section>
               </q-item>
 
@@ -42,6 +45,9 @@
                 </q-item-section>
                 <q-item-section>
                   <q-slider v-model="store.state.mapSizeY" :min="1" :max="101" label color="secondary" :step="1" label-always/>
+                  <q-tooltip :disable="$q.platform.is.mobile">
+                    Size along the Y-axis.
+                  </q-tooltip>
                 </q-item-section>
               </q-item>
 
@@ -61,6 +67,9 @@
                 <q-icon name="cancel" @click.stop="store.state.seed = null" class="cursor-pointer" />
                 <q-icon name="refresh" @click.stop="store.state.seed = store.seedGenerator.random_int31()" class="cursor-pointer" />
               </template>
+              <q-tooltip :disable="$q.platform.is.mobile">
+                Numbers only.
+              </q-tooltip>
             </q-input>
             <q-btn class="q-mr-xs" color="secondary" label="Generate Random Map" @click='createRandomMap()'>
                 <q-tooltip :disable="$q.platform.is.mobile">
@@ -79,7 +88,11 @@
               placeholder="Paste Map Data"
               type="textarea"
               input-class="pastCodeArea"
-            ></q-input>
+            >
+              <q-tooltip :disable="$q.platform.is.mobile">
+                Valid map-json only.
+              </q-tooltip>
+            </q-input>
             <q-btn class="q-mr-xs" color="secondary" label="Load Map From Filedata" @click='loadMapData()'>
               <q-tooltip :disable="$q.platform.is.mobile">
                 Load Map From Data
@@ -95,12 +108,19 @@
               v-model="file"
               label="Pick one file"
               filled
-              accept=".json"
-              style="max-width: 300px"
-            />
+              clearable
+              accept=".json, application/*"
+              max-file-size="800000"
+              style="max-width: 100%"
+              @rejected="onRejected"
+            >
+              <q-tooltip :disable="$q.platform.is.mobile">
+                Only one file of max 800Kb in size.
+              </q-tooltip>
+            </q-file>
             <q-btn class="q-mr-xs" color="secondary" label="Load Map From Filedata" @click='loadMapFile()'>
               <q-tooltip :disable="$q.platform.is.mobile">
-                Load Map From Data
+                Load Map From File
               </q-tooltip>
             </q-btn>
           </div>
@@ -169,6 +189,13 @@ export default defineComponent({
         store.methods.generateRandomMap();
       };
 
+      const onRejected = function(rejectedEntries) {
+        $q.notify({
+          type: 'negative',
+          message: `${rejectedEntries[0].file.name} file(s) did not pass validation constraints`
+        });
+      };
+
       return {
         parseJsonFromString,
         file: ref(null),
@@ -177,7 +204,8 @@ export default defineComponent({
         createMap,
         createRandomMap,
         loadMapData,
-        loadMapFile
+        loadMapFile,
+        onRejected
       }
     },
 
