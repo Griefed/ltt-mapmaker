@@ -295,13 +295,16 @@ export default defineComponent({
         return (mapSize/2)+2
       }
     },
+
     newMap(){
       this.confirmMapNew = false;
       this.store.methods.reset();
     },
+
     generateMap() {
       this.downloadMap(this.store.methods.getMapId() + ".json", JSON.stringify(this.store.methods.exportMap(), null, 2));
     },
+
     downloadMap(mapName, map) {
       var element = document.createElement('a');
       element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(map));

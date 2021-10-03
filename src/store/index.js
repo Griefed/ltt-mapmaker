@@ -77,10 +77,10 @@ const methods = {
     return{
       mapID: state.mapID,
       mapName: state.mapName,
-      initialViewRadiusX: state.centerX,
-      initialViewRadiusY: state.centerY,
-      initialVieCenterX: state.radiusX,
-      initialViewCenterY: state.radiusY,
+      initialViewRadiusX: state.radiusX,
+      initialViewRadiusY: state.radiusY,
+      initialViewCenterX: state.centerX,
+      initialViewCenterY: state.centerY,
       tileSet: state.lttMap.flat()}
   },
 
