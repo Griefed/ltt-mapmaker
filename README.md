@@ -116,17 +116,17 @@ If you wish to expand/change the random name generator, edit `const reticulating
 <table>
 <tr>
     <td align="center">
-        <a href="https://github.com/Griefed">
-            <img src="https://avatars.githubusercontent.com/u/44273438?v=4" width="100;" alt="Griefed"/>
-            <br />
-            <sub><b>Griefed</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/Trungel">
             <img src="https://avatars.githubusercontent.com/u/29035983?v=4" width="100;" alt="Trungel"/>
             <br />
             <sub><b>Trungel</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/Griefed">
+            <img src="https://avatars.githubusercontent.com/u/44273438?v=4" width="100;" alt="Griefed"/>
+            <br />
+            <sub><b>Griefed</b></sub>
         </a>
     </td></tr>
 </table>
@@ -139,7 +139,7 @@ If you wish to expand/change the random name generator, edit `const reticulating
 <tr>
     <td align="center">
         <a href="https://github.com/kreezxil">
-            <img src="https://avatars.githubusercontent.com/u/3880072?v=4" width="100;" alt="kreezxil"/>
+            <img src="https://avatars.githubusercontent.com/u/3880072?u=f320cce8b9bf44541e86499cdf40fcb6b7ff8667&v=4" width="100;" alt="kreezxil"/>
             <br />
             <sub><b>Kreezxil</b></sub>
         </a>
