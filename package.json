@@ -61,6 +61,11 @@
       "name": "dependabot[bot]",
       "email": "49699333+dependabot[bot]@users.noreply.github.com",
       "url": "https://github.com/apps/dependabot"
+    },
+    {
+      "name": "github-actions[bot]",
+      "email": "41898282+github-actions[bot]@users.noreply.github.com",
+      "url": "https://github.com/apps/github-actions"
     }
   ]
 }
