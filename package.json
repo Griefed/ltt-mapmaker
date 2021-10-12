@@ -18,16 +18,16 @@
     "core-js": "^3.18.2",
     "mersenne-twister": "^1.1.0",
     "noise-map": "^1.1.0",
-    "quasar": "^2.1.0"
+    "quasar": "^2.1.2"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.15.8",
     "@quasar/app": "^3.1.3",
     "electron": "^15.1.2",
     "electron-packager": "^15.4.0",
-    "eslint": "^7.32.0",
+    "eslint": "7.32.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-vue": "^7.18.0",
+    "eslint-plugin-vue": "^7.19.1",
     "eslint-webpack-plugin": "^3.0.1"
   },
   "browserslist": [
