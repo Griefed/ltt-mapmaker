@@ -13,7 +13,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: akhilmhdh/contributors-readme-action@v2.2
+      - uses: akhilmhdh/contributors-readme-action@v2.3
         with:
           collaborators: all
           commit_message: "chore: Update Collaborators, Contributors etc. in README"
