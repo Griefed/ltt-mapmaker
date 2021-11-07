@@ -1,10 +1,18 @@
 {
   "name": "ltt-mapmaker",
-  "version": "2.3.3",
+  "version": "2.3.4",
   "description": "Visual Map Maker for Let Them Trade",
   "productName": "Let Them Trade Map-Maker",
   "author": "Griefed <griefed@griefed.de>",
   "private": true,
+  "bugs": {
+    "url": "https://github.com/Griefed/ltt-mapmaker/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Griefed/ltt-mapmaker.git"
+  },
+  "license": "MITLicense",
   "scripts": {
     "start": "quasar dev",
     "electron": "quasar dev -m electron",
@@ -14,21 +22,21 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
-    "@quasar/extras": "^1.11.3",
-    "core-js": "^3.19.0",
+    "@quasar/extras": "^1.11.4",
+    "core-js": "^3.19.1",
     "mersenne-twister": "^1.1.0",
     "noise-map": "^1.1.0",
-    "quasar": "^2.2.1"
+    "quasar": "^2.3.0"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.15.8",
-    "@quasar/app": "^3.1.7",
+    "@babel/eslint-parser": "^7.16.0",
+    "@quasar/app": "^3.1.10",
     "electron": "^15.3.0",
     "electron-packager": "^15.4.0",
-    "eslint": "7.32.0",
+    "eslint": "8.2.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-vue": "^7.20.0",
-    "eslint-webpack-plugin": "^3.0.1"
+    "eslint-plugin-vue": "^8.0.3",
+    "eslint-webpack-plugin": "^3.1.0"
   },
   "browserslist": [
     "last 10 Chrome versions",
