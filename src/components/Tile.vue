@@ -1,5 +1,4 @@
 <template>
-
    <div id="parent" class="hexagon"
     :class="[tile.typeId,isViewRadiusBorder(), ((tile.x == store.state.centerX) && (tile.y == store.state.centerY))?'centerTile':'']">
     <div class="hexTop" :class="((tile.x == store.state.centerX) && (tile.y == store.state.centerY))?'centerTop':''"></div>
@@ -30,13 +29,13 @@
       {{tile.x+'/'+tile.y+": "+ tile.typeId}}
     </q-tooltip>
    </div>
-
 </template>
 
 <script>
 import {inject, ref} from "vue";
 
 export default {
+  name: 'LttTile',
   props:{
     tile: Object,
     typeValue: String

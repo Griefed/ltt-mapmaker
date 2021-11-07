@@ -1,5 +1,4 @@
 <template>
-
   <span v-if="store.state.lttMap">
     <span v-for="(xRow, index) in store.state.lttMap" :key="index">
       <div class="row no-wrap"
@@ -130,7 +129,6 @@
       </q-card>
     </div>
   </span>
-
 </template>
 
 <script>
@@ -139,6 +137,7 @@ import Tile from "../components/Tile.vue";
 import { useQuasar } from 'quasar';
 
 export default defineComponent({
+  name: 'LttIndex',
     setup() {
 
       const store = inject('store');
