@@ -146,7 +146,7 @@ If you wish to expand/change the random name generator, edit `const reticulating
     </td>
     <td align="center">
         <a href="https://github.com/Seniorendi">
-            <img src="https://avatars.githubusercontent.com/u/67484093?v=4" width="100;" alt="Seniorendi"/>
+            <img src="https://avatars.githubusercontent.com/u/67484093?u=8c438408b6a235d72e886dd060272b02ca364561&v=4" width="100;" alt="Seniorendi"/>
             <br />
             <sub><b>Sr_endi</b></sub>
         </a>
