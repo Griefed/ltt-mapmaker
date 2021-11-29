@@ -13,7 +13,7 @@ RUN \
   npm install && \
   quasar build
 
-FROM lsiobase/nginx:3.14
+FROM lsiobase/nginx:3.15-version-7641cf5a
 
 LABEL maintainer="Griefed <griefed@griefed.de>"
 
