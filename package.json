@@ -23,10 +23,10 @@
   },
   "dependencies": {
     "@quasar/extras": "^1.12.2",
-    "core-js": "^3.19.1",
+    "core-js": "^3.19.3",
     "mersenne-twister": "^1.1.0",
     "noise-map": "^1.1.0",
-    "quasar": "^2.3.3"
+    "quasar": "^2.3.4"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.16.3",
