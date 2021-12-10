@@ -14,7 +14,7 @@ updates:
     labels:
       - "dependencies"
       - "github-actions"
-    target-branch: "develop"
+    target-branch: "dependabot"
 
   - package-ecosystem: "npm"
     directory: "/"
@@ -25,7 +25,7 @@ updates:
     labels:
       - "dependencies"
       - "npm"
-    target-branch: "develop"
+    target-branch: "dependabot"
 
   - package-ecosystem: "docker"
     directory: "/"
@@ -36,4 +36,4 @@ updates:
     labels:
       - "dependencies"
       - "docker"
-    target-branch: "develop"
+    target-branch: "dependabot"
