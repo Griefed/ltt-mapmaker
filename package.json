@@ -22,7 +22,7 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
-    "@quasar/extras": "^1.12.1",
+    "@quasar/extras": "^1.12.2",
     "core-js": "^3.19.1",
     "mersenne-twister": "^1.1.0",
     "noise-map": "^1.1.0",
@@ -30,10 +30,10 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.16.3",
-    "@quasar/app": "^3.2.3",
-    "electron": "^16.0.1",
+    "@quasar/app": "^3.2.5",
+    "electron": "^16.0.4",
     "electron-packager": "^15.4.0",
-    "eslint": "8.3.0",
+    "eslint": "8.4.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-vue": "^8.1.1",
     "eslint-webpack-plugin": "^3.1.1"
