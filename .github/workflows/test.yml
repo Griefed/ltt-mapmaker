@@ -10,6 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      
+      - name: Get branch name
+        id: branch-name
+        uses: tj-actions/branch-names@v5
+      
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.5.0
         with:
@@ -47,15 +52,15 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          build-args: BRANCH_OR_TAG=${{ github.ref_name }}
+          build-args: BRANCH_OR_TAG=${{ steps.branch-name.outputs.current_branch }}
           file: ./Dockerfile
           platforms: linux/amd64,linux/arm/v7,linux/arm64
           push: true
           tags: |
-            ghcr.io/griefed/ltt-mapmaker:${{ github.ref_name }}
-            ghcr.io/griefed/ltt-mapmaker:${{ github.ref_name }}-${{ github.sha }}
-            griefed/ltt-mapmaker:${{ github.ref_name }}
-            griefed/ltt-mapmaker:${{ github.ref_name }}-${{ github.sha }}
+            ghcr.io/griefed/ltt-mapmaker:${{ steps.branch-name.outputs.current_branch }}
+            ghcr.io/griefed/ltt-mapmaker:${{ steps.branch-name.outputs.current_branch }}-${{ github.sha }}
+            griefed/ltt-mapmaker:${{ steps.branch-name.outputs.current_branch }}
+            griefed/ltt-mapmaker:${{ steps.branch-name.outputs.current_branch }}-${{ github.sha }}
 
   electron:
     needs: test
