@@ -103,6 +103,14 @@ jobs:
       - name: List files
         run: ls dist/electron
 
+      - uses: actions/upload-artifact@v2
+        with:
+          name: build-artifacts-electron ${{ matrix.os }}
+          path: |
+            dist/electron/
+            !dist/electron/UnPackaged
+          if-no-files-found: warn # 'warn' or 'ignore' are also available, defaults to `warn`
+
       - name: Rename folders
         run: |
           mv dist/electron/Let* lttmm-${{ matrix.os }}
@@ -120,11 +128,3 @@ jobs:
 
       - name: List files
         run: ls
-
-      - uses: actions/upload-artifact@v2
-        with:
-          name: build-artifacts-electron ${{ matrix.os }}
-          path: |
-            dist/electron/
-            !dist/electron/UnPackaged
-          if-no-files-found: warn # 'warn' or 'ignore' are also available, defaults to `warn`
