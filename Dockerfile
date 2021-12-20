@@ -1,4 +1,4 @@
-FROM node:16.12.0-alpine3.13 AS builder
+FROM node:17.0.0-alpine3.13 AS builder
 
 ARG BRANCH_OR_TAG=master
 
