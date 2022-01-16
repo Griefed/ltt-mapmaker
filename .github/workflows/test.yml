@@ -10,11 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      
+
       - name: Get branch name
         id: branch-name
         uses: tj-actions/branch-names@v5
-      
+
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.5.1
         with:
@@ -40,7 +40,7 @@ jobs:
       - name: Login to DockerHub
         uses: docker/login-action@v1
         with:
-          username: griefed
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Login to GitHub Container Registry
         uses: docker/login-action@v1
@@ -59,8 +59,8 @@ jobs:
           tags: |
             ghcr.io/griefed/ltt-mapmaker:${{ steps.branch-name.outputs.current_branch }}
             ghcr.io/griefed/ltt-mapmaker:${{ steps.branch-name.outputs.current_branch }}-${{ github.sha }}
-            griefed/ltt-mapmaker:${{ steps.branch-name.outputs.current_branch }}
-            griefed/ltt-mapmaker:${{ steps.branch-name.outputs.current_branch }}-${{ github.sha }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/ltt-mapmaker:${{ steps.branch-name.outputs.current_branch }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/ltt-mapmaker:${{ steps.branch-name.outputs.current_branch }}-${{ github.sha }}
 
   electron:
     needs: test
