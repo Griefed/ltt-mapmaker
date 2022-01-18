@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.16.5",
-    "@quasar/app": "^3.2.7",
+    "@quasar/app": "^3.2.9",
     "electron": "^16.0.7",
     "electron-packager": "^15.4.0",
     "eslint": "8.7.0",
