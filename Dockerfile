@@ -1,6 +1,7 @@
 FROM node:16.12.0-alpine3.13 AS builder
 
-ARG BRANCH_OR_TAG=master
+ARG BRANCH_OR_TAG=main
+ARG HOSTER=git.griefed.de
 
 RUN \
   apk add \
@@ -8,7 +9,7 @@ RUN \
     npm && \
   git clone \
     -b $BRANCH_OR_TAG \
-      https://github.com/Griefed/ltt-mapmaker.git \
+      https://$HOSTER/Griefed/ltt-mapmaker.git \
         /tmp/lttmm && \
   cd /tmp/lttmm && \
   npm install -g npm@7.23.0 && \
@@ -18,7 +19,11 @@ RUN \
 
 FROM lsiobase/nginx:3.15
 
+ARG VERSION=dev
+
 LABEL maintainer="Griefed <griefed@griefed.de>"
+LABEL version=$VERSION
+LABEL description="Visual Map Maker for Let Them Trade by Spaceflower."
 
 RUN \
   mkdir -p \
