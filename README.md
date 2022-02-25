@@ -9,16 +9,31 @@
 
 ---
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/griefed/ltt-mapmaker?style=for-the-badge&logo=Docker&labelColor=325358&color=c0ffee&logoColor=white)](https://hub.docker.com/r/griefed/serverpackcreator)
-[![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/griefed/ltt-mapmaker?label=Image%20size&sort=date&style=for-the-badge&logo=Docker&labelColor=325358&color=c0ffee&logoColor=white)](https://hub.docker.com/r/griefed/serverpackcreator)
+# Sources, GitHub, GitLab and Mirroring and all that good stuff
 
-[![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/Griefed/ltt-mapmaker?include_prereleases&label=Latest%20Release&logo=Github&style=for-the-badge&color=c0ffee&labelColor=325358)](https://github.com/Griefed/ServerPackCreator/releases/latest)
-[![GitHub](https://img.shields.io/github/license/Griefed/ltt-mapmaker?logo=GitHub&style=for-the-badge&color=c0ffee&labelColor=325358)](https://github.com/Griefed/ServerPackCreator/blob/main/LICENSE)
+Repositories on GitHub are now for issues only. I've set up my own installation of GitLab and moved all my repositories over to [Git.Griefed.de](https://git.griefed.de/users/Griefed/projects). Make sure to check there first for the latest code before opening an issue on GitHub.
 
-[![GitHub Repo stars](https://img.shields.io/github/stars/Griefed/ltt-mapmaker?label=GitHub%20Stars&style=for-the-badge&logo=Github&labelColor=325358&color=c0ffee)](https://github.com/Griefed/ServerPackCreator)
-[![GitHub forks](https://img.shields.io/github/forks/Griefed/ltt-mapmaker?label=GitHub%20Forks&style=for-the-badge&logo=Github&labelColor=325358&color=c0ffee)](https://github.com/Griefed/ServerPackCreator)
-[![GitHub contributors](https://img.shields.io/github/contributors/Griefed/ltt-mapmaker?color=c0ffee&label=Contributors&logo=GitHub&logoColor=white&style=for-the-badge&labelColor=325358)](https://github.com/Griefed/ServerPackCreator/graphs/contributors)
-[![GitHub all releases](https://img.shields.io/github/downloads/Griefed/ltt-mapmaker/total?color=c0ffee&logo=GitHub&logoColor=white&labelColor=325358&style=for-the-badge)](https://github.com/Griefed/ServerPackCreator/releases)
+For questions, you can always join my [Discord server](https://discord.griefed.de) and talk to me there.
+
+###### This repository is available at:
+
+- Source: https://git.griefed.de/Griefed/ltt-mapmaker
+- Mirror: https://gitlab.com/Griefed/ltt-mapmaker
+- Mirror: https://github.com/Griefed/ltt-mapmaker
+- Mirror: https://gitea.com/Griefed/ltt-mapmaker
+
+---
+
+[![Docker Pulls](https://img.shields.io/docker/pulls/griefed/ltt-mapmaker?style=for-the-badge&logo=Docker&labelColor=325358&color=c0ffee&logoColor=white)](https://hub.docker.com/r/griefed/ltt-mapmaker)
+[![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/griefed/ltt-mapmaker?label=Image%20size&sort=date&style=for-the-badge&logo=Docker&labelColor=325358&color=c0ffee&logoColor=white)](https://hub.docker.com/r/griefed/ltt-mapmaker)
+
+[![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/Griefed/ltt-mapmaker?include_prereleases&label=Latest%20Release&logo=Github&style=for-the-badge&color=c0ffee&labelColor=325358)](https://github.com/Griefed/ltt-mapmaker/releases/latest)
+[![GitHub](https://img.shields.io/github/license/Griefed/ltt-mapmaker?logo=GitHub&style=for-the-badge&color=c0ffee&labelColor=325358)](https://github.com/Griefed/ltt-mapmaker/blob/main/LICENSE)
+
+[![GitHub Repo stars](https://img.shields.io/github/stars/Griefed/ltt-mapmaker?label=GitHub%20Stars&style=for-the-badge&logo=Github&labelColor=325358&color=c0ffee)](https://github.com/Griefed/ltt-mapmaker)
+[![GitHub forks](https://img.shields.io/github/forks/Griefed/ltt-mapmaker?label=GitHub%20Forks&style=for-the-badge&logo=Github&labelColor=325358&color=c0ffee)](https://github.com/Griefed/ltt-mapmaker)
+[![GitHub contributors](https://img.shields.io/github/contributors/Griefed/ltt-mapmaker?color=c0ffee&label=Contributors&logo=GitHub&logoColor=white&style=for-the-badge&labelColor=325358)](https://github.com/Griefed/ltt-mapmaker/graphs/contributors)
+[![GitHub all releases](https://img.shields.io/github/downloads/Griefed/ltt-mapmaker/total?color=c0ffee&logo=GitHub&logoColor=white&labelColor=325358&style=for-the-badge)](https://github.com/Griefed/ltt-mapmaker/releases)
 
 # Screenshots
 
