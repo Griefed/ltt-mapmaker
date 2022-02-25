@@ -9,6 +9,21 @@
 
 ---
 
+# Sources, GitHub, GitLab and Mirroring and all that good stuff
+
+Repositories on GitHub are now for issues only. I've set up my own installation of GitLab and moved all my repositories over to [Git.Griefed.de](https://git.griefed.de/users/Griefed/projects). Make sure to check there first for the latest code before opening an issue on GitHub.
+
+For questions, you can always join my [Discord server](https://discord.griefed.de) and talk to me there.
+
+###### This repository is available at:
+
+- Source: https://git.griefed.de/Griefed/ltt-mapmaker
+- Mirror: https://gitlab.com/Griefed/ltt-mapmaker
+- Mirror: https://github.com/Griefed/ltt-mapmaker
+- Mirror: https://gitea.com/Griefed/ltt-mapmaker
+
+---
+
 [![Docker Pulls](https://img.shields.io/docker/pulls/griefed/ltt-mapmaker?style=for-the-badge&logo=Docker&labelColor=325358&color=c0ffee&logoColor=white)](https://hub.docker.com/r/griefed/serverpackcreator)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/griefed/ltt-mapmaker?label=Image%20size&sort=date&style=for-the-badge&logo=Docker&labelColor=325358&color=c0ffee&logoColor=white)](https://hub.docker.com/r/griefed/serverpackcreator)
 
