@@ -56,7 +56,7 @@ jobs:
           push: false
 
   electron:
-    needs: test
+    needs: build
     runs-on: ${{ matrix.os }}
 
     strategy:
