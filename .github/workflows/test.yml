@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Get branch name
         id: branch-name
@@ -35,7 +35,7 @@ jobs:
   docker:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Get branch name
         id: branch-name
         uses: tj-actions/branch-names@v5
@@ -66,7 +66,7 @@ jobs:
     steps:
       # GET LATEST CODE
       - name: Checkout latest code
-        uses: actions/checkout@master
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
