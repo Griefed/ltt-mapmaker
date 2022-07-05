@@ -22,14 +22,14 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
-    "@quasar/extras": "^1.12.5",
+    "@quasar/extras": "^1.14.2",
     "core-js": "^3.21.1",
     "mersenne-twister": "^1.1.0",
     "noise-map": "^1.1.0",
-    "quasar": "^2.5.5"
+    "quasar": "^2.7.5"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.17.0",
+    "@babel/eslint-parser": "^7.18.2",
     "@quasar/app": "^3.3.3",
     "electron": "^17.2.0",
     "electron-packager": "^15.4.0",
