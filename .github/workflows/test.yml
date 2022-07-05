@@ -26,7 +26,7 @@ jobs:
       - run: npm install
       - run: quasar build
       - run: pwd && ls -al *
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: build-artifacts-quasar
           path: dist/spa/
@@ -96,7 +96,7 @@ jobs:
       - name: List files
         run: ls dist/electron
 
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: build-artifacts-electron ${{ matrix.os }}
           path: |
