@@ -16,7 +16,7 @@ jobs:
         uses: tj-actions/branch-names@v5
 
       - name: Setup Node.js environment
-        uses: actions/setup-node@v3.3.0
+        uses: actions/setup-node@v3.4.0
         with:
           # Version Spec of the version to use.  Examples: 12.x, 10.15.1, >=10.15.0
           node-version: '>= 16.9.1'
@@ -79,7 +79,7 @@ jobs:
 
       # SETUP NODE ENVIRONMENT
       - name: Setup Node.js environment
-        uses: actions/setup-node@v3.3.0
+        uses: actions/setup-node@v3.4.0
         with:
           # Version Spec of the version to use.  Examples: 12.x, 10.15.1, >=10.15.0
           node-version: '>= 16.9.1'
