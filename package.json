@@ -29,7 +29,7 @@
     "quasar": "^2.7.5"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.18.2",
+    "@babel/eslint-parser": "^7.18.9",
     "@quasar/app": "^3.3.3",
     "electron": "^19.0.8",
     "electron-packager": "^15.5.1",
