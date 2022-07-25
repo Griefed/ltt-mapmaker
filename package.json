@@ -22,8 +22,8 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
+    "core-js": "^3.24.0",
     "@quasar/extras": "^1.15.0",
-    "core-js": "^3.23.5",
     "mersenne-twister": "^1.1.0",
     "noise-map": "^1.1.0",
     "quasar": "^2.7.5"
