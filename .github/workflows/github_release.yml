@@ -115,37 +115,37 @@ jobs:
           branch: gh-pages
           folder: dist/spa
 
-      # DOCKER RELATED
-      - name: Set up QEMU
-        uses: docker/setup-qemu-action@v2
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v2
-      - name: Login to DockerHub
-        uses: docker/login-action@v2
-        with:
-          username: griefed
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
-      - name: Login to GitHub Container Registry
-        uses: docker/login-action@v2
-        with:
-          registry: ghcr.io
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-      - name: Build and push
-        uses: docker/build-push-action@v3
-        with:
-          context: .
-          build-args: |
-            BRANCH_OR_TAG=${{ github.ref_name }}
-            HOSTER=github.com
-          file: ./Dockerfile
-          platforms: linux/amd64,linux/arm/v7,linux/arm64
-          push: true
-          tags: |
-            ghcr.io/griefed/ltt-mapmaker:latest
-            ghcr.io/griefed/ltt-mapmaker:${{ steps.tag.outputs.tag }}
-            griefed/ltt-mapmaker:latest
-            griefed/ltt-mapmaker:${{ steps.tag.outputs.tag }}
+      # # DOCKER RELATED
+      # - name: Set up QEMU
+      #   uses: docker/setup-qemu-action@v2
+      # - name: Set up Docker Buildx
+      #   uses: docker/setup-buildx-action@v2
+      # - name: Login to DockerHub
+      #   uses: docker/login-action@v2
+      #   with:
+      #     username: griefed
+      #     password: ${{ secrets.DOCKERHUB_TOKEN }}
+      # - name: Login to GitHub Container Registry
+      #   uses: docker/login-action@v2
+      #   with:
+      #     registry: ghcr.io
+      #     username: ${{ github.actor }}
+      #     password: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Build and push
+      #   uses: docker/build-push-action@v3
+      #   with:
+      #     context: .
+      #     build-args: |
+      #       BRANCH_OR_TAG=${{ github.ref_name }}
+      #       HOSTER=github.com
+      #     file: ./Dockerfile
+      #     platforms: linux/amd64,linux/arm/v7,linux/arm64
+      #     push: true
+      #     tags: |
+      #       ghcr.io/griefed/ltt-mapmaker:latest
+      #       ghcr.io/griefed/ltt-mapmaker:${{ steps.tag.outputs.tag }}
+      #       griefed/ltt-mapmaker:latest
+      #       griefed/ltt-mapmaker:${{ steps.tag.outputs.tag }}
 
   electron:
     needs: release
