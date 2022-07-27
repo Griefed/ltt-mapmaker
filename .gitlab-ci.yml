@@ -53,10 +53,10 @@ pages:
   before_script:
     - npm install
     - rm -Rf dist
+    - rm -rf public
   script:
     - quasar build
-    - mkdir public
-    - cp -Rf dist/spa/* public/
+    - mv dist/spa public
   artifacts:
     paths:
       - public
