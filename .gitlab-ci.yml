@@ -55,6 +55,7 @@ pages:
     - rm -Rf dist
   script:
     - quasar build
+    - mkdir public
     - cp -Rf dist/spa/* public/
   artifacts:
     paths:
