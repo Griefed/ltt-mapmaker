@@ -22,7 +22,7 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
-    "@quasar/extras": "^1.15.0",
+    "@quasar/extras": "1.15.1",
     "core-js": "^3.24.0",
     "mersenne-twister": "^1.1.0",
     "noise-map": "^1.1.0",
