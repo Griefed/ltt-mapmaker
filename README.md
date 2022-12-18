@@ -158,6 +158,13 @@ If you wish to expand/change the random name generator, edit `const reticulating
             <br />
             <sub><b>Kreezxil</b></sub>
         </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/SirEndii">
+            <img src="https://avatars.githubusercontent.com/u/67484093?v=4" width="100;" alt="SirEndii"/>
+            <br />
+            <sub><b>Srendi</b></sub>
+        </a>
     </td></tr>
 </table>
 <!-- readme: sponsors -end -->
