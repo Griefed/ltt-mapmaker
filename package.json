@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@quasar/extras": "1.15.8",
-    "core-js": "3.26.1",
+    "core-js": "3.27.1",
     "noise-map": "1.1.0",
     "mersenne-twister": "1.1.0",
     "quasar": "^2.11.1"
