@@ -3,9 +3,9 @@
     <span v-for="(xRow, index) in store.state.lttMap" :key="index">
       <div class="row no-wrap"
         v-bind:class="[{
-          firstRow: (index == 0),
-          moveup: (index !=0),
-        }, (index != 0 && !(index%2))?'shifted':'notShifted']"
+          firstRow: (index === 0),
+          moveup: (index !== 0),
+        }, (index !== 0 && !(index%2))?'shifted':'notShifted']"
       >
         <Tile
           v-for="(tile, i) in xRow"
@@ -13,7 +13,7 @@
           :typeValue="tile.typeId"
           @update:typeValue="tile.typeId = $event"
           v-bind:id="tile.x+'_'+tile.y"
-          :class="{tileMl: (i!=0)?1:0}"
+          :class="{tileMl: (i !== 0) ? 1 : 0}"
           v-bind:key="i">
           </Tile>
       </div>
