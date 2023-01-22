@@ -3,20 +3,22 @@
     <q-header elevated>
       <q-toolbar>
 
-
         <q-avatar>
           <img alt="header" src="~assets/icon.webp" width="50px">
         </q-avatar>
-
 
         <q-toolbar-title style="font-weight: bold;">
           Let Them Trade Map-Maker
         </q-toolbar-title>
 
         <template v-if="store.state.lttMap">
-          <q-btn class="q-mr-xs" color="secondary" label="New Map" @click='confirmMapNew = true'>
+          <q-btn
+            icon="replay"
+            class="q-mr-xs"
+            color="secondary"
+            @click='confirmMapNew = true'>
             <q-tooltip :disable="$q.platform.is.mobile">
-              NewMap
+              Create a new map
             </q-tooltip>
           </q-btn>
 
@@ -37,8 +39,21 @@
             </q-card>
           </q-dialog>
 
+          <q-btn
+            icon="download"
+            class="q-mr-xs"
+            color="secondary"
+            @click='generateMap()'>
+            <q-tooltip :disable="$q.platform.is.mobile">
+              Download current configuration as a JSON-file.
+            </q-tooltip>
+          </q-btn>
 
-          <q-btn-dropdown label="Settings" color="secondary">
+          <q-separator inset spaced />
+
+          <q-btn-dropdown
+            icon="settings"
+            color="secondary">
             <div class="row no-wrap q-pa-md">
               <div class="column" style="width: 600px;">
                 <div class="text-h6 q-mb-md">Initial View Radius</div>
@@ -122,14 +137,6 @@
 
           <q-separator inset spaced />
 
-          <q-btn class="q-mr-xs" color="secondary" label="Download Map" @click='generateMap()'>
-            <q-tooltip :disable="$q.platform.is.mobile">
-              Download current configuration as a JSON-file.
-            </q-tooltip>
-          </q-btn>
-
-          <q-separator inset spaced />
-
         </template>
 
         <q-btn
@@ -137,7 +144,6 @@
           class="q-mr-xs"
           dense
           color="secondary"
-          label="Toggle Fullscreen"
           @click="$q.fullscreen.toggle()">
           <q-tooltip :disable="$q.platform.is.mobile">
             {{ $q.fullscreen.isActive ? 'Exit Fullscreen' : 'Toggle Fullscreen' }}
@@ -151,7 +157,6 @@
           class="q-mr-xs"
           dense
           color="secondary"
-          label="Toggle Dark Mode"
           @click="$q.dark.toggle()">
           <q-tooltip :disable="$q.platform.is.mobile">
             {{ $q.dark.isActive ? 'Deactivate Dark Mode' : 'Activate Dark Mode' }}
@@ -160,7 +165,11 @@
 
         <q-separator inset spaced />
 
-        <q-btn @click="alert = true" color="secondary" dense label="About LTTMM">
+        <q-btn
+          icon="info"
+          @click="alert=true"
+          color="secondary"
+          dense>
           <q-tooltip :disable="$q.platform.is.mobile">
             Open a little About! 🙂
           </q-tooltip>
@@ -255,7 +264,8 @@
         <div class="col">
           <div class="full-height full-width">
             <q-scroll-area
-              :visible="visible" class="full-height full-width page"
+              :visible="visible"
+              :class="$q.dark.isActive ? 'full-height full-width page-dark' : 'full-height full-width page'"
               :bar-style="{ borderRadius: '5px', opacity: 1, zIndex: 1001 }"
               :vertical-thumb-style="{ borderRadius: '5px', opacity: verticalOpacity, zIndex: 1001, background: verticalColor }"
               :horizontal-thumb-style="{ borderRadius: '5px', opacity: horizontalOpacity, zIndex: 1001, background: horizontalColor }">
@@ -269,8 +279,7 @@
 </template>
 
 <script>
-import { defineComponent, ref, reactive, inject } from 'vue'
-import { openURL } from 'quasar'
+import { defineComponent, ref, inject } from 'vue'
 
 export default defineComponent({
   name: 'MainLayout',
@@ -281,8 +290,8 @@ export default defineComponent({
       store,
       visible: ref(true),
       alert: ref(false),
-      verticalColor: ref('#000000'),
-      horizontalColor: ref('#000000'),
+      verticalColor: ref('#ff0000'),
+      horizontalColor: ref('#ff0000'),
       verticalOpacity: ref(1),
       horizontalOpacity: ref(1),
     }
@@ -306,7 +315,7 @@ export default defineComponent({
     },
 
     downloadMap(mapName, map) {
-      var element = document.createElement('a');
+      const element = document.createElement('a');
       element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(map));
       element.setAttribute('download', mapName);
 
@@ -321,8 +330,13 @@ export default defineComponent({
 })
 </script>
 
+<!--suppress CssUnusedSymbol -->
 <style>
 .page {
-  background: radial-gradient(circle, #56638A 0%, #483A58 100%)
+  background: radial-gradient(circle, #fbfbf9 30%, #594a37 100%, #3e4e69 100%)
+}
+
+.page-dark {
+  background: radial-gradient(circle, #fbfbf9 5%, #594a37 20%, #3e4e69 100%)
 }
 </style>
