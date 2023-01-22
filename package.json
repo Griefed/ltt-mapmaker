@@ -1,6 +1,6 @@
 {
   "name": "ltt-mapmaker",
-  "version": "2.3.4",
+  "version": "2.3.6",
   "description": "Visual Map Maker for Let Them Trade by Spaceflower.",
   "productName": "Let Them Trade Map-Maker",
   "author": "Griefed <griefed@griefed.de>",
@@ -23,17 +23,17 @@
   },
   "dependencies": {
     "@quasar/extras": "1.15.9",
-    "core-js": "3.26.1",
+    "core-js": "3.27.1",
     "noise-map": "1.1.0",
     "mersenne-twister": "1.1.0",
-    "quasar": "^2.7.7"
+    "quasar": "^2.11.5"
   },
   "devDependencies": {
     "@babel/eslint-parser": "7.19.1",
     "@quasar/app": "3.3.3",
-    "electron": "22.0.0",
+    "electron": "22.0.3",
     "electron-packager": "15.5.2",
-    "eslint": "8.29.0",
+    "eslint": "8.31.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-vue": "9.8.0",
     "eslint-webpack-plugin": "3.2.0"
@@ -50,9 +50,9 @@
     "last 5 Opera versions"
   ],
   "engines": {
-    "node": "^16.9.1",
-    "npm": "^7.23.0",
-    "yarn": "^1.22.11"
+    "node": ">= 16.9.1",
+    "npm": ">= 7.21.1",
+    "yarn": ">= 1.22.11"
   },
   "contributors": [
     {
