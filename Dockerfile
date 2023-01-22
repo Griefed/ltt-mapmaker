@@ -17,7 +17,7 @@ RUN \
   npm install && \
   quasar build
 
-FROM lsiobase/nginx:3.16
+FROM lsiobase/nginx:3.17
 
 ARG VERSION=dev
 
