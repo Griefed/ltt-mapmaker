@@ -149,8 +149,8 @@ button.without-icon i {
 
 .hexTop {
   top: -35.3553px;
-  border-top: solid 4.2426px #333333;
-  border-right: solid 4.2426px #333333;
+  border-top: solid 3px #333333;
+  border-right: solid 3px #333333;
 }
 
 .hexTop:after {
@@ -159,8 +159,8 @@ button.without-icon i {
 
 .hexBottom {
   bottom: -35.3553px;
-  border-bottom: solid 4.2426px #333333;
-  border-left: solid 4.2426px #333333;
+  border-bottom: solid 3px #333333;
+  border-left: solid 3px #333333;
 }
 
 .hexBottom:after {
