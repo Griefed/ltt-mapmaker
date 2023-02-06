@@ -31,7 +31,7 @@
   "devDependencies": {
     "@babel/eslint-parser": "7.19.1",
     "@quasar/app": "3.3.3",
-    "electron": "22.1.0",
+    "electron": "22.2.0",
     "electron-packager": "15.5.2",
     "eslint": "8.33.0",
     "eslint-config-prettier": "8.5.0",
