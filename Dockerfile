@@ -1,4 +1,4 @@
-FROM node:16.12.0-alpine3.13 AS builder
+FROM node:17.3.0-alpine3.13 AS builder
 
 ARG BRANCH_OR_TAG=main
 ARG HOSTER=git.griefed.de
